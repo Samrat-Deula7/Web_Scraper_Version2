@@ -28,7 +28,7 @@ url = []
 
 AboutConsultancy = ""
 
-for i, query in enumerate(search_query[0:3]):
+for i, query in enumerate(search_query[0:13]):
     
     try:
         defaultpath = "data"
