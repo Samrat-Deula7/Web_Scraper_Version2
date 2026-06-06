@@ -11,6 +11,9 @@ import pandas as pd
 
 def gen(path):
     with open(path,"r", encoding="utf-8") as f:
+        print("\n")
+        print("~~~~~~~~~~~~~~~~~~~~~``This is the path i am printing data from ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print(path)
         html_content = f.read()
 
         soupData = BeautifulSoup(html_content,"html.parser")

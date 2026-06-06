@@ -21,13 +21,15 @@ import pandas as pd
 df = pd.read_excel("C:\\Users\\hp\\Downloads\\consultancy data.xlsx")
 search_query = df["Name of Company"].tolist()
 
-for i, query in enumerate(search_query[0:5]):
-    name = []
-    logo = []
-    ConsultancyDesc = []
-    url = []
+name = []
+logo = []
+ConsultancyDesc = []
+url = []
 
-    AboutConsultancy = ""
+AboutConsultancy = ""
+
+for i, query in enumerate(search_query[0:15]):
+    
     try:
         defaultpath = "data"
 
@@ -107,27 +109,27 @@ for i, query in enumerate(search_query[0:5]):
         print("Couldn't scrape Data",e)
         pass
 
-    data = {
-        "Name":name,
-        "Url":url,
-        "Logo":logo,
-        "Desc":ConsultancyDesc
-    }
+data = {
+    "Name":name,
+    "Url":url,
+    "Logo":logo,
+    "Desc":ConsultancyDesc
+}
 
-    print("\n")
-    print("############### This is the data to export to json ###############")
-    print(name)
-    print("\n")
-    print("############### This is the data to export to json ###############")
-    print(url)
-    print("\n")
-    print("############### This is the data to export to json ###############")
-    print(logo)
-    print("\n")
-    print("############### This is the data to export to json ###############")
-    print(ConsultancyDesc)
+print("\n")
+print("############### This is the data to export to json ###############")
+print(name)
+print("\n")
+print("############### This is the data to export to json ###############")
+print(url)
+print("\n")
+print("############### This is the data to export to json ###############")
+print(logo)
+print("\n")
+print("############### This is the data to export to json ###############")
+print(ConsultancyDesc)
 
-    df = pd.DataFrame(data)
+df = pd.DataFrame(data)
 
-    # Export to JSON
-    df.to_json("HopeData.json", orient="records", indent=4)
+# Export to JSON
+df.to_json("HopeData.json", orient="records", indent=4)
