@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Grace International</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/G_Logo.png" type="image/x-icon">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Header Styles -->
+    <link href="css/header-styles.css" rel="stylesheet">
+
+    <!-- WhatsApp Button Styles -->
+    <link href="css/whatsapp.css" rel="stylesheet">
+
+    <!-- Universities Styles -->
+    <link href="css/universities.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <script>
+        window.onload = function() {
+            document.getElementById('spinner').classList.remove('show');
+        }
+    </script>
+
+    </head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 d-lg-block">
+        <div class="container px-0">
+            <div class="row gx-0 align-items-center">
+                <div class="col-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <div class="city-selector dropdown"><button class="btn btn-sm btn-outline-light dropdown-toggle" type="button" id="cityDropdown" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-map-marker-alt me-1"></i> Select City</button><ul class="dropdown-menu" aria-labelledby="cityDropdown"><li><a class="dropdown-item" href="?city=SYDNEY">Sydney</a></li><li><a class="dropdown-item" href="?city=MELBOURNE">Melbourne</a></li><li><a class="dropdown-item" href="?city=ADELAIDE">Adelaide</a></li><li><a class="dropdown-item" href="?city=BRISBANE">Brisbane</a></li><li><a class="dropdown-item" href="?city=CANBERRA">Canberra</a></li><li><a class="dropdown-item" href="?city=DANDENONG">Dandenong</a></li><li><a class="dropdown-item" href="?city=DARWIN">Darwin</a></li><li><a class="dropdown-item" href="?city=GLENROY">Glenroy</a></li><li><a class="dropdown-item" href="?city=HOBART">Hobart</a></li><li><a class="dropdown-item" href="?city=PERTH">Perth</a></li></ul></div>                        <a href="tel:+61 (03) 9662 9020" class="text-white ms-4 me-2 me-lg-4">
+                            <i class="fas fa-phone-alt text-primary me-2"></i>
+                            <span class="d-none d-md-inline">+61 (03) 9662 9020</span>
+                        </a>
+                        <a href="mailto:melbourne@graceintlgroup.com" class="text-white me-0">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <span class="d-none d-md-inline">melbourne@graceintlgroup.com</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-4 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="https://www.facebook.com/graceintloceania" class="btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@graceintl_melbourne" class="btn-square rounded-circle me-3" style="background-color: #000000; color: #ffffff;"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/graceintlmelbourne/" class="btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/" class="btn-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid sticky-top px-0" style="z-index: 10;">
+        <!-- The <nav> element will be in navbar.php -->
+        <!-- End of content for header.php before navbar -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords"
+                                aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End --><nav class="navbar navbar-expand-lg navbar-dark bg-white py-3">
+    <div class="container">
+        <a href="index.php" class="navbar-brand">
+            <img src="img/Grace-Logo.png" alt="Grace International" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.php" class="nav-item nav-link ">Home</a>
+              
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Student Services</a>
+                    <div class="dropdown-menu">
+                        <a href="education_service.php" class="dropdown-item ">Education Service</a>
+                        <a href="educational_partners.php" class="dropdown-item ">Educational Partners</a>
+                        <a href="scholarship_service.php" class="dropdown-item ">Scholarship</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Other Services</a>
+                    <div class="dropdown-menu">
+                        <a href="oshc_ovhc.php" class="dropdown-item ">OSHC/OVHC</a>
+                        <a href="naati_pte.php" class="dropdown-item ">NAATI/PTE</a>
+                        <a href="professional_year.php" class="dropdown-item ">Professional Year</a>
+                    </div>
+                </div>
+                <a href="contact.php" class="nav-item nav-link active">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+</div> <!-- Closing .container px-0 -->
+</div> <!-- Closing .container-fluid sticky-top px-0 -->
+<!-- Simple Contact Form -->
+<div class="container-fluid py-5 glossy-bg">
+    <div class="container py-5">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+            <h4 class="text-primary">Contact Us</h4>
+            <h1 class="display-5 mb-3 gradient-text">Speak to our Team</h1>
+            <p class="mb-0">Fill out the form below for a free consultation with our expert team.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="glossy-card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <div style="background: url('img/form.jpg'); background-size: cover; background-position: center; height: 100%; min-height: 300px; border-radius: 15px 0 0 15px;"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="p-4 p-md-5">
+                                
+                                <form action="/contact.php" method="post">
+                                    <div class="form-floating mb-4">
+                                        <input type="text" class="form-control "
+                                            id="name" name="name" placeholder="Full Name" value="">
+                                        <label for="name">Full Name</label>
+                                                                            </div>
+
+                                    <div class="form-floating mb-4">
+                                        <input type="email" class="form-control "
+                                            id="email" name="email" placeholder="Email Address" value="">
+                                        <label for="email">Email Address</label>
+                                                                            </div>
+
+                                    <div class="form-floating mb-4">
+                                        <input type="text" class="form-control "
+                                            id="number" name="number" placeholder="Phone Number" value="">
+                                        <label for="number">Phone Number</label>
+                                                                            </div>
+                                    <div class="form-floating mb-4">
+                                        <textarea class="form-control "
+                                            id="message" name="message" placeholder="Message" style="height: 150px;"></textarea>
+                                        <label for="message">Message</label>
+                                                                            </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="glossy-button">
+                                            <i class="fas fa-paper-plane me-2"></i> Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    body {
+        text-align: center;
+        background-color: #f5f5f5;
+    }
+
+    .nav-buttons {
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .nav-buttons button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+        border: 2px solid #00a1d6;
+        background-color: #00a1d6;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        min-width: 120px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .nav-buttons button.active {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .nav-buttons button:hover {
+        background-color: #008cb3;
+    }
+
+    .subsection-buttons {
+        margin: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .subsection-buttons button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        border: 1px solid #00a1d6;
+        background-color: #fff;
+        color: #00a1d6;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+        min-width: 100px;
+    }
+
+    .subsection-buttons button.active {
+        background-color: #28a745;
+        color: white;
+        border-color: #28a745;
+    }
+
+    .subsection-buttons button:hover {
+        background-color: #e6f3fa;
+    }
+
+    .contact-section {
+        max-width: 1300px;
+        margin: 60px auto;
+        padding: 30px;
+        background-color: var(--grace-white);
+        box-shadow: 0 4px 15px var(--grace-shadow-medium);
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .contact-section.active {
+        display: block;
+    }
+
+    /* Mobile-specific styles (up to 768px) */
+    @media (max-width: 768px) {
+        .nav-buttons {
+            margin: 1.5rem 0;
+            gap: 0.3rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .nav-buttons button {
+            padding: 0.5rem 0.8rem;
+            font-size: 0.8rem;
+            min-width: 0;
+            width: 100%;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        .subsection-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.3rem;
+        }
+
+        .subsection-buttons button {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.75rem;
+            min-width: 0;
+            width: 100%;
+        }
+
+        .contact-section {
+            margin: 1rem auto;
+            padding: 1rem;
+        }
+
+        .branch-item p {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+        }
+    }
+
+    /* Laptop and larger screens (above 768px) */
+    @media (min-width: 769px) {
+        .nav-buttons {
+            gap: 1rem;
+        }
+
+        .nav-buttons button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+        }
+
+        .subsection-buttons button {
+            padding: 0.6rem 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-section {
+            max-width: 1300px;
+            padding: 2rem;
+        }
+    }
+</style>
+
+<!-- Navigation buttons -->
+<div class="nav-buttons">
+    <button data-section="all" class="active">ALL BRANCHES</button>
+    <button data-section="australia" >AUSTRALIA OFFICES</button>
+    <button data-section="south_asia" >SOUTH ASIA OFFICES</button>
+    <button data-section="dubai" >DUBAI OFFICE</button>
+    <button data-section="indonesia" >INDONESIA OFFICE</button>
+    <button data-section="kenya" >KENYA OFFICE</button>
+    <button data-section="new_zealand" >NEW ZEALAND OFFICE</button>
+    <button data-section="philippines" >PHILIPPINES OFFICE</button>
+</div>
+
+<!-- Container for dynamic content -->
+<div id="contact-sections"></div>
+
+<script>
+    // Pass PHP contacts data to JavaScript
+    const contacts = {"all":[{"name":"Adelaide Office","phone":"+61 (08) 7225 7892","email":"adelaide@graceintlgroup.com","address":"Suite 2, Level 1, 9A Hindley St., Adelaide, SA 5000, Australia"},{"name":"Auckland Office","phone":"+64 95585152","email":"director.nz@graceintlgroup.com","address":"Suite 202, 87-93 Queen Street, Dingwall Building, Auckland, New Zealand"},{"name":"Bagbazar Office","phone":"+977 (01) 4256121 \/ 5356121 \/ 4212374","email":"bagbazar@grace.edu.np","address":"Bagbazar, Kathmandu (Opposite of Pipalbot), Nepal"},{"name":"Baglung Office","phone":"+977 (068) 522667","email":"baglung@grace.edu.np","address":"Hanumandas Road, Next building to Hotel Peace Palace, Baglung, Nepal"},{"name":"Banepa Office","phone":"9709160061\/62\/63","email":"banepa@grace.edu.np","address":"Banepa, Tindobato"},{"name":"Bardibas Office","phone":"+977-044-590312 \/ 9841133810","email":"bardibas@grace.edu.np","address":"Aurahi Road, Near Subhaswostik Hospital, Bardibas, Nepal"},{"name":"Biratnagar Office","phone":"+977 9820709054 \/ (021) 570133","email":"biratnagar@grace.edu.np","address":"Hanumandas Road, Biratnagar-7, Nepal"},{"name":"Birtamode Office","phone":"(023) 536117","email":"birtamod@grace.edu.np","address":"Hanuman Central, 4th Floor, Birtamode, Nepal"},{"name":"Brisbane Office","phone":"+61 (08) 0732663358","email":"brisbane@graceintlgroup.com","address":"Level 5, 190 Edward Street, Brisbane 4000, Australia"},{"name":"Buddhanagar Office","phone":"+977 01 5913321 \/ 20","email":"reception.buddhanagar@grace.edu.np","address":"Buddhanagar, Nearby Himalayan Ayurved Medical Science College, Kathmandu, Nepal"},{"name":"Butwal Office","phone":"(071) 542276 \/ 532276 \/ 535407","email":"butwal@grace.edu.np","address":"Milanchowk, NMB Bank Building, Butwal, Nepal"},{"name":"Canberra Office","phone":"+61 262 471 050","email":"canberra@graceintlgroup.com","address":"Suite 1.04\/ 17-21 University Avenue City ACT 2601, Australia"},{"name":"Cebu Office","phone":"+63 956 291 0349","email":"admission.ph@graceintlgroup.com","address":"Shope 220 Raintree Mall \u201cAnnex A\u201d 528 General Maxilom Avenue Cebu City Philippines, 6000"},{"name":"Chitwan Office","phone":"(056) 590712 \/ (056) 590812 \/ +977 9855019790","email":"chitwan@grace.edu.np","address":"Sahid Chowk, Narayangarh, Chitwan, Nepal"},{"name":"Colombo Office","phone":"61 430500165","email":"srilanka@graceintlgroup.com","address":"6A 1\/1, Vajira road, Colombo 4, Sri Lanka"},{"name":"Damak Office","phone":"+977 9845863530 \/ +977 (023) 572536","email":"damak@grace.edu.np","address":"Beldangi Road Damak 6 Jhapa at KD complex, Damak, Nepal"},{"name":"Damauli Office","phone":"065-590550","email":"damauli@grace.edu.np","address":"Bhorletar Chowk, Damauli, Tanahun, Nepal"},{"name":"Dandenong Office","phone":"+61 (03) 70097653, +61 (0)431794684","address":"Level 10, 14 Mason Street, Dandenong, VIC 3175, Australia"},{"name":"Dang Office","phone":"(082) 2590719 \/ +977 9857870719","email":"dang@grace.edu.np","address":"Ghorahi 15, Newroad Dang Infront of Ganesh Chitralaya, Dang, Nepal"},{"name":"Darwin Office","phone":"+61 411 632 575","email":"darwin@graceintlgroup.com","address":"43 Cavenagh Street, Darwin, NT, 0800 Level 1, Australia"},{"name":"Delhi Office","phone":"+91 (11) 45542231","email":"india@graceintlgroup.com","address":"Office No. 505, 6th Floor, Westend Mall, Near District Centre, Janak Puri (West), New Delhi, 110058, India"},{"name":"Dharan Office","phone":"+977 025 579595","email":"dharan@grace.edu.np","address":"Sadan Road, Dharan, Nepal"},{"name":"Dhaka Office","phone":"+8809678770115 \/ +8801334925380","email":"dhaka@graceintlgroup.com","address":"Skylark MAK84, Level 4, House 84, Road 11, Block D, Banani, Dhaka-1213, Bangladesh"},{"name":"Dubai Office","phone":"+971 45548034 \/ +971 523110230","email":"dubai@graceintlgroup.com","address":"PO Box 33256, Office S02 Bin Hareb Building AI Mararr Dubai 33256, UAE"},{"name":"Eldoret Office","phone":"+254 716361048","email":"eldoret@graceintlgroup.com","address":"Kenya Office Eldoret, 301\/2nd Floor, Stow-burg Plaza Oginga Odinga Street, Eldoret, Kenya"},{"name":"Glenroy Office","phone":"+61 431 715 577","email":"glenroy@graceintlgroup.com","address":"Unit 3\/1 Post Office Pl, Glenroy, VIC 3046, Australia"},{"name":"Gurugram Office","phone":"+91 (01) 244367660","email":"bdm@graceintlgroup.com","address":"G-308, Floor 3rd, Sushant Shopping Arcade, Sushant Lok Phase -1, Gurugram, Haryana, India"},{"name":"Haymarket Office","phone":"+61 (02) 9286 3447","email":"central.aus@grace.edu.np","address":"Suite 453, Level 5, 311-315 Castlereagh St, Haymarket NSW 2000, Australia"},{"name":"Hetauda Office","phone":"+977 9843690518 \/ (057) 524403","email":"hetauda@grace.edu.np","address":"Hetauda-04, Parijatpath, Hetauda, Nepal"},{"name":"Hobart Office","phone":"03 6289 6655","email":"tasmania@graceintlgroup.com","address":"Suite 105, Level 1, 86 Murray Street, Hobart TAS 7000, Australia"},{"name":"Itahari Office","phone":"+977-25-590581 \/ +977 9762378608","email":"itahari@grace.edu.np","address":"Sangit Chowk, Itahari, Nepal"},{"name":"Jakarta Office","phone":"(+62) 87850020074","email":"director.indonesia@graceintlgroup.com","address":"Wisma Kodel, 9th floor, Jl. H. R. Rasuna Said kavling B4, Kuningan, Jakarta 12910 Indonesia"},{"name":"Kawasoti Office","phone":"+977 9849898606 \/ 078-590992","email":"kawasoti@grace.edu.np","address":"Indrachowk, kawasoti-2, Nawalpur, Nepal"},{"name":"Lalitpur Office","phone":"+977 9766385821 \/ +977 1-5920013\/14","email":"kumaripati@grace.edu.np","address":"Kumaripati, Lalitpur (3rd Floor, CG Building)"},{"name":"Melbourne Office","phone":"+61 (03) 9662 9020","email":"melbourne@graceintlgroup.com","address":"Level 14, 282 Collins Street, Melbourne, VIC 3000, Australia"},{"name":"New Baneshwor Office","phone":"+977 (01) 4796880 \/ 4796881","email":"baneshwor@grace.edu.np","address":"PC Complex 2nd Floor, New Baneshwor, Kathmandu, Nepal"},{"name":"Pakistan Office","phone":"+92 (335) 5441602","email":"pakistan@graceintlgroup.com","address":"F-8 Markaz, Al Babar Center Level 1 Islamabad, Pakistan"},{"name":"Parramatta Office","phone":"+61 (02) 9286 3447","email":"parramatta@grace.edu.np","address":"109 Church Street, Parramatta, NSW 2150, Australia"},{"name":"Parsa Office","phone":"+977 9855019797 \/ (056) 582053","email":"parsa@grace.edu.np","address":"Khairahani, Parsa, Nepal"},{"name":"Perth Office","phone":"+61 450570884","email":"perth@graceintlgroup.com","address":"383 Hay St, Perth WA 6000, Australia"},{"name":"Pokhara Office","phone":"+977 9846054807 \/ (061) 551013\/ (061) 553013","email":"pokhara@grace.edu.np","address":"Mahendrapool, Pokhara"},{"name":"Simara Office","phone":"+977 985-5030941","email":"simara@grace.edu.np","address":"Simara Business Center, Simara, Nepal"},{"name":"Strathfield Office","phone":"+61 (02) 9286 3447","email":"strathfield@grace.edu.np","address":"Unit 1\/14 Boulevarde, Strathfield NSW 2135, Australia"},{"name":"Surkhet Office","phone":"+977 9858054080 \/ (083) 520211","email":"surkhet@grace.edu.np","address":"Birendranagar-6, Surkhet (Near Maya Nursing Home)"},{"name":"Sydney Office","phone":"+61 (02) 9286 3447","email":"sydney@graceintlgroup.com","address":"Suite 1305, Level 13, 97-99 Bathurst Street, Sydney, NSW, Australia, New South Wales"},{"name":"Sylhet Office","phone":"+8801765710165 \/ +61469884800","email":"director.bangladesh@graceintlgroup.com","address":"Abdul Hamid Road, Kadamtoli, Sylhet, (1st Floor), Humayun Rashid Chattar, Bangladesh"},{"name":"Williams Landing Office","phone":"+61 0393819379","email":"williamslanding@graceintlgroup.com","address":"Level 4, Suite 405, 87 Overton Road, WL VIC 3027, Australia"}],"australia":[{"name":"Adelaide Office","phone":"+61 (08) 7225 7892","email":"adelaide@graceintlgroup.com","address":"Suite 2, Level 1, 9A Hindley St., Adelaide, SA 5000, Australia"},{"name":"Brisbane Office","phone":"+61 (08) 0732663358","email":"brisbane@graceintlgroup.com","address":"Level 5, 190 Edward Street, Brisbane 4000, Australia"},{"name":"Canberra Office","phone":"+61 262 471 050","email":"canberra@graceintlgroup.com","address":"Suite 1.04\/ 17-21 University Avenue City ACT 2601, Australia"},{"name":"Dandenong Office","phone":"+61 (03) 70097653, +61 (0)431794684","email":"dandenong@graceintlgroup.com","address":"Level 10, 14 Mason Street, Dandenong, VIC 3175, Australia"},{"name":"Darwin Office","phone":"+61 411 632 575","email":"darwin@graceintlgroup.com","address":"43 Cavenagh Street, Darwin, NT, 0800 Level 1, Australia"},{"name":"Glenroy Office","phone":"+61 431 715 577","email":"glenroy@graceintlgroup.com","address":"Unit 3\/1 Post Office Pl, Glenroy, VIC 3046, Australia"},{"name":"Haymarket Office","phone":"+61 (02) 9286 3447","email":"central.aus@grace.edu.np","address":"Suite 453, Level 5, 311-315 Castlereagh St, Haymarket NSW 2000, Australia"},{"name":"Hobart Office","phone":"03 6289 6655","email":"tasmania@graceintlgroup.com","address":"Suite 105, Level 1, 86 Murray Street, Hobart TAS 7000, Australia"},{"name":"Melbourne Office","phone":"+61 (03) 9662 9020","email":"melbourne@graceintlgroup.com","address":"Level 14, 282 Collins Street, Melbourne, VIC 3000, Australia"},{"name":"Parramatta Office","phone":"+61 (02) 9286 3447","email":"parramatta@grace.edu.np","address":"109 Church Street, Parramatta, NSW 2150, Australia"},{"name":"Perth Office","phone":"+61 (08) 93252445","email":"perth@graceintlgroup.com","address":"383 Hay St, Perth WA 6000, Australia"},{"name":"Strathfield Office","phone":"+61 (02) 9286 3447","email":"strathfield@grace.edu.np","address":"Unit 1\/14 Boulevarde, Strathfield NSW 2135, Australia"},{"name":"Sydney Office","phone":"+61 (02) 9286 3447","email":"sydney@graceintlgroup.com","address":"Suite 1508, Level 15, 97-99 Bathurst Street, Sydney, NSW 2000, Australia"},{"name":"Williams Landing Office","phone":"+61 0393819379","email":"williamslanding@graceintlgroup.com","address":"Level 4, Suite 405, 87 Overton Road, WL VIC 3027, Australia"}],"south_asia":{"Nepal":{"Bagbazar":{"name":"Bagbazar Office","phone":"+977 (01) 4256121 \/ 5356121 \/ 4212374","email":"bagbazar@grace.edu.np","address":"Bagbazar, Kathmandu (Opposite of Pipalbot), Nepal"},"Baglung":{"name":"Baglung Office","phone":"+977 (068) 522667","email":"baglung@grace.edu.np","address":"Hanumandas Road, Next building to Hotel Peace Palace, Baglung, Nepal"},"Banepa":{"name":"Banepa Office","phone":"9709160061\/62\/63","email":"banepa@grace.edu.np","address":"Banepa, Tindobato"},"Bardibas":{"name":"Bardibas Office","phone":"+977-044-590312 \/ 9841133810","email":"bardibas@grace.edu.np","address":"Aurahi Road, Near Subhaswostik Hospital, Bardibas, Nepal"},"Biratnagar":{"name":"Biratnagar Office","phone":"+977 9820709054 \/ (021) 570133","email":"biratnagar@grace.edu.np","address":"Hanumandas Road, Biratnagar-7, Nepal"},"Birtamode":{"name":"Birtamode Office","phone":"(023) 536117","email":"birtamod@grace.edu.np","address":"Hanuman Central, 4th Floor, Birtamode, Nepal"},"Buddhanagar":{"name":"Buddhanagar Office","phone":"+977 01 5913321 \/ 20","email":"reception.buddhanagar@grace.edu.np","address":"Buddhanagar, Nearby Himalayan Ayurved Medical Science College, Kathmandu, Nepal"},"Butwal":{"name":"Butwal Office","phone":"(071) 542276 \/ 532276 \/ 535407","email":"butwal@grace.edu.np","address":"Milanchowk, NMB Bank Building, Butwal, Nepal"},"Chitwan":{"name":"Chitwan Office","phone":"(056) 590712 \/ (056) 590812 \/ +977 9855019790","email":"chitwan@grace.edu.np","address":"Sahid Chowk, Narayangarh, Chitwan, Nepal"},"Damak":{"name":"Damak Office","phone":"+977 9845863530 \/ +977 (023) 572536","email":"damak@grace.edu.np","address":"Beldangi Road Damak 6 Jhapa at KD complex, Damak, Nepal"},"Damauli":{"name":"Damauli Office","phone":"065-590550","email":"damauli@grace.edu.np","address":"Bhorletar Chowk, Damauli, Tanahun, Nepal"},"Dang":{"name":"Dang Office","phone":"(082) 2590719 \/ +977 9857870719","email":"dang@grace.edu.np","address":"Ghorahi 15, Newroad Dang Infront of Ganesh Chitralaya, Dang, Nepal"},"Dharan":{"name":"Dharan Office","phone":"+977 025 579595","email":"dharan@grace.edu.np","address":"Sadan Road, Dharan, Nepal"},"Hetauda":{"name":"Hetauda Office","phone":"+977 9843690518 \/ (057) 524403","email":"hetauda@grace.edu.np","address":"Hetauda-04, Parijatpath, Hetauda, Nepal"},"Itahari":{"name":"Itahari Office","phone":"+977-25-590581 \/ +977 9762378608","email":"itahari@grace.edu.np","address":"Sangit Chowk, Itahari, Nepal"},"Kawasoti":{"name":"Kawasoti Office","phone":"+977 9849898606 \/ 078-590992","email":"kawasoti@grace.edu.np","address":"Indrachowk, kawasoti-2, Nawalpur, Nepal"},"Lalitpur":{"name":"Lalitpur Office","phone":"+977 9766385821 \/ +977 1-5920013\/14","email":"kumaripati@grace.edu.np","address":"Kumaripati, Lalitpur (3rd Floor, CG Building)"},"New Baneshwor":{"name":"New Baneshwor Office","phone":"+977 (01) 4796880 \/ 4796881","email":"baneshwor@grace.edu.np","address":"PC Complex 2nd Floor, New Baneshwor, Kathmandu, Nepal"},"Parsa":{"name":"Parsa Office","phone":"+977 9855019797 \/ (056) 582053","email":"parsa@grace.edu.np","address":"Khairahani, Parsa, Nepal"},"Pokhara":{"name":"Pokhara Office","phone":"+977 9846054807 \/ (061) 551013\/ (061) 553013","email":"pokhara@grace.edu.np","address":"Mahendrapool, Pokhara"},"Simara":{"name":"Simara Office","phone":"+977 985-5030941","email":"simara@grace.edu.np","address":"Simara Business Center, Simara, Nepal"},"Surkhet":{"name":"Surkhet Office","phone":"+977 9858054080 \/ (083) 520211","email":"surkhet@grace.edu.np","address":"Birendranagar-6, Surkhet (Near Maya Nursing Home)"}},"Bangladesh":{"Sylhet":{"name":"Sylhet Office","phone":"+8801765710165 \/ +61469884800","email":"director.bangladesh@graceintlgroup.com","address":"Abdul Hamid Road, Kadamtoli, Sylhet, (1st Floor), Humayun Rashid Chattar, Bangladesh"},"dhaka":{"name":"Dhaka Office","phone":"+8809678770115 \/ +8801334925380","email":"dhaka@graceintlgroup.com","address":"Skylark MAK84, Level 4, House 84, Road 11, Block D, Banani, Dhaka-1213, Bangladesh"}},"India":{"Delhi":{"name":"Delhi Office","phone":"+91 (11) 45542231","email":"india@graceintlgroup.com","address":"Office No. 505, 6th Floor, Westend Mall, Near District Centre, Janak Puri (West), New Delhi, 110058, India"},"Gurugram":{"name":"Gurugram Office","phone":"+91 (01) 244367660","email":"bdm@graceintlgroup.com","address":"G-308, Floor 3rd, Sushant Shopping Arcade, Sushant Lok Phase -1, Gurugram, Haryana, India"}},"Pakistan":{"Pakistan":{"name":"Pakistan Office","phone":"+92 (335) 5441602","email":"pakistan@graceintlgroup.com","address":"F-8 Markaz, Al Babar Center Level 1 Islamabad, Pakistan"}},"Sri lanka":{"Colombo":{"name":"Colombo Office","phone":"61 430500165","email":"srilanka@graceintlgroup.com","address":"6A 1\/1, Vajira road, Colombo 4, Sri Lanka"}}},"dubai":{"Dubai":{"name":"Dubai Office","phone":"+971 45548034 \/ +971 523110230","email":"dubai@graceintlgroup.com","address":"PO Box 33256, Office S02 Bin Hareb Building AI Mararr Dubai 33256, UAE"}},"indonesia":{"Jakarta":{"name":"Jakarta Office","phone":"(+62) 87850020074","email":"director.indonesia@graceintlgroup.com","address":"Wisma Kodel, 9th floor, Jl. H. R. Rasuna Said kavling B4, Kuningan, Jakarta 12910 Indonesia"}},"kenya":{"Eldoret":{"name":"Eldoret Office","phone":"+254 716361048","email":"eldoret@graceintlgroup.com","address":"Kenya Office Eldoret, 301\/2nd Floor, Stow-burg Plaza Oginga Odinga Street, Eldoret, Kenya"}},"new_zealand":{"Auckland":{"name":"Auckland Office","phone":"+64 95585152","email":"director.nz@graceintlgroup.com","address":"Suite 202, 87-93 Queen Street, Dingwall Building, Auckland, New Zealand"}},"philippines":{"Cebu":{"name":"Cebu Office","phone":"+63 956 291 0349","email":"admission.ph@graceintlgroup.com","address":"Shope 220 Raintree Mall \u201cAnnex A\u201d 528 General Maxilom Avenue Cebu City Philippines, 6000"}}};
+    let activeSection = 'all';
+    let activeSubsection = '';
+
+    function getSubsectionDisplayName(section, subsection) {
+        return subsection.charAt(0).toUpperCase() + subsection.slice(1) + ' Offices';
+    }
+
+    function renderContactSection(section, subsection = '') {
+        const sectionsContainer = document.getElementById('contact-sections');
+        sectionsContainer.innerHTML = '';
+
+        // Create section div
+        const sectionDiv = document.createElement('div');
+        sectionDiv.className = `contact-section active`;
+        sectionDiv.id = `${section}-section`;
+        sectionDiv.dataset.section = section;
+
+        // Add heading
+        const heading = document.createElement('h2');
+        if (section === 'south_asia' && subsection) {
+            heading.textContent = getSubsectionDisplayName(section, subsection);
+        } else {
+            heading.textContent = section === 'all' ? 'All Offices' :
+                section.replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase()) + ' Office' + (section !== 'all' && contacts[section].length > 1 ? 's' : '');
+        }
+        sectionDiv.appendChild(heading);
+
+        // Add subsection buttons for south_asia
+        if (section === 'south_asia') {
+            const subsectionButtons = document.createElement('div');
+            subsectionButtons.className = 'subsection-buttons';
+            Object.keys(contacts['south_asia']).forEach(sub => {
+                const button = document.createElement('button');
+                button.textContent = sub;
+                button.dataset.subsection = sub;
+                if (sub === subsection) {
+                    button.className = 'active';
+                }
+                button.addEventListener('click', () => switchSubsection(section, sub));
+                subsectionButtons.appendChild(button);
+            });
+            sectionDiv.appendChild(subsectionButtons);
+        }
+
+        // Add branch grid
+        const branchGrid = document.createElement('div');
+        branchGrid.className = 'branch-grid';
+
+        // Handle contacts display
+        let contactList = [];
+        if (section === 'south_asia' && subsection && contacts[section][subsection]) {
+            contactList = Array.isArray(contacts[section][subsection]) ?
+                contacts[section][subsection] :
+                Object.values(contacts[section][subsection]);
+        } else if (contacts[section]) {
+            contactList = Array.isArray(contacts[section]) ?
+                contacts[section] :
+                Object.values(contacts[section]).flatMap(obj => Array.isArray(obj) ? obj : [obj]);
+        }
+
+        contactList.forEach(contact => {
+            const branchItem = document.createElement('div');
+            branchItem.className = 'branch-item';
+            branchItem.innerHTML = `
+                <h3>${contact.name}</h3>
+                <p><i class="fas fa-phone"></i><a href="tel:${contact.phone.replace(/\s/g, '')}">${contact.phone}</a></p>
+                <p><i class="fas fa-envelope"></i>${contact.email ? `<a href="mailto:${contact.email}">${contact.email}</a>` : '<span class="no-email">No email provided</span>'}</p>
+                <p><i class="fas fa-map-marker-alt"></i>${contact.address}</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.address)}" target="_blank" class="get-directions-btn">Get Directions</a>
+            `;
+            branchGrid.appendChild(branchItem);
+        });
+
+        sectionDiv.appendChild(branchGrid);
+        sectionsContainer.appendChild(sectionDiv);
+    }
+
+    function switchSection(section) {
+        activeSection = section;
+        activeSubsection = section === 'south_asia' ? Object.keys(contacts['south_asia'])[0] : '';
+
+        // Update URL without reloading
+        const url = section === 'south_asia' ?
+            `?section=${section}&subsection=${encodeURIComponent(activeSubsection)}` :
+            `?section=${section}`;
+        history.pushState({
+            section,
+            subsection: activeSubsection
+        }, '', url);
+
+        // Update active button
+        document.querySelectorAll('.nav-buttons button').forEach(button => {
+            button.classList.toggle('active', button.dataset.section === section);
+        });
+
+        // Render section
+        renderContactSection(section, activeSubsection);
+    }
+
+    function switchSubsection(section, subsection) {
+        activeSubsection = subsection;
+
+        // Update URL without reloading
+        history.pushState({
+            section,
+            subsection
+        }, '', `?section=${section}&subsection=${encodeURIComponent(subsection)}`);
+
+        // Render section
+        renderContactSection(section, subsection);
+    }
+
+    // Handle browser back/forward
+    window.addEventListener('popstate', (event) => {
+        const state = event.state || {
+            section: 'all',
+            subsection: ''
+        };
+        activeSection = state.section;
+        activeSubsection = state.subsection;
+
+        // Update active button
+        document.querySelectorAll('.nav-buttons button').forEach(button => {
+            button.classList.toggle('active', button.dataset.section === activeSection);
+        });
+
+        renderContactSection(activeSection, activeSubsection);
+    });
+
+    // Add click event listeners to nav buttons
+    document.querySelectorAll('.nav-buttons button').forEach(button => {
+        button.addEventListener('click', () => switchSection(button.dataset.section));
+    });
+
+    // Initial render
+    document.addEventListener('DOMContentLoaded', () => {
+        renderContactSection(activeSection, activeSubsection);
+    });
+</script>
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section logo-section">
+            <img src="img/Grace-white-Logo.png" alt="Grace International Education & Migration" class="logo">
+            <div class="footer-social mt-3">
+                <a href="https://www.facebook.com/graceintloceania" class="btn-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@graceintl_melbourne" class="btn-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/graceintlmelbourne/" class="btn-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/" class="btn-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+            </div><br><br>
+            <form>
+                <input type="email" placeholder="Enter your email here" class="email-input"><br><br>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <h3 class="green-line"></h3>
+            <p><a href="about.php">Who We Are</a></p>
+            <p><a href="about.php">Our Timeline</a></p>
+            <p><a href="about.php">Our Leadership Team</a></p>
+            <p><a href="about.php">Partner With Us</a></p>
+            <p><a href="about.php">Awards Recognitions</a></p><br>
+            <h3>Our Services</h3>
+            <h3 class="green-line"></h3>
+            <p><a href="#">Meet us Online</a></p>
+            <p><a href="#">Admission Counseling</a></p>
+            <p><a href="#">Health Cover</a></p>
+            <p><a href="#">Student Visa Service</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <h3 class="green-line"></h3>
+            <p><a href="service.php">Visit Our Virtual Office</a></p>
+            <p><a href="service.php">Test Preparation</a></p>
+            <p><a href="service.php">International Study Guide</a></p>
+            <p><a href="service.php">Duolingo English Test</a></p><br>
+            <h3>Study Destinations</h3>
+            <h3 class="green-line"></h3>
+            <p><a href="#">Study in Australia</a></p>
+            <p><a href="#">Study in Canada</a></p>
+            <p><a href="#">Study in Europe</a></p>
+            <p><a href="#">Study in New Zealand</a></p>
+            <p><a href="#">Study in UK</a></p>
+            <p><a href="#">Study in USA</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Courses Abroad</h3>
+            <h3 class="green-line"></h3>
+            <p><a href="#">MBA in Australia</a></p>
+            <p><a href="#">MBA in USA</a></p>
+            <p><a href="#">MBA in Canada</a></p><br>
+            <h3>Global Offices</h3>
+            <h3 class="green-line"></h3>
+            <p><a href="contact.php">Australia</a></p>
+            <p><a href="contact.php">Bangladesh</a></p>
+            <p><a href="contact.php">Dubai</a></p>
+            <p><a href="contact.php">India</a></p>
+            <p><a href="contact.php">Indonesia</a></p>
+            <p><a href="contact.php">Kenya</a></p>
+            <p><a href="contact.php">Nepal</a></p>
+            <p><a href="contact.php">New Zealand</a></p>
+            <p><a href="contact.php">Pakistan</a></p>
+            <p><a href="contact.php">Philippines</a></p>
+            <p><a href="contact.php">Sri Lanka</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2024. Grace International. All Rights Reserved.</p>
+    </div>
+</div>
+<style>
+    .footer {
+        background-color: #181818;
+        color: #ffffff;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 150px;
+        margin: 10px;
+    }
+
+    .logo-section {
+        text-align: center;
+    }
+
+    .logo-section .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer-section h3 {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .footer-section p {
+        margin: 5px 0;
+    }
+
+    .footer-section a {
+        color: #ababab;
+        text-decoration: none;
+    }
+
+    .footer-section a:hover {
+        color: #ffffff;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #ffffff;
+        width: 80%;
+        margin: 20px auto 0;
+    }
+
+
+
+    .green-line {
+        border: 0;
+        height: 2px;
+        background: #1baa4b;
+        margin-bottom: 10px;
+    }
+
+    .email-input {
+        padding: 10px;
+        margin-right: 10px;
+        border: none;
+        background-color: #ffffff;
+        color: #333;
+    }
+
+    .subscribe-btn {
+        padding: 5px 10px;
+        background-color: #1baa4b;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .subscribe-btn:hover {
+        background-color: #1baa4b;
+    }
+</style>
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/6143177244?text=Hello%20Grace%20International,%20I%20have%20a%20question"
+    class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="script.js"></script>
+
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<!-- Location Javascript -->
+<script src="js/location.js"></script>
+
+<!-- Initialize any remaining carousels -->
+<script>
+    $(document).ready(function() {
+        // Initialize any universities carousels that might not have been initialized yet
+        if (typeof $.fn.owlCarousel !== 'undefined') {
+            $(".universities-carousel:not(.owl-loaded)").each(function() {
+                $(this).owlCarousel({
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    smartSpeed: 1000,
+                    margin: 25,
+                    loop: true,
+                    nav: true,
+                    navText: [
+                        '<i class="fas fa-chevron-left"></i>',
+                        '<i class="fas fa-chevron-right"></i>'
+                    ],
+                    dots: false,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        576: {
+                            items: 2
+                        },
+                        768: {
+                            items: 3
+                        },
+                        992: {
+                            items: 5
+                        }
+                    }
+                });
+            });
+        }
+    });
+</script>
+</body>
+
+</html>

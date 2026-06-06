@@ -1,0 +1,2155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://keystoneglobalnetwork.com.np/images/favicon.png" type="image/x-icon">
+  <meta http-equiv="refresh" content="7200">
+
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="Nht3rtSMuvqcYLkRxM2o936UyqgSVOwDdiOnGy9K">
+
+  <title>Keystone</title>
+
+  <!-- Scripts -->
+
+  <!-- Styles -->
+  <link rel="preload" as="style" href="https://keystoneglobalnetwork.com.np/build/assets/style-N9A2ribW.css" /><link rel="stylesheet" href="https://keystoneglobalnetwork.com.np/build/assets/style-N9A2ribW.css" data-navigate-track="reload" />  <link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/app-CocHq4go.js" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/bootstrap-yVyWljs_.js" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/vue.esm-bundler-B62WDwIR.js" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/axios-B6xwUs71.js" /><script type="module" src="https://keystoneglobalnetwork.com.np/build/assets/app-CocHq4go.js" data-navigate-track="reload"></script>  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYX40EL4LV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NYX40EL4LV');
+  </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]function(){(c[a].q=c[a].q[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "nysk2422rr");
+  </script>
+</head>
+
+<body>
+  
+<div id="off-canvas" class="lg:hidden">
+    <div class="pt-7 fw-navi">
+        <div class="gap-4 text-sm lg:flex fw-navbar-list">
+                        <a href="/" class="hover:text-[#E4B000] duration-200">Home</a>
+                        <a href="/destinations" class="hover:text-[#E4B000] duration-200">Key Destinations</a>
+                        <a href="/services" class="hover:text-[#E4B000] duration-200">Key Services</a>
+                        <a href="/events" class="hover:text-[#E4B000] duration-200">Events</a>
+                        <a href="/contact" class="hover:text-[#E4B000] duration-200">Contact Us</a>
+                    </div>
+    </div>
+</div>
+
+<div id="all">
+    <div v-cloak id="prepFormApp" class="!sticky top-0 !z-50">
+        <header id="main-navigation" class="z-50 bg-white fw-navigation sticky-grab">
+            <nav class="container py-3">
+                <div class="row-grid">
+                    <div class="col-span-12 lg:col-span-12 xl:col-span-10 lg:col-start-2 xl:col-start-2">
+                        <nav class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <a class="flex items-center" href="/">
+                                    <img src="https://keystoneglobalnetwork.com.np/images/logo.png" alt="Key Stone" class="w-auto h-12" />
+                                </a>
+                            </div>
+                            <div class="items-center hidden gap-4 text-sm lg:flex fw-navbar-list">
+                                                                
+                                <a href="/" class="hover:text-[#E4B000] duration-200 text-[#E4B000] font-medium">Home</a>
+                                                                
+                                <a href="/destinations" class="hover:text-[#E4B000] duration-200 ">Key Destinations</a>
+                                                                
+                                <a href="/services" class="hover:text-[#E4B000] duration-200 ">Key Services</a>
+                                                                
+                                <a href="/events" class="hover:text-[#E4B000] duration-200 ">Events</a>
+                                                                
+                                <a href="/contact" class="hover:text-[#E4B000] duration-200 ">Contact Us</a>
+                                                            </div>
+                            <div class="hidden lg:block">
+                                <button @click="open = !open" class="!py-2.5 text-sm fw-btn-outline">
+                                    Book your test prep now
+                                </button>
+                            </div>
+                            <div id="nav-trigger" class="lg:hidden">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div tabindex="-1" aria-hidden="true" :class="{ 'hidden': !open }" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center w-full h-screen max-h-full overflow-x-hidden overflow-y-auto bg-[#00000096] md:inset-0">
+  <div class="relative w-full max-w-lg max-h-full p-4">
+    <form @submit.prevent="submitForm" class="relative bg-white shadow rounded-2xl">
+      <div class="flex items-center justify-between px-4 pt-4 rounded-t md:px-5">
+        <h3 class="text-xl font-semibold text-[#4A4A4A]">
+          Personal Information
+        </h3>
+        <button @click="open = !open" type="button" class="absolute -top-6 right-0 bg-[#1676EA] inline-flex items-center justify-center w-12 h-12 text-sm text-white rounded-full ms-auto" data-modal-hide="default-modal">
+          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="px-4 mt-3 space-y-1 md:px-5">
+        <div class="relative mt-1 rounded-md">
+          <label for="name" class="text-[#212529] text-sm mb-2">Full name</label>
+          <input @change="clearError('name')"  v-model="formData.name" type="text" name="name" id="name" class="mt-1 block w-full rounded-md border-0 py-2.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-[#616162] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:text-sm sm:leading-6" placeholder="Eg. John Doe">
+
+          <div class="text-red-600" v-if="errors['name']">
+            <p class="text-red-400" v-for="error in errors['name']" :key="error">{{ error }}</p>
+          </div>
+        </div>
+
+        <div class="relative mt-1 rounded-md">
+          <label for="email" class="text-[#212529] text-sm mb-2">Email</label>
+          <input @change="clearError('email')" v-model="formData.email" type="email" name="email" class="mt-1 block w-full rounded-md border-0 py-2.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-[#616162] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:text-sm sm:leading-6" placeholder="Eg. john@keystone.com">
+
+          <div class="text-red-600" v-if="errors['email']">
+            <p class="text-red-400" v-for="error in errors['email']" :key="error">{{ error }}</p>
+          </div>
+        </div>
+
+        <div class="relative mt-1 rounded-md">
+          <label for="phone" class="text-[#212529] text-sm mb-2">Mobile Number</label>
+          <input @change="clearError('phone')" v-model="formData.phone" type="number" pattern=".{10,10}" name="phone" class="mt-1 block w-full rounded-md border-0 py-2.5 pl-3 pr-6 text-gray-900 ring-1 ring-inset ring-[#616162] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:text-sm sm:leading-6" placeholder="Eg. 981*******">
+
+          <div class="text-red-600" v-if="errors['phone']">
+            <p class="text-red-400" v-for="error in errors['phone']" :key="error">{{ error }}</p>
+          </div>
+        </div>
+
+        
+        <div class="grid grid-cols-2 gap-2">
+          <div class="relative mt-1 rounded-md">
+            <label for="preferred_date" class="text-[#212529] text-sm mb-2">Preferred Date</label>
+            <input @change="clearError('preferred_date')" v-model="formData.preferred_date" type="date" name="preferred_date" class="mt-1 block w-full rounded-md border-0 py-2.5 pl-3 pr-6 text-gray-900 ring-1 ring-inset ring-[#616162] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:text-sm sm:leading-6" :min="minDate">
+
+            <div class="text-red-600" v-if="errors['preferred_date']">
+              <p class="text-red-400" v-for="error in errors['preferred_date']" :key="error">{{ error }}</p>
+            </div>
+          </div>
+
+          
+          <div class="relative mt-1 rounded-md">
+            <label for="preferred_time" class="text-[#212529] text-sm mb-2">Preferred Time</label>
+            <select @change="clearError('preferred_time')" v-model="formData.preferred_time" id="degree" name="preferred_time" class="mt-1 appearance-none block w-full px-3 py-2.5 border-0 ring-1 ring-[#616162] rounded-md placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              <option selected value="" disabled>Select</option> 
+              <option value="Morning">Morning</option>
+              <option value="Evening">Evening</option>
+              <option value="Afternoon">Afternoon</option>
+            </select>
+
+            <div class="text-red-600" v-if="errors['preferred_time']">
+              <p class="text-red-400" v-for="error in errors['preferred_time']" :key="error">{{ error }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-[#4A4A4A] my-3">
+            Test Information
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div class="relative rounded-md">
+            <label for="test_type" class="text-[#212529] text-sm mb-2">Preparing for which test?</label>
+            <select @change="handleTestTypeChange($event.target.value)" id="test_type" name="test_type" class="mt-1 appearance-none block w-full px-3 py-2.5 border-0 ring-1 ring-[#616162] rounded-md placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              <option selected disabled>Select</option>
+              <option value="IELTS">IELTS</option>
+              <option value="PTE">PTE</option>
+              <option value="GRE">GRE</option>
+              <option value="SAT">SAT</option>
+            </select>
+
+            <div class="flex flex-wrap gap-2">
+              <div v-for="test in testTypes()" :key="test">
+                <div class="inline-flex items-center mt-2 mr-1 text-sm bg-indigo-100 rounded">
+                  <span v-text="test" class="max-w-xs ml-2 mr-1 leading-relaxed truncate"></span>
+                  <button @click.prevent="removeTag(index)" class="inline-block w-6 h-8 text-gray-500 align-middle hover:text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6 mx-auto fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path fill-rule="evenodd" d="M15.78 14.36a1 1 0 0 1-1.42 1.42l-2.82-2.83-2.83 2.83a1 1 0 1 1-1.42-1.42l2.83-2.82L7.3 8.7a1 1 0 0 1 1.42-1.42l2.83 2.83 2.82-2.83a1 1 0 0 1 1.42 1.42l-2.83 2.83 2.83 2.82z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="text-red-600" v-if="errors['test_type']">
+                <p class="text-red-400" v-for="error in errors['test_type']" :key="error">{{ error }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative rounded-md">
+            <label for="qualification" class="text-[#212529] text-sm mb-2">Highest level of qualification</label>
+            <select @change="clearError('qualification')"  v-model="formData.qualification" id="qualification" name="qualification" class="mt-1 appearance-none block w-full px-3 py-2.5 border-0 ring-1 ring-[#616162] rounded-md placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              <option selected value="" disabled>Select</option>
+              <option value="+2 / A Levels/ IB Diploma">+2 / A Levels/ IB Diploma</option>
+              <option value="Diploma">Diploma</option>
+              <option value="Bachelor's Degree">Bachelor's Degree</option>
+              <option value="Master's Degree">Master's Degree</option>
+            </select>
+
+            <div class="text-red-600" v-if="errors['qualification']">
+              <p class="text-red-400" v-for="error in errors['qualification']" :key="error">{{ error }}</p>
+            </div>
+          </div>
+
+          <div class="relative rounded-md">
+            <label for="mode" class="text-[#212529] text-sm mb-2">Mode</label>
+            <select @change="clearError('mode')"  v-model="formData.mode" id="mode" name="mode" class="mt-1 appearance-none block w-full px-3 py-2.5 border-0 ring-1 ring-[#616162] rounded-md placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              <option selected value="">Select</option>
+              <option value="Online">Online</option>
+              <option value="In person">In person</option>
+            </select>
+
+            <div class="text-red-600" v-if="errors['mode']">
+              <p class="text-red-400" v-for="error in errors['mode']" :key="error">{{ error }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center p-4 rounded-b md:p-5">
+          <button :disabled="isSubmitting" type="submit" class="px-4 !py-2 fw-btn-primary !w-full sm:!w-auto !m-0">
+            {{ isSubmitting ? 'Submitting...' : 'Submit' }}
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.2565 11.326L11.6499 21.9326" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M13.7188 11.3438L22.2564 11.3255L22.2388 19.8638" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+    </div>
+<div class="overflow-hidden">
+    <section class="container relative z-0 fw-no-padding my-14 lg:my-8">
+        <div class="z-10 row-grid">
+            <div class="col-span-12 md:col-span-10 md:col-start-2">
+                <h1 class="fw-anim-banner-content px-4 md:px-0 my-3 text-center text-[#212529] secondary-font font-normal text-4xl md:text-5xl lg:text-6xl mb-4">Unlock your potential, <br> <span class="font-semibold fw-gradient-text-1">study</span> <span class="font-medium text-[#1776EA]">abroad</span> with <span class="font-medium">confidence</span></h1>
+                <p class="fw-anim-banner-content text-center text-[#616162] font-normal mb-8 px-4 md:px-0">Expert guidance for choosing the right course and university.</p>
+
+                <a href="https://keystoneglobalnetwork.com.np/journey" class="fw-anim-banner-content px-4 !py-4 fw-btn-primary fw-btn-shadow">
+                    Start your journey now
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.2565 11.326L11.6499 21.9326" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.7188 11.3438L22.2564 11.3255L22.2388 19.8638" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute -z-30 -left-64 -bottom-36 fw-move-around">
+            <img src="https://keystoneglobalnetwork.com.np/images/blob3.svg" alt="banner" class="object-cover w-full h-full" />
+        </div>
+
+        <div class="absolute -z-30 -right-36 -bottom-32 fw-move-around-2">
+            <img src="https://keystoneglobalnetwork.com.np/images/blob2.svg" alt="banner" class="object-cover w-full h-full" />
+        </div>
+    </section>
+    <section class="relative z-0">
+            <div class="w-full mx-auto">
+                <div class="border-[10px] border-[#eeeeee80] w-full lg:w-[60%] fw-anim-banner-content mx-auto fw-video-container fw-anim-video-container mt-12 lg:rounded-t-[4rem] overflow-hidden h-full">
+                    <iframe class="w-full aspect-[16/9]" src="https://www.youtube.com/embed/5t0JGoFO14k?autoplay=1&mute=1&loop=1&color=white&modestbranding=1&playsinline=1&rel=0&enablejsapi=1" auto></iframe>
+                </div>
+            </div>
+    </section>
+</div>
+
+        
+            <section class="container my-20 md:my-24 fw-uni-showcase-container">
+    <div class="row-grid">
+        <div class="col-span-12 md:col-span-10 md:col-start-2">
+            <h2 class="mb-8 fw-anim-uni-content font-normal text-center text-[#4A4A4A] secondary-font">Discover <span class="text-[#212529] font-semibold">our partner</span> universities</h2>
+
+            <div class="marquee">
+                <div class="mt-8 marquee__content">
+                    <ul class="list-inline">
+                                                                        <li>
+                            <img
+            src="/curator/media/fe9c4bcd-80ea-462c-9ade-82874aae2cc1.png?s=e14caff7009f2ae629949f6b68794973"
+            alt=""
+                            width="870"
+                height="224"
+                                        srcset="/curator/media/fe9c4bcd-80ea-462c-9ade-82874aae2cc1.png?h=51&amp;w=200&amp;s=76dadc0c930a104b82a833cc78aa77bd 200w, /curator/media/fe9c4bcd-80ea-462c-9ade-82874aae2cc1.png?h=77&amp;w=300&amp;s=f84c8565294195b7d9232794803b82e9 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                                                <li>
+                            <img
+            src="/curator/media/5bb23be7-5d73-4ef1-a56c-8eb34aaa1080.png?s=06e30dc622423d5cbb754899c248aede"
+            alt=""
+                            width="177"
+                height="87"
+                                        srcset="/curator/media/5bb23be7-5d73-4ef1-a56c-8eb34aaa1080.png?h=98&amp;w=200&amp;s=fa91961cfb2d40f31b0b8251c461963b 200w, /curator/media/5bb23be7-5d73-4ef1-a56c-8eb34aaa1080.png?h=147&amp;w=300&amp;s=401e3092d7846d37bf37ff3e0708ee91 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                                                <li>
+                            <img
+            src="/curator/media/51983802-9200-4ca6-b443-b262ddc0aa6a.png?s=9d3d03c6a5aaa3018898bbe2cc1da7c2"
+            alt=""
+                            width="116"
+                height="35"
+                                        srcset="/curator/media/51983802-9200-4ca6-b443-b262ddc0aa6a.png?h=60&amp;w=200&amp;s=8220c27c006b6ad06d972fee2180ff43 200w, /curator/media/51983802-9200-4ca6-b443-b262ddc0aa6a.png?h=90&amp;w=300&amp;s=f29a03c2471a30b9eea9a4f774fdb32d 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                    </ul>
+                    <ul class="list-inline">
+                                                                        <li>
+                            <img
+            src="/curator/media/fe9c4bcd-80ea-462c-9ade-82874aae2cc1.png?s=e14caff7009f2ae629949f6b68794973"
+            alt=""
+                            width="870"
+                height="224"
+                                        srcset="/curator/media/fe9c4bcd-80ea-462c-9ade-82874aae2cc1.png?h=51&amp;w=200&amp;s=76dadc0c930a104b82a833cc78aa77bd 200w, /curator/media/fe9c4bcd-80ea-462c-9ade-82874aae2cc1.png?h=77&amp;w=300&amp;s=f84c8565294195b7d9232794803b82e9 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                                                <li>
+                            <img
+            src="/curator/media/5bb23be7-5d73-4ef1-a56c-8eb34aaa1080.png?s=06e30dc622423d5cbb754899c248aede"
+            alt=""
+                            width="177"
+                height="87"
+                                        srcset="/curator/media/5bb23be7-5d73-4ef1-a56c-8eb34aaa1080.png?h=98&amp;w=200&amp;s=fa91961cfb2d40f31b0b8251c461963b 200w, /curator/media/5bb23be7-5d73-4ef1-a56c-8eb34aaa1080.png?h=147&amp;w=300&amp;s=401e3092d7846d37bf37ff3e0708ee91 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                                                <li>
+                            <img
+            src="/curator/media/51983802-9200-4ca6-b443-b262ddc0aa6a.png?s=9d3d03c6a5aaa3018898bbe2cc1da7c2"
+            alt=""
+                            width="116"
+                height="35"
+                                        srcset="/curator/media/51983802-9200-4ca6-b443-b262ddc0aa6a.png?h=60&amp;w=200&amp;s=8220c27c006b6ad06d972fee2180ff43 200w, /curator/media/51983802-9200-4ca6-b443-b262ddc0aa6a.png?h=90&amp;w=300&amp;s=f29a03c2471a30b9eea9a4f774fdb32d 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                    </ul>
+                    <ul class="list-inline">
+                                                                        <li>
+                            <img
+            src="/curator/media/fe9c4bcd-80ea-462c-9ade-82874aae2cc1.png?s=e14caff7009f2ae629949f6b68794973"
+            alt=""
+                            width="870"
+                height="224"
+                                        srcset="/curator/media/fe9c4bcd-80ea-462c-9ade-82874aae2cc1.png?h=51&amp;w=200&amp;s=76dadc0c930a104b82a833cc78aa77bd 200w, /curator/media/fe9c4bcd-80ea-462c-9ade-82874aae2cc1.png?h=77&amp;w=300&amp;s=f84c8565294195b7d9232794803b82e9 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                                                <li>
+                            <img
+            src="/curator/media/5bb23be7-5d73-4ef1-a56c-8eb34aaa1080.png?s=06e30dc622423d5cbb754899c248aede"
+            alt=""
+                            width="177"
+                height="87"
+                                        srcset="/curator/media/5bb23be7-5d73-4ef1-a56c-8eb34aaa1080.png?h=98&amp;w=200&amp;s=fa91961cfb2d40f31b0b8251c461963b 200w, /curator/media/5bb23be7-5d73-4ef1-a56c-8eb34aaa1080.png?h=147&amp;w=300&amp;s=401e3092d7846d37bf37ff3e0708ee91 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                                                <li>
+                            <img
+            src="/curator/media/51983802-9200-4ca6-b443-b262ddc0aa6a.png?s=9d3d03c6a5aaa3018898bbe2cc1da7c2"
+            alt=""
+                            width="116"
+                height="35"
+                                        srcset="/curator/media/51983802-9200-4ca6-b443-b262ddc0aa6a.png?h=60&amp;w=200&amp;s=8220c27c006b6ad06d972fee2180ff43 200w, /curator/media/51983802-9200-4ca6-b443-b262ddc0aa6a.png?h=90&amp;w=300&amp;s=f29a03c2471a30b9eea9a4f774fdb32d 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                    </ul>
+                </div>
+            </div>
+
+            <div class="marquee !max-w-3xl !mt-8">
+                <div class="mt-8 marquee__content marquee__reverse">
+                    <ul class="list-inline">
+                                                                        <li>
+                            <img
+            src="/curator/media/c468550f-bde4-4ea3-8146-16af6ad2a101.png?s=898ecc2fe16dadefcf915fa3cb9aab10"
+            alt=""
+                            width="325"
+                height="68"
+                                        srcset="/curator/media/c468550f-bde4-4ea3-8146-16af6ad2a101.png?h=41&amp;w=200&amp;s=50dd575cec04847cc8c2b1dd95da109b 200w, /curator/media/c468550f-bde4-4ea3-8146-16af6ad2a101.png?h=62&amp;w=300&amp;s=0c805d70500acd1e932dd5f7cd807020 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                                                <li>
+                            <img
+            src="/curator/media/1085cdb6-b167-47ca-9a91-780b58c51f3c.png?s=d8aadf00d60c5247e0c54475d7f1806b"
+            alt=""
+                            width="150"
+                height="149"
+                                        srcset="/curator/media/1085cdb6-b167-47ca-9a91-780b58c51f3c.png?h=198&amp;w=200&amp;s=0d5d622d37d82a4737519dbc406628b0 200w, /curator/media/1085cdb6-b167-47ca-9a91-780b58c51f3c.png?h=298&amp;w=300&amp;s=16530f885089831fea85d6e323683b4c 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                    </ul>
+                    <ul class="list-inline">
+                                                                        <li>
+                            <img
+            src="/curator/media/c468550f-bde4-4ea3-8146-16af6ad2a101.png?s=898ecc2fe16dadefcf915fa3cb9aab10"
+            alt=""
+                            width="325"
+                height="68"
+                                        srcset="/curator/media/c468550f-bde4-4ea3-8146-16af6ad2a101.png?h=41&amp;w=200&amp;s=50dd575cec04847cc8c2b1dd95da109b 200w, /curator/media/c468550f-bde4-4ea3-8146-16af6ad2a101.png?h=62&amp;w=300&amp;s=0c805d70500acd1e932dd5f7cd807020 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                                                <li>
+                            <img
+            src="/curator/media/1085cdb6-b167-47ca-9a91-780b58c51f3c.png?s=d8aadf00d60c5247e0c54475d7f1806b"
+            alt=""
+                            width="150"
+                height="149"
+                                        srcset="/curator/media/1085cdb6-b167-47ca-9a91-780b58c51f3c.png?h=198&amp;w=200&amp;s=0d5d622d37d82a4737519dbc406628b0 200w, /curator/media/1085cdb6-b167-47ca-9a91-780b58c51f3c.png?h=298&amp;w=300&amp;s=16530f885089831fea85d6e323683b4c 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                    </ul>
+                    <ul class="list-inline">
+                                                                        <li>
+                            <img
+            src="/curator/media/c468550f-bde4-4ea3-8146-16af6ad2a101.png?s=898ecc2fe16dadefcf915fa3cb9aab10"
+            alt=""
+                            width="325"
+                height="68"
+                                        srcset="/curator/media/c468550f-bde4-4ea3-8146-16af6ad2a101.png?h=41&amp;w=200&amp;s=50dd575cec04847cc8c2b1dd95da109b 200w, /curator/media/c468550f-bde4-4ea3-8146-16af6ad2a101.png?h=62&amp;w=300&amp;s=0c805d70500acd1e932dd5f7cd807020 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                                                <li>
+                            <img
+            src="/curator/media/1085cdb6-b167-47ca-9a91-780b58c51f3c.png?s=d8aadf00d60c5247e0c54475d7f1806b"
+            alt=""
+                            width="150"
+                height="149"
+                                        srcset="/curator/media/1085cdb6-b167-47ca-9a91-780b58c51f3c.png?h=198&amp;w=200&amp;s=0d5d622d37d82a4737519dbc406628b0 200w, /curator/media/1085cdb6-b167-47ca-9a91-780b58c51f3c.png?h=298&amp;w=300&amp;s=16530f885089831fea85d6e323683b4c 300w"
+                sizes="(max-width: 1200px) 100vw, 200px"
+                        class="object-contain w-auto h-8 sm:h-10 md:h-14 lg:h-16"
+        />
+                            </li>
+                                                                    </ul>
+                </div>
+            </div>
+
+                        <a href="/universities" class="mt-10 fw-uni-showcase-btn lg:mt-12 fw-btn-primary">
+                View all Universities
+                <svg width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.2565 11.326L11.6499 21.9326" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.7188 11.3438L22.2564 11.3255L22.2388 19.8638" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+                    </div>
+    </div>
+</section>
+
+
+        
+            <section class="container my-20 overflow-hidden fw-no-padding md:my-24">
+    <div class="row-grid">
+        <div class="col-span-12 md:col-span-10 md:col-start-2">
+            <div class="py-10 md:px-6 lg:px-16 md:py-12 fw-destination-container md:rounded-2xl">
+                <div class="flex items-end justify-between px-6 mb-6 md:px-0">
+                    <h2 class="font-normal text-left text-white fw-anim-destination-content secondary-font">
+                                                                                                                        Get to know your destinations
+                                                                                    
+                    </h2>
+                    <div class="hidden fw-anim-destination-content md:block">
+                        <a href="https://keystoneglobalnetwork.com.np/destinations" class="inline-flex text-lg font-medium text-white border-b">
+                            View more destinations
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.3153 11.3554L11.7087 21.962" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.7777 11.3734L22.3153 11.355L22.2976 19.8933" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="px-6 mt-4 mb-8 text-left md:px-0 md:text-center md:mb-9 md:mt-8 md:hidden">
+                    <a href=https://keystoneglobalnetwork.com.np/destinations class="inline-flex items-center pl-2 text-lg font-medium text-white border-b group">
+                        View more destination
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" class="duration-200 ease-in-out group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.3153 11.3554L11.7087 21.962" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.7777 11.3734L22.3153 11.355L22.2976 19.8933" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                
+                    <div class="hidden grid-cols-1 gap-5 mt-8 md:grid md:grid-cols-2 lg:grid-cols-3">
+                                                    <a href="https://keystoneglobalnetwork.com.np/destinations/australia" class="relative overflow-hidden text-center rounded-2xl group fw-anim-destination-content">
+                                <div class="aspect-[1.2] md:aspect-[0.8] lg:aspect-square overflow-hidden">
+                                                                        <img
+            src="/curator/media/85685a35-fa5d-496a-bbc7-cba2140d4606.webp?s=70c979fb78a9edb00c4a64220bbf385d"
+            alt=""
+                            width="828"
+                height="625"
+                                        srcset="/curator/media/85685a35-fa5d-496a-bbc7-cba2140d4606.webp?h=377&amp;w=500&amp;s=9c8fe0fb9af4900612b94fb1ce3ac74d 500w, /curator/media/85685a35-fa5d-496a-bbc7-cba2140d4606.webp?h=301&amp;w=400&amp;s=062a32b485709416b9ec331b48c526bb 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/cdb5cfca-2d79-4d54-a0cb-21a914d80a18.webp?s=6e1042afb5f4a7f882b93a7c767153b0"
+            alt=""
+                            width="680"
+                height="426"
+                                        srcset="/curator/media/cdb5cfca-2d79-4d54-a0cb-21a914d80a18.webp?h=313&amp;w=500&amp;s=dbbb5c1d76be340df7dc471991a4e910 500w, /curator/media/cdb5cfca-2d79-4d54-a0cb-21a914d80a18.webp?h=250&amp;w=400&amp;s=4640112e59f7a7cc8d2cffd1f541d698 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-2 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">Australia</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                    <a href="https://keystoneglobalnetwork.com.np/destinations/canada" class="relative overflow-hidden text-center rounded-2xl group fw-anim-destination-content">
+                                <div class="aspect-[1.2] md:aspect-[0.8] lg:aspect-square overflow-hidden">
+                                                                        <img
+            src="/curator/media/07fa0cc0-4876-4d12-81cc-04f1e37ce2aa.webp?s=9064b7c422af82b630ed30812cc277f6"
+            alt=""
+                            width="1200"
+                height="630"
+                                        srcset="/curator/media/07fa0cc0-4876-4d12-81cc-04f1e37ce2aa.webp?h=262&amp;w=500&amp;s=c628efbd55d3f38e76e0f1dcb4fcebfa 500w, /curator/media/07fa0cc0-4876-4d12-81cc-04f1e37ce2aa.webp?h=210&amp;w=400&amp;s=a21de11407f4bbb80f6f6f504533e532 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/fd80e114-8b2f-4da7-98bf-8c87b0c6ff15.webp?s=515ce5090d73e6ccc34dd5997a0751d1"
+            alt=""
+                            width="1500"
+                height="1000"
+                                        srcset="/curator/media/fd80e114-8b2f-4da7-98bf-8c87b0c6ff15.webp?h=333&amp;w=500&amp;s=1aed40f75d4431b10c039b1b157afae2 500w, /curator/media/fd80e114-8b2f-4da7-98bf-8c87b0c6ff15.webp?h=266&amp;w=400&amp;s=5ac9ea589c82ce2680fc016c42ab44aa 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-2 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">Canada</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                    <a href="https://keystoneglobalnetwork.com.np/destinations/usa" class="relative overflow-hidden text-center rounded-2xl group fw-anim-destination-content">
+                                <div class="aspect-[1.2] md:aspect-[0.8] lg:aspect-square overflow-hidden">
+                                                                        <img
+            src="/curator/media/1f83bf06-6a8d-496a-b5db-0d44ab6f6cf6.webp?s=e1a9a80b806fb6c91a5f0b48640ee06c"
+            alt=""
+                            width="2000"
+                height="1000"
+                                        srcset="/curator/media/1f83bf06-6a8d-496a-b5db-0d44ab6f6cf6.webp?h=250&amp;w=500&amp;s=0180fbf7dd8db05cdd5c5763a344b30b 500w, /curator/media/1f83bf06-6a8d-496a-b5db-0d44ab6f6cf6.webp?h=200&amp;w=400&amp;s=32c069cbcd89b73473fdf57614ff307c 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/d897d092-e300-4152-b064-160f4b25cd7d.webp?s=2548d0396d387667b14666df3358e42d"
+            alt=""
+                            width="730"
+                height="487"
+                                        srcset="/curator/media/d897d092-e300-4152-b064-160f4b25cd7d.webp?h=333&amp;w=500&amp;s=09f2e0af5fd6d7d40b57b8dab1d5796c 500w, /curator/media/d897d092-e300-4152-b064-160f4b25cd7d.webp?h=266&amp;w=400&amp;s=883e9f82d718dfa6466a3debb8ff964c 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-2 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">USA</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                    <a href="https://keystoneglobalnetwork.com.np/destinations/uk" class="relative overflow-hidden text-center rounded-2xl group fw-anim-destination-content">
+                                <div class="aspect-[1.2] md:aspect-[0.8] lg:aspect-square overflow-hidden">
+                                                                        <img
+            src="/curator/media/306a6d80-ec17-45fb-ac57-53836b2fcb84.webp?s=70972c5684cb884dc5ba37cf05912036"
+            alt=""
+                            width="878"
+                height="585"
+                                        srcset="/curator/media/306a6d80-ec17-45fb-ac57-53836b2fcb84.webp?h=333&amp;w=500&amp;s=a8161a590a2c3482d997ced0c197bacf 500w, /curator/media/306a6d80-ec17-45fb-ac57-53836b2fcb84.webp?h=266&amp;w=400&amp;s=d479e9d50c41f78cf1d53b346b42e015 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/fc2da81e-c6f8-4576-b814-184640f3febe.webp?s=0f1e6abc830cf2fba91aa989a8db5ba3"
+            alt=""
+                            width="1254"
+                height="836"
+                                        srcset="/curator/media/fc2da81e-c6f8-4576-b814-184640f3febe.webp?h=333&amp;w=500&amp;s=67ad2f43194ea2411a1162e661a31b96 500w, /curator/media/fc2da81e-c6f8-4576-b814-184640f3febe.webp?h=266&amp;w=400&amp;s=7ca5b3b0307462ead38d1fcec4ba0999 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-2 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">UK</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                    <a href="https://keystoneglobalnetwork.com.np/destinations/new-zealand" class="relative overflow-hidden text-center rounded-2xl group fw-anim-destination-content">
+                                <div class="aspect-[1.2] md:aspect-[0.8] lg:aspect-square overflow-hidden">
+                                                                        <img
+            src="/curator/media/4c134146-c73d-4ee2-bdeb-0e4d5999ba60.webp?s=6a873317d887e08874088f46ee91fc8e"
+            alt=""
+                            width="1900"
+                height="1000"
+                                        srcset="/curator/media/4c134146-c73d-4ee2-bdeb-0e4d5999ba60.webp?h=263&amp;w=500&amp;s=625104e3a251ab6afa73fa280c894f00 500w, /curator/media/4c134146-c73d-4ee2-bdeb-0e4d5999ba60.webp?h=210&amp;w=400&amp;s=b4ee945870a6df6b1ce64caf24b89054 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/d24f5a8e-e338-4fa4-9dd8-b20544924e98.webp?s=47883fe084a2ca1d756b3fb268365b12"
+            alt=""
+                            width="1960"
+                height="1226"
+                                        srcset="/curator/media/d24f5a8e-e338-4fa4-9dd8-b20544924e98.webp?h=312&amp;w=500&amp;s=b753f72731a799a88b6e6bea3a8844ff 500w, /curator/media/d24f5a8e-e338-4fa4-9dd8-b20544924e98.webp?h=250&amp;w=400&amp;s=888ca8b4a375eff77a182a3e7ba853da 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-2 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">New Zealand</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                    <a href="https://keystoneglobalnetwork.com.np/destinations/ireland" class="relative overflow-hidden text-center rounded-2xl group fw-anim-destination-content">
+                                <div class="aspect-[1.2] md:aspect-[0.8] lg:aspect-square overflow-hidden">
+                                                                        <img
+            src="/curator/media/94a9a2ce-f5d5-4435-96ab-42ce392dbf7b.webp?s=e7c8ec8f6c102ad6a89217f0f236d0b1"
+            alt=""
+                            width="1500"
+                height="1125"
+                                        srcset="/curator/media/94a9a2ce-f5d5-4435-96ab-42ce392dbf7b.webp?h=375&amp;w=500&amp;s=dec55a1e7a2033004a3c3e6193854a53 500w, /curator/media/94a9a2ce-f5d5-4435-96ab-42ce392dbf7b.webp?h=300&amp;w=400&amp;s=a16956640da687da484656aa1b7b353d 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/5396b481-58c6-4aab-8450-b2d0b68865be.webp?s=ccc7edc6969775481469192c064e72c4"
+            alt=""
+                            width="2500"
+                height="1667"
+                                        srcset="/curator/media/5396b481-58c6-4aab-8450-b2d0b68865be.webp?h=333&amp;w=500&amp;s=f1738067525ab6b6e863e4ccf002e4a2 500w, /curator/media/5396b481-58c6-4aab-8450-b2d0b68865be.webp?h=266&amp;w=400&amp;s=224dcd72ce2b5a079852f93798f85772 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-2 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">Ireland</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                            </div>
+                    <div class="swiper destinationSwiper !block md:!hidden !pl-4 md:!pl-0 !-mr-16 md:!mr-0">
+                        <div class="swiper-wrapper">
+                                                        <a href="https://keystoneglobalnetwork.com.np/destinations/australia" class="fw-anim-destination-content relative overflow-hidden text-center rounded-2xl swiper-slide destination-slide group !h-auto">
+                                <div class="aspect-[.7] md:aspect-[0.8] h-full lg:aspect-[0.7] overflow-hidden">
+                                                                        <img
+            src="/curator/media/85685a35-fa5d-496a-bbc7-cba2140d4606.webp?s=70c979fb78a9edb00c4a64220bbf385d"
+            alt=""
+                            width="828"
+                height="625"
+                                        srcset="/curator/media/85685a35-fa5d-496a-bbc7-cba2140d4606.webp?h=340&amp;w=451&amp;s=c3f421ed0f478fb4244be2b13e9019f6 451w, /curator/media/85685a35-fa5d-496a-bbc7-cba2140d4606.webp?h=301&amp;w=400&amp;s=062a32b485709416b9ec331b48c526bb 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] h-full w-full overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/cdb5cfca-2d79-4d54-a0cb-21a914d80a18.webp?s=6e1042afb5f4a7f882b93a7c767153b0"
+            alt=""
+                            width="680"
+                height="426"
+                                        srcset="/curator/media/cdb5cfca-2d79-4d54-a0cb-21a914d80a18.webp?h=282&amp;w=451&amp;s=a27e0b469e4ac931668ffc7ee5a5137d 451w, /curator/media/cdb5cfca-2d79-4d54-a0cb-21a914d80a18.webp?h=250&amp;w=400&amp;s=4640112e59f7a7cc8d2cffd1f541d698 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-6 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">Australia</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                        <a href="https://keystoneglobalnetwork.com.np/destinations/canada" class="fw-anim-destination-content relative overflow-hidden text-center rounded-2xl swiper-slide destination-slide group !h-auto">
+                                <div class="aspect-[.7] md:aspect-[0.8] h-full lg:aspect-[0.7] overflow-hidden">
+                                                                        <img
+            src="/curator/media/07fa0cc0-4876-4d12-81cc-04f1e37ce2aa.webp?s=9064b7c422af82b630ed30812cc277f6"
+            alt=""
+                            width="1200"
+                height="630"
+                                        srcset="/curator/media/07fa0cc0-4876-4d12-81cc-04f1e37ce2aa.webp?h=236&amp;w=451&amp;s=bb8f4ff9ab6ab00be0ca92ef533d9541 451w, /curator/media/07fa0cc0-4876-4d12-81cc-04f1e37ce2aa.webp?h=210&amp;w=400&amp;s=a21de11407f4bbb80f6f6f504533e532 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] h-full w-full overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/fd80e114-8b2f-4da7-98bf-8c87b0c6ff15.webp?s=515ce5090d73e6ccc34dd5997a0751d1"
+            alt=""
+                            width="1500"
+                height="1000"
+                                        srcset="/curator/media/fd80e114-8b2f-4da7-98bf-8c87b0c6ff15.webp?h=300&amp;w=451&amp;s=e9a7810ec4739ddd31e0806f3b3815b9 451w, /curator/media/fd80e114-8b2f-4da7-98bf-8c87b0c6ff15.webp?h=266&amp;w=400&amp;s=5ac9ea589c82ce2680fc016c42ab44aa 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-6 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">Canada</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                        <a href="https://keystoneglobalnetwork.com.np/destinations/usa" class="fw-anim-destination-content relative overflow-hidden text-center rounded-2xl swiper-slide destination-slide group !h-auto">
+                                <div class="aspect-[.7] md:aspect-[0.8] h-full lg:aspect-[0.7] overflow-hidden">
+                                                                        <img
+            src="/curator/media/1f83bf06-6a8d-496a-b5db-0d44ab6f6cf6.webp?s=e1a9a80b806fb6c91a5f0b48640ee06c"
+            alt=""
+                            width="2000"
+                height="1000"
+                                        srcset="/curator/media/1f83bf06-6a8d-496a-b5db-0d44ab6f6cf6.webp?h=225&amp;w=451&amp;s=0c7e664e23d5606fff3f4bdfa9191fab 451w, /curator/media/1f83bf06-6a8d-496a-b5db-0d44ab6f6cf6.webp?h=200&amp;w=400&amp;s=32c069cbcd89b73473fdf57614ff307c 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] h-full w-full overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/d897d092-e300-4152-b064-160f4b25cd7d.webp?s=2548d0396d387667b14666df3358e42d"
+            alt=""
+                            width="730"
+                height="487"
+                                        srcset="/curator/media/d897d092-e300-4152-b064-160f4b25cd7d.webp?h=300&amp;w=451&amp;s=c82245fecec29175edc69b2f8828e031 451w, /curator/media/d897d092-e300-4152-b064-160f4b25cd7d.webp?h=266&amp;w=400&amp;s=883e9f82d718dfa6466a3debb8ff964c 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-6 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">USA</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                        <a href="https://keystoneglobalnetwork.com.np/destinations/uk" class="fw-anim-destination-content relative overflow-hidden text-center rounded-2xl swiper-slide destination-slide group !h-auto">
+                                <div class="aspect-[.7] md:aspect-[0.8] h-full lg:aspect-[0.7] overflow-hidden">
+                                                                        <img
+            src="/curator/media/306a6d80-ec17-45fb-ac57-53836b2fcb84.webp?s=70972c5684cb884dc5ba37cf05912036"
+            alt=""
+                            width="878"
+                height="585"
+                                        srcset="/curator/media/306a6d80-ec17-45fb-ac57-53836b2fcb84.webp?h=300&amp;w=451&amp;s=fcb77518be32077823d574179fca7eda 451w, /curator/media/306a6d80-ec17-45fb-ac57-53836b2fcb84.webp?h=266&amp;w=400&amp;s=d479e9d50c41f78cf1d53b346b42e015 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] h-full w-full overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/fc2da81e-c6f8-4576-b814-184640f3febe.webp?s=0f1e6abc830cf2fba91aa989a8db5ba3"
+            alt=""
+                            width="1254"
+                height="836"
+                                        srcset="/curator/media/fc2da81e-c6f8-4576-b814-184640f3febe.webp?h=300&amp;w=451&amp;s=48755596fc43ff150fe72025c351f415 451w, /curator/media/fc2da81e-c6f8-4576-b814-184640f3febe.webp?h=266&amp;w=400&amp;s=7ca5b3b0307462ead38d1fcec4ba0999 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-6 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">UK</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                        <a href="https://keystoneglobalnetwork.com.np/destinations/new-zealand" class="fw-anim-destination-content relative overflow-hidden text-center rounded-2xl swiper-slide destination-slide group !h-auto">
+                                <div class="aspect-[.7] md:aspect-[0.8] h-full lg:aspect-[0.7] overflow-hidden">
+                                                                        <img
+            src="/curator/media/4c134146-c73d-4ee2-bdeb-0e4d5999ba60.webp?s=6a873317d887e08874088f46ee91fc8e"
+            alt=""
+                            width="1900"
+                height="1000"
+                                        srcset="/curator/media/4c134146-c73d-4ee2-bdeb-0e4d5999ba60.webp?h=237&amp;w=451&amp;s=655ba470c905e1cd4d430fd7407a768e 451w, /curator/media/4c134146-c73d-4ee2-bdeb-0e4d5999ba60.webp?h=210&amp;w=400&amp;s=b4ee945870a6df6b1ce64caf24b89054 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] h-full w-full overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/d24f5a8e-e338-4fa4-9dd8-b20544924e98.webp?s=47883fe084a2ca1d756b3fb268365b12"
+            alt=""
+                            width="1960"
+                height="1226"
+                                        srcset="/curator/media/d24f5a8e-e338-4fa4-9dd8-b20544924e98.webp?h=282&amp;w=451&amp;s=f90cb359d882645b628c23923937781d 451w, /curator/media/d24f5a8e-e338-4fa4-9dd8-b20544924e98.webp?h=250&amp;w=400&amp;s=888ca8b4a375eff77a182a3e7ba853da 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-6 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">New Zealand</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                        <a href="https://keystoneglobalnetwork.com.np/destinations/ireland" class="fw-anim-destination-content relative overflow-hidden text-center rounded-2xl swiper-slide destination-slide group !h-auto">
+                                <div class="aspect-[.7] md:aspect-[0.8] h-full lg:aspect-[0.7] overflow-hidden">
+                                                                        <img
+            src="/curator/media/94a9a2ce-f5d5-4435-96ab-42ce392dbf7b.webp?s=e7c8ec8f6c102ad6a89217f0f236d0b1"
+            alt=""
+                            width="1500"
+                height="1125"
+                                        srcset="/curator/media/94a9a2ce-f5d5-4435-96ab-42ce392dbf7b.webp?h=338&amp;w=451&amp;s=c04d2a7592ac4c3a5e48a2580b877f11 451w, /curator/media/94a9a2ce-f5d5-4435-96ab-42ce392dbf7b.webp?h=300&amp;w=400&amp;s=a16956640da687da484656aa1b7b353d 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="aspect-[0.7] h-full w-full overflow-hidden absolute top-0 left-0 ease-in-out duration-500 opacity-0 group-hover:opacity-100">
+                                                                        <img
+            src="/curator/media/5396b481-58c6-4aab-8450-b2d0b68865be.webp?s=ccc7edc6969775481469192c064e72c4"
+            alt=""
+                            width="2500"
+                height="1667"
+                                        srcset="/curator/media/5396b481-58c6-4aab-8450-b2d0b68865be.webp?h=300&amp;w=451&amp;s=cc7e8447beb570c61e01eaee89a1ac98 451w, /curator/media/5396b481-58c6-4aab-8450-b2d0b68865be.webp?h=266&amp;w=400&amp;s=224dcd72ce2b5a079852f93798f85772 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <div class="absolute bottom-0 left-0 right-0 z-20 flex items-center justify-between mx-4 my-6 lg:m-5">
+                                    <h6 class="text-xl font-medium text-white 2xl:text-3xl">Ireland</h6>
+                                    <span class="right-0 inline-flex items-center justify-center w-12 h-12 p-2 bg-white rounded-full 2xl:h-14 2xl:w-14 ">
+                                        <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:rotate-[-25deg] ease-in-out duration-200">
+                                            <mask id="mask0_612_6096" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                                                <rect x="15.9399" y="31.4758" width="21.9708" height="21.9708" transform="rotate(-135 15.9399 31.4758)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_612_6096)">
+                                                <path d="M8.61621 16.8558L19.7618 16.8558L14.6353 21.9823L15.9398 23.2639L23.2634 15.9403L15.9398 8.61668L14.6353 9.89831L19.7618 15.0248L8.61621 15.0248L8.61621 16.8558Z" fill="#1663C1" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-1"></div>
+                            </a>
+                                                    </div>
+                    </div>
+                    
+
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+            <section class="overflow-hidden">
+    <div class="container relative my-20 md:my-24 fw-services-container">
+        <div class="row-grid">
+            <div class="flex flex-wrap items-center justify-between col-span-12 lg:flex-nowrap md:col-span-9 md:col-start-3">
+                <h2 class="fw-anim-service-content w-full font-normal text-[#4A4A4A] text-left secondary-font mt-6 fw-title"> Our Services
+                                    </h2>
+
+                                <p class="fw-anim-service-content text-[#616162] font-normal mt-3 max-w-sm">Explore and conquer your study abroad dreams with our specially designed services.</p>
+                            </div>
+
+            <div class="col-span-12 md:col-span-10 md:col-start-2">
+                <div class="md:mt-4 lg:mt-8">
+                    
+                    <div class="swiper serviceSwiper !-mr-16 md:!-mr-96">
+                        <div class="swiper-wrapper">
+                                                                                    <a href="/services#career-counselling" class="fw-anim-service-content relative overflow-hidden text-center rounded-[2rem] lg:rounded-[2.5rem] swiper-slide group">
+                                <div class="aspect-[.7] md:aspect-[.8]  overflow-hidden h-full w-full rounded-[2rem] lg:rounded-[2.5rem] ">
+                                                                        <img
+            src="/curator/media/d3b06704-cdd6-4ca5-9020-af3fd17ff481.jpg?s=8c5367dc0890f73b20801aadff69a1a6"
+            alt=""
+                            width="1500"
+                height="1000"
+                                        srcset="/curator/media/d3b06704-cdd6-4ca5-9020-af3fd17ff481.jpg?h=300&amp;w=451&amp;s=74042d1806005606ae2cc037f1d0ae63 451w, /curator/media/d3b06704-cdd6-4ca5-9020-af3fd17ff481.jpg?h=266&amp;w=400&amp;s=7d4e847aa9cc507115e4168a3ca743a3 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+
+                                <div class="absolute top-0 left-0 right-0 z-10 flex flex-col m-8 text-left">
+                                    <h5 class="text-2xl font-medium text-white md:text-3xl secondary-font">Career Counselling</h5>
+                                                                        <p class="hidden md:block mt-2.5 text-lg font-normal text-white duration-500 ease-in-out lg:opacity-0 group-hover:opacity-100">Get expert advice on your career path</p>
+                                                                    </div>
+
+                                <div class="opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-[-0.8rem] right-[-1rem] z-10 p-2.5">
+                                    <svg class="h-32" width="100%" height="100%" viewBox="0 0 157 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M156.947 0C155.869 21.1287 138.397 37.9286 117 37.9286H77C54.9086 37.9286 37 55.8371 37 77.9285V108C37 129.082 20.6902 146.355 0 147.889L0 148H157V0L156.947 0Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="lg:opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-0 lg:bottom-0 right-0 z-10 p-2.5 ">
+                                    <span class="inline-flex items-center justify-center bg-[#1663C1] text-white right-0 h-16 w-16 rounded-full">
+                                        <svg width="40" height="40" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_2023_785" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                                                <rect x="26.5" y="52.9121" width="37.352" height="37.352" transform="rotate(-135 26.5 52.9121)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_2023_785)">
+                                                <path d="M18.7965 36.4044L32.1951 23.0059L32.1951 35.3315L35.304 35.304V17.696H17.696L17.6685 20.8049L29.9941 20.8049L16.5956 34.2035L18.7965 36.4044Z" fill="#FAFAFA" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-2"></div>
+                            </a>
+                                                                                                                <a href="/services#university-and-visa-application" class="fw-anim-service-content relative overflow-hidden text-center rounded-[2rem] lg:rounded-[2.5rem] swiper-slide group">
+                                <div class="aspect-[.7] md:aspect-[.8]  overflow-hidden h-full w-full rounded-[2rem] lg:rounded-[2.5rem] ">
+                                                                        <img
+            src="/curator/media/4640875f-cbfc-47f9-b2d9-72a89abd0325.jpg?s=529d878fb4624a7443ad0488f3d0074c"
+            alt=""
+                            width="1200"
+                height="775"
+                                        srcset="/curator/media/4640875f-cbfc-47f9-b2d9-72a89abd0325.jpg?h=291&amp;w=451&amp;s=af769adf3e8f2a27d5057e42f8c62249 451w, /curator/media/4640875f-cbfc-47f9-b2d9-72a89abd0325.jpg?h=258&amp;w=400&amp;s=845ca616e17f8a9fc798628cfaea927b 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+
+                                <div class="absolute top-0 left-0 right-0 z-10 flex flex-col m-8 text-left">
+                                    <h5 class="text-2xl font-medium text-white md:text-3xl secondary-font">University and Visa Application</h5>
+                                                                        <p class="hidden md:block mt-2.5 text-lg font-normal text-white duration-500 ease-in-out lg:opacity-0 group-hover:opacity-100">We simplify your study abroad decision by guiding you through the application process</p>
+                                                                    </div>
+
+                                <div class="opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-[-0.8rem] right-[-1rem] z-10 p-2.5">
+                                    <svg class="h-32" width="100%" height="100%" viewBox="0 0 157 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M156.947 0C155.869 21.1287 138.397 37.9286 117 37.9286H77C54.9086 37.9286 37 55.8371 37 77.9285V108C37 129.082 20.6902 146.355 0 147.889L0 148H157V0L156.947 0Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="lg:opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-0 lg:bottom-0 right-0 z-10 p-2.5 ">
+                                    <span class="inline-flex items-center justify-center bg-[#1663C1] text-white right-0 h-16 w-16 rounded-full">
+                                        <svg width="40" height="40" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_2023_785" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                                                <rect x="26.5" y="52.9121" width="37.352" height="37.352" transform="rotate(-135 26.5 52.9121)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_2023_785)">
+                                                <path d="M18.7965 36.4044L32.1951 23.0059L32.1951 35.3315L35.304 35.304V17.696H17.696L17.6685 20.8049L29.9941 20.8049L16.5956 34.2035L18.7965 36.4044Z" fill="#FAFAFA" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-2"></div>
+                            </a>
+                                                                                                                <a href="/services#ielts-pte-toefl-gre-sat-preparation" class="fw-anim-service-content relative overflow-hidden text-center rounded-[2rem] lg:rounded-[2.5rem] swiper-slide group">
+                                <div class="aspect-[.7] md:aspect-[.8]  overflow-hidden h-full w-full rounded-[2rem] lg:rounded-[2.5rem] ">
+                                                                        <img
+            src="/curator/media/37408841-be43-4fe2-a16c-f77ee21d94ca.jpg?s=388714761719721460e6ab30fd6bd0e4"
+            alt=""
+                            width="800"
+                height="450"
+                                        srcset="/curator/media/37408841-be43-4fe2-a16c-f77ee21d94ca.jpg?h=253&amp;w=451&amp;s=450cb04a6fd2d4dab496e2b79918058d 451w, /curator/media/37408841-be43-4fe2-a16c-f77ee21d94ca.jpg?h=225&amp;w=400&amp;s=51bf4d852f8e3b6d8a59da95673c0138 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+
+                                <div class="absolute top-0 left-0 right-0 z-10 flex flex-col m-8 text-left">
+                                    <h5 class="text-2xl font-medium text-white md:text-3xl secondary-font">IELTS | PTE | TOEFL | GRE | SAT Preparation</h5>
+                                                                        <p class="hidden md:block mt-2.5 text-lg font-normal text-white duration-500 ease-in-out lg:opacity-0 group-hover:opacity-100">Prepare for your English language proficiency tests with our expert trainers</p>
+                                                                    </div>
+
+                                <div class="opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-[-0.8rem] right-[-1rem] z-10 p-2.5">
+                                    <svg class="h-32" width="100%" height="100%" viewBox="0 0 157 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M156.947 0C155.869 21.1287 138.397 37.9286 117 37.9286H77C54.9086 37.9286 37 55.8371 37 77.9285V108C37 129.082 20.6902 146.355 0 147.889L0 148H157V0L156.947 0Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="lg:opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-0 lg:bottom-0 right-0 z-10 p-2.5 ">
+                                    <span class="inline-flex items-center justify-center bg-[#1663C1] text-white right-0 h-16 w-16 rounded-full">
+                                        <svg width="40" height="40" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_2023_785" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                                                <rect x="26.5" y="52.9121" width="37.352" height="37.352" transform="rotate(-135 26.5 52.9121)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_2023_785)">
+                                                <path d="M18.7965 36.4044L32.1951 23.0059L32.1951 35.3315L35.304 35.304V17.696H17.696L17.6685 20.8049L29.9941 20.8049L16.5956 34.2035L18.7965 36.4044Z" fill="#FAFAFA" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-2"></div>
+                            </a>
+                                                                                                                <a href="/services#scholarships-and-finances" class="fw-anim-service-content relative overflow-hidden text-center rounded-[2rem] lg:rounded-[2.5rem] swiper-slide group">
+                                <div class="aspect-[.7] md:aspect-[.8]  overflow-hidden h-full w-full rounded-[2rem] lg:rounded-[2.5rem] ">
+                                                                        <img
+            src="/curator/media/75d779e3-78c9-4ce9-8660-0ab26446eb8a.jpg?s=a32bd0d92d648eb20c9f9a108f70b8c4"
+            alt=""
+                            width="824"
+                height="545"
+                                        srcset="/curator/media/75d779e3-78c9-4ce9-8660-0ab26446eb8a.jpg?h=298&amp;w=451&amp;s=1a349a68dfafdea06f7fcd8ebd1018ba 451w, /curator/media/75d779e3-78c9-4ce9-8660-0ab26446eb8a.jpg?h=264&amp;w=400&amp;s=cd8edda8a045eaf311fe9de48a235beb 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+
+                                <div class="absolute top-0 left-0 right-0 z-10 flex flex-col m-8 text-left">
+                                    <h5 class="text-2xl font-medium text-white md:text-3xl secondary-font">Scholarships and Finances</h5>
+                                                                        <p class="hidden md:block mt-2.5 text-lg font-normal text-white duration-500 ease-in-out lg:opacity-0 group-hover:opacity-100">We help you secure scholarships and financial aid</p>
+                                                                    </div>
+
+                                <div class="opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-[-0.8rem] right-[-1rem] z-10 p-2.5">
+                                    <svg class="h-32" width="100%" height="100%" viewBox="0 0 157 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M156.947 0C155.869 21.1287 138.397 37.9286 117 37.9286H77C54.9086 37.9286 37 55.8371 37 77.9285V108C37 129.082 20.6902 146.355 0 147.889L0 148H157V0L156.947 0Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="lg:opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-0 lg:bottom-0 right-0 z-10 p-2.5 ">
+                                    <span class="inline-flex items-center justify-center bg-[#1663C1] text-white right-0 h-16 w-16 rounded-full">
+                                        <svg width="40" height="40" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_2023_785" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                                                <rect x="26.5" y="52.9121" width="37.352" height="37.352" transform="rotate(-135 26.5 52.9121)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_2023_785)">
+                                                <path d="M18.7965 36.4044L32.1951 23.0059L32.1951 35.3315L35.304 35.304V17.696H17.696L17.6685 20.8049L29.9941 20.8049L16.5956 34.2035L18.7965 36.4044Z" fill="#FAFAFA" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-2"></div>
+                            </a>
+                                                                                                                <a href="/services#flight-and-accommodation" class="fw-anim-service-content relative overflow-hidden text-center rounded-[2rem] lg:rounded-[2.5rem] swiper-slide group">
+                                <div class="aspect-[.7] md:aspect-[.8]  overflow-hidden h-full w-full rounded-[2rem] lg:rounded-[2.5rem] ">
+                                                                        <img
+            src="/curator/media/afddb354-880b-4a6d-acdf-2b8418a24821.jpg?s=2069c191720e6bf017f5ac427473fd60"
+            alt=""
+                            width="800"
+                height="532"
+                                        srcset="/curator/media/afddb354-880b-4a6d-acdf-2b8418a24821.jpg?h=299&amp;w=451&amp;s=6f5bfa6e5a71243e1100305e53bcfe98 451w, /curator/media/afddb354-880b-4a6d-acdf-2b8418a24821.jpg?h=266&amp;w=400&amp;s=db21bf38863b39cb701e109e7486acf0 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+
+                                <div class="absolute top-0 left-0 right-0 z-10 flex flex-col m-8 text-left">
+                                    <h5 class="text-2xl font-medium text-white md:text-3xl secondary-font">Flight and Accommodation</h5>
+                                                                        <p class="hidden md:block mt-2.5 text-lg font-normal text-white duration-500 ease-in-out lg:opacity-0 group-hover:opacity-100">We assist you in finding the best accommodation and flight options</p>
+                                                                    </div>
+
+                                <div class="opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-[-0.8rem] right-[-1rem] z-10 p-2.5">
+                                    <svg class="h-32" width="100%" height="100%" viewBox="0 0 157 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M156.947 0C155.869 21.1287 138.397 37.9286 117 37.9286H77C54.9086 37.9286 37 55.8371 37 77.9285V108C37 129.082 20.6902 146.355 0 147.889L0 148H157V0L156.947 0Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="lg:opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-0 lg:bottom-0 right-0 z-10 p-2.5 ">
+                                    <span class="inline-flex items-center justify-center bg-[#1663C1] text-white right-0 h-16 w-16 rounded-full">
+                                        <svg width="40" height="40" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_2023_785" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                                                <rect x="26.5" y="52.9121" width="37.352" height="37.352" transform="rotate(-135 26.5 52.9121)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_2023_785)">
+                                                <path d="M18.7965 36.4044L32.1951 23.0059L32.1951 35.3315L35.304 35.304V17.696H17.696L17.6685 20.8049L29.9941 20.8049L16.5956 34.2035L18.7965 36.4044Z" fill="#FAFAFA" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-2"></div>
+                            </a>
+                                                                                                                <a href="/services#pre-departure-preparation" class="fw-anim-service-content relative overflow-hidden text-center rounded-[2rem] lg:rounded-[2.5rem] swiper-slide group">
+                                <div class="aspect-[.7] md:aspect-[.8]  overflow-hidden h-full w-full rounded-[2rem] lg:rounded-[2.5rem] ">
+                                                                        <img
+            src="/curator/media/03d9a593-594d-44a8-8832-f1c96e4a6bed.png?s=f55314e51cf09dcbbee67d3ee206505d"
+            alt=""
+                            width="770"
+                height="480"
+                                        srcset="/curator/media/03d9a593-594d-44a8-8832-f1c96e4a6bed.png?h=281&amp;w=451&amp;s=d47ecce93f2a8a00173d2aa26b569dcb 451w, /curator/media/03d9a593-594d-44a8-8832-f1c96e4a6bed.png?h=249&amp;w=400&amp;s=823e625d9c7cc306ed1360b8985c24ed 400w"
+                sizes="(max-width: 1200px) 100vw, 1024px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+
+                                <div class="absolute top-0 left-0 right-0 z-10 flex flex-col m-8 text-left">
+                                    <h5 class="text-2xl font-medium text-white md:text-3xl secondary-font">Pre-Departure Preparation</h5>
+                                                                        <p class="hidden md:block mt-2.5 text-lg font-normal text-white duration-500 ease-in-out lg:opacity-0 group-hover:opacity-100">We equip you with essential info on enrollment, insurance, health, safety, and cultural adaptation for your study abroad journey.</p>
+                                                                    </div>
+
+                                <div class="opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-[-0.8rem] right-[-1rem] z-10 p-2.5">
+                                    <svg class="h-32" width="100%" height="100%" viewBox="0 0 157 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M156.947 0C155.869 21.1287 138.397 37.9286 117 37.9286H77C54.9086 37.9286 37 55.8371 37 77.9285V108C37 129.082 20.6902 146.355 0 147.889L0 148H157V0L156.947 0Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="lg:opacity-0 group-hover:opacity-100 ease-in-out duration-500 absolute bottom-0 lg:bottom-0 right-0 z-10 p-2.5 ">
+                                    <span class="inline-flex items-center justify-center bg-[#1663C1] text-white right-0 h-16 w-16 rounded-full">
+                                        <svg width="40" height="40" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_2023_785" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+                                                <rect x="26.5" y="52.9121" width="37.352" height="37.352" transform="rotate(-135 26.5 52.9121)" fill="#D9D9D9" />
+                                            </mask>
+                                            <g mask="url(#mask0_2023_785)">
+                                                <path d="M18.7965 36.4044L32.1951 23.0059L32.1951 35.3315L35.304 35.304V17.696H17.696L17.6685 20.8049L29.9941 20.8049L16.5956 34.2035L18.7965 36.4044Z" fill="#FAFAFA" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+
+                                <div class="absolute top-0 bottom-0 left-0 right-0 fw-overlay-2"></div>
+                            </a>
+                                                                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <a href="/services" class="z-10 mt-8 md:mt-12 fw-btn-primary">
+            View more services
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.2565 11.326L11.6499 21.9326" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13.7188 11.3438L22.2564 11.3255L22.2388 19.8638" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        
+        <div class="absolute left-0 -top-10">
+            <svg width="951" height="724" viewBox="0 0 951 724" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_20_4601)">
+                    <path d="M294 319.788C294 383.532 234.454 435.208 161 435.208C87.5461 435.208 28 383.532 28 319.788C28 256.043 87.5461 204.368 161 204.368C234.454 204.368 294 256.043 294 319.788Z" fill="#1674E7" fill-opacity="0.5" />
+                </g>
+                <path d="M417.577 350.846H533.077L488.654 146.5H808.5L719.654 617.385H639.692V724H808.5L950.654 31H346.5L417.577 350.846Z" fill="url(#paint0_linear_20_4601)" fill-opacity="0.06" />
+                <path d="M364.269 359.731L293.192 31H177.692L248.769 359.731H364.269Z" fill="url(#paint1_linear_20_4601)" fill-opacity="0.06" />
+                <path d="M186.577 359.731L115.5 31H0L71.0769 359.731H186.577Z" fill="url(#paint2_linear_20_4601)" fill-opacity="0.06" />
+                <defs>
+                    <filter id="filter0_f_20_4601" x="-176" y="0.367676" width="674" height="638.84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="102" result="effect1_foregroundBlur_20_4601" />
+                    </filter>
+                    <linearGradient id="paint0_linear_20_4601" x1="886.369" y1="28" x2="162.479" y2="219.813" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#262626" />
+                        <stop offset="1" stop-color="#737373" stop-opacity="0.74" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_20_4601" x1="344.417" y1="29.5769" x2="112.08" y2="69.6569" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#262626" />
+                        <stop offset="1" stop-color="#737373" stop-opacity="0.74" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_20_4601" x1="166.724" y1="29.5769" x2="-65.6121" y2="69.6569" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#262626" />
+                        <stop offset="1" stop-color="#737373" stop-opacity="0.74" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</section>
+
+        
+            <section class="container mt-16 ">
+    <div class="relative row-grid fw-future-section">
+        <div class="col-span-12 md:col-span-10 md:col-start-2">
+            <div class="relative px-12 py-10 fw-gradient-1 rounded-2xl">
+                <h2 class="max-w-xl mx-auto font-normal text-center text-white fw-anim-future-content secondary-font">
+                    Unlock a future full of possibilities, invest in yourself, invest in your future
+                </h2>
+
+                                <div class="flex">
+                    <a href="/journey" class="fw-anim-future-content whitespace-nowrap mt-8 text-base lg:text-lg font-medium mx-auto bg-white text-[#1676EA] px-6 py-3 rounded-full w-full flex items-center justify-center sm:w-auto">
+                        Start your journey now
+                        <svg class="ml-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.286 4.32598L4.67941 14.9326" stroke="#1676EA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.74838 4.34384L15.286 4.32546L15.2683 12.8638" stroke="#1676EA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="absolute bottom-10 left-64 fw-float-around">
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.3">
+                            <path d="M31.4729 34.6672L11.5807 41.7825C11.2465 41.9026 10.8897 41.9465 10.5363 41.911C10.183 41.8755 9.84201 41.7615 9.53839 41.5773C9.23477 41.393 8.97615 41.1433 8.78145 40.8463C8.58674 40.5493 8.46086 40.2126 8.41302 39.8607L4.35486 9.185C4.10786 7.31734 6.04269 5.92417 7.75003 6.73667L46.3145 25.1447C48.2212 26.0547 48.0782 28.8063 46.0849 29.5148L40.7982 31.3955L37.9165 32.4073M23.8332 37.3972L28.1449 44.6035C29.5532 46.3542 32.3894 45.364 32.3894 43.1237V37.3538C32.3893 36.265 31.9793 35.2161 31.241 34.4158L22.8539 25.3158" stroke="white" stroke-width="3.09524" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="absolute top-10 right-64 fw-move-around">
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                            <path d="M16.5797 28.0004L32.6464 33.7474C32.9164 33.8444 33.2046 33.8799 33.49 33.8512C33.7754 33.8225 34.0507 33.7304 34.296 33.5816C34.5412 33.4328 34.7501 33.2311 34.9074 32.9913C35.0646 32.7514 35.1663 32.4794 35.2049 32.1952L38.4827 7.41866C38.6822 5.91016 37.1194 4.78491 35.7404 5.44116L4.59217 20.3092C3.05217 21.0442 3.16767 23.2667 4.77767 23.8389L9.04767 25.3579L11.3752 26.1752M22.7502 30.2054L19.2677 36.0259C18.1302 37.4399 15.8394 36.6402 15.8394 34.8307V30.1704C15.8395 29.291 16.1706 28.4438 16.7669 27.7974L23.5412 20.4474" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="absolute right-0 -top-20 -z-10">
+            <svg width="951" height="693" viewBox="0 0 951 693" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M417.577 373.154H533.077L488.654 577.5H808.5L719.654 106.615H639.692V6.10352e-05H808.5L950.654 693H346.5L417.577 373.154Z" fill="url(#paint0_linear_612_6059)" fill-opacity="0.06" />
+                <path d="M364.269 364.269L293.192 693H177.692L248.769 364.269H364.269Z" fill="url(#paint1_linear_612_6059)" fill-opacity="0.06" />
+                <path d="M186.577 364.269L115.5 693H0L71.0769 364.269H186.577Z" fill="url(#paint2_linear_612_6059)" fill-opacity="0.06" />
+                <defs>
+                    <linearGradient id="paint0_linear_612_6059" x1="886.369" y1="696" x2="162.479" y2="504.187" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#262626" />
+                        <stop offset="1" stop-color="#737373" stop-opacity="0.74" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_612_6059" x1="344.417" y1="694.423" x2="112.08" y2="654.343" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#262626" />
+                        <stop offset="1" stop-color="#737373" stop-opacity="0.74" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_612_6059" x1="166.724" y1="694.423" x2="-65.6121" y2="654.343" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#262626" />
+                        <stop offset="1" stop-color="#737373" stop-opacity="0.74" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</section>        
+            <section class="container my-20 md:my-24 fw-we-are-container">
+    <div class="row-grid">
+        <div class="col-span-12 md:col-span-10 md:col-start-2">
+            <div class="flex flex-col flex-wrap justify-between my-4 md:flex-row md:items-center lg:flex-nowrap">
+                <h2 class="fw-anim-we-are-content w-auto whitespace-nowrap font-normal text-[#4A4A4A] text-left secondary-font">
+                                                            Who are we
+                                                        </h2>
+
+                                <p class="fw-anim-we-are-content text-[#616162] font-normal max-w-lg w-full mt-3">
+                    Keystone Global Network (Keystone) stands as the leading International Education Service provider based in Nepal with its headquarters in Singapore.
+                </p>
+                            </div>
+        </div>
+        <div class="col-span-12 md:col-span-10 md:col-start-2">
+            <div class="grid grid-cols-12 gap-4">
+                                <div class="col-span-12 fw-anim-we-are-content">
+                    <div class="overflow-hidden rounded-xl">
+                        
+                            <img
+            src="/curator/media/a31237a0-1ff0-455b-895d-087482b7eeea.png?s=69a45794357de4288bbcdaef4ae3a870"
+            alt=""
+                            width="1066"
+                height="361"
+                                        srcset="/curator/media/a31237a0-1ff0-455b-895d-087482b7eeea.png?h=507&amp;w=1500&amp;s=5f8e126ecc08a91c65e30cb62f7c4d3c 1500w, /curator/media/a31237a0-1ff0-455b-895d-087482b7eeea.png?h=406&amp;w=1200&amp;s=468926a643b4d316c31351e2535f2e81 1200w, /curator/media/a31237a0-1ff0-455b-895d-087482b7eeea.png?h=270&amp;w=800&amp;s=7425ca069f85437504b9a12a2e49d035 800w"
+                sizes="(max-width: 1400px) 100vw, 1024px"
+                        class="object-contain w-full h-full"
+        />
+                                
+                    </div>
+                </div>
+                                
+            </div>
+        </div>
+    </div>
+
+    </section>        
+            <div id="faqApp">
+    <section class="container my-20 md:my-24">
+        <div class="row-grid">
+            <div class="col-span-12 md:col-span-10 md:col-start-2">
+                <div class="flex flex-wrap items-center justify-between my-4 lg:flex-nowrap">
+                    <h2 class="font-normal text-left secondary-font text-[#4A4A4A]">
+                        Frequently <br> asked <span class="font-semibold text-[#212529]">Questions</span>
+                    </h2>
+
+                    <div class="mt-3">
+                        <p class="text-[#616162] font-normal max-w-sm w-full">
+                            Explore and conquer your study abroad dreams with our services especially designed for you .
+                        </p>
+                    </div>
+                </div>
+
+                <div class="max-w-md my-2 md:my-6">
+                    <div class="relative mt-2 rounded-md">
+                        <input v-model="search" @input="filterData" type="text" name="search" id="search" class="block w-full rounded-md border-0 py-2.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-[#616162] placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:text-sm sm:leading-6" placeholder="Can't find what you looking for? Search here">
+                        <div class="absolute inset-y-0 right-0 flex items-center text-[#616162] pr-3">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.5a7.5 7.5 0 0 1 5.964 12.048l4.743 4.745a1 1 0 0 1-1.32 1.497l-.094-.083-4.745-4.743A7.5 7.5 0 1 1 10 2.5Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z" fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <faq-accordion :faq="filteredData"></faq-accordion>
+
+                <h3 v-if="filteredData.length == 0" class="text-center text-[#212529] font-normal w-full mt-8">
+                    No results found
+                </h3>
+            </div>
+        </div>
+    </section>
+    
+    
+</div>
+
+        
+            <section class="relative py-16 overflow-hidden fw-gradient-1 fw-testimonial-section">
+    <div class="container">
+        <div class="row-grid">
+            <div class="col-span-12 md:col-span-10 md:col-start-2">
+                <div class="px-12 mb-12">
+                    <h2 class="font-normal text-left text-white fw-anim-testimonial-content secondary-font">
+                        What people say <br>
+                        <span class="font-medium">about Keystone</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="hidden fw-masonry-grid md:block">
+                        <div class="px-4 py-4 bg-white fw-anim-testimonial-content rounded-xl grid-item">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">&quot;Keystone Global Network made my dream of studying in the USA a reality! From helping me choose the right university to guide me through the visa process, they provided hassle-free service every step of the way.&quot; </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-lg mb-0.5">Sameer Pathak</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white fw-anim-testimonial-content rounded-xl grid-item">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">&quot;I can&#039;t thank Keystone enough for their support in my journey to study in Australia. Their expert advice, visa assistance, and personalized approach ensured a smooth and successful transition. Highly recommended!&quot; </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-lg mb-0.5">Smriti Rai</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white fw-anim-testimonial-content rounded-xl grid-item">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">&quot;My greatest choice for my study abroad experience in the UK was to choose Keystone. The whole procedure was stress-free thanks to their experienced counselors, advice on university placement, and pre-departure assistance.&quot; 
+</p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-lg mb-0.5">Ritesh Karki</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white fw-anim-testimonial-content rounded-xl grid-item">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">&quot;Keystone Global Network has made it possible for me to study in Canada! Their help with lodging, visa applications, and cultural acclimatization advice made my trip very delightful.&quot; </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-lg mb-0.5">Ranu Dhungel</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white fw-anim-testimonial-content rounded-xl grid-item">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">&quot;I&#039;m grateful to Keystone for their professional and efficient service. They helped me secure admission to a top university in New Zealand and provided valuable insights throughout my study abroad journey.&quot; </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-lg mb-0.5">Misma Adhikari </p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white fw-anim-testimonial-content rounded-xl grid-item">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">&quot;I&#039;m thrilled with the service I received from Keystone Global Network. They made the entire process of studying abroad in USA seamless and stress-free, allowing me to focus on my education.&quot; </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-lg mb-0.5">Riya KC</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white fw-anim-testimonial-content rounded-xl grid-item">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">&quot;I couldn&#039;t have navigated the complexities of studying abroad without Keystone&#039;s expertise. Their guidance, attention to detail, and commitment to student success are truly commendable.&quot; </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-lg mb-0.5">Dipesh Bastola</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white fw-anim-testimonial-content rounded-xl grid-item">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">I&#039;m amazed to get my USA student visa at Wright State University for my Bachelor&#039;s Program without any kind of hassle. Keystone Global Network prepared me to get through the US interview process easily and had confidence in me. Thank you Keystone.</p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-lg mb-0.5">Sudikshya Chataut</p>
+                        <span class="text-[#999898] font-normal">Nursing Student</span>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+
+    <div class="swiper testimonialSwiper !pl-4 md:!pl-0 md:!mr-0 block md:!hidden !-mr-16 ">
+        <div class="swiper-wrapper">
+                        <div class="px-4 py-4 bg-white rounded-xl grid-item swiper-slide">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">
+                    &quot;Keystone Global Network made my dream of studying in the USA a reality! From helping me choose the right university to guide me through the visa process, they provided hassle-free service every step of the way.&quot; 
+                </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-xl mb-0.5">Sameer Pathak</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white rounded-xl grid-item swiper-slide">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">
+                    &quot;I can&#039;t thank Keystone enough for their support in my journey to study in Australia. Their expert advice, visa assistance, and personalized approach ensured a smooth and successful transition. Highly recommended!&quot; 
+                </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-xl mb-0.5">Smriti Rai</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white rounded-xl grid-item swiper-slide">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">
+                    &quot;My greatest choice for my study abroad experience in the UK was to choose Keystone. The whole procedure was stress-free thanks to their experienced counselors, advice on university placement, and pre-departure assistance.&quot; 
+
+                </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-xl mb-0.5">Ritesh Karki</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white rounded-xl grid-item swiper-slide">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">
+                    &quot;Keystone Global Network has made it possible for me to study in Canada! Their help with lodging, visa applications, and cultural acclimatization advice made my trip very delightful.&quot; 
+                </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-xl mb-0.5">Ranu Dhungel</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white rounded-xl grid-item swiper-slide">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">
+                    &quot;I&#039;m grateful to Keystone for their professional and efficient service. They helped me secure admission to a top university in New Zealand and provided valuable insights throughout my study abroad journey.&quot; 
+                </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-xl mb-0.5">Misma Adhikari </p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white rounded-xl grid-item swiper-slide">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">
+                    &quot;I&#039;m thrilled with the service I received from Keystone Global Network. They made the entire process of studying abroad in USA seamless and stress-free, allowing me to focus on my education.&quot; 
+                </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-xl mb-0.5">Riya KC</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white rounded-xl grid-item swiper-slide">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">
+                    &quot;I couldn&#039;t have navigated the complexities of studying abroad without Keystone&#039;s expertise. Their guidance, attention to detail, and commitment to student success are truly commendable.&quot; 
+                </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-xl mb-0.5">Dipesh Bastola</p>
+                        <span class="text-[#999898] font-normal">Student</span>
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-4 bg-white rounded-xl grid-item swiper-slide">
+                <svg class="mt-4" width="81" height="59" viewBox="0 0 81 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.6991 26.9152H45.4187L41.6804 9.71889H68.5963L61.1196 49.3451H54.3907V58.317H68.5963L80.5589 -0.000732422H29.7178L35.6991 26.9152Z" fill="#E0E0E0" />
+                    <path d="M31.2131 27.6628L25.2318 -0.000732422H15.5122L21.4935 27.6628H31.2131Z" fill="#E0E0E0" />
+                    <path d="M16.2598 27.6631L10.2785 -0.000488281H0.558838L6.54015 27.6631H16.2598Z" fill="#E0E0E0" />
+                </svg>
+                <p class="mt-4 text-[#616162] text-lg font-normal">
+                    I&#039;m amazed to get my USA student visa at Wright State University for my Bachelor&#039;s Program without any kind of hassle. Keystone Global Network prepared me to get through the US interview process easily and had confidence in me. Thank you Keystone.
+                </p>
+
+                <div class="flex items-center mt-4">
+                                        <div class="px-4 text-left">
+                        <p class="text-indigo-600 font-normal text-xl mb-0.5">Sudikshya Chataut</p>
+                        <span class="text-[#999898] font-normal">Nursing Student</span>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+    
+
+    <div class="absolute -top-10 -z-10 w-[300px] lg:w-[600px]">
+        <svg viewBox="0 0 605 693" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M533.077 319.846H417.577L462 115.5H142.154L231 586.385H310.962V693H142.154L0.000427246 0H604.154L533.077 319.846Z" fill="url(#paint0_linear_612_6052)" fill-opacity="0.06" />
+            <defs>
+                <linearGradient id="paint0_linear_612_6052" x1="64.2851" y1="-2.99999" x2="788.175" y2="188.813" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#262626" />
+                    <stop offset="1" stop-color="#737373" stop-opacity="0.74" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+</section>
+
+
+    
+<footer class="bg-[#FAFAFA] pt-16 relative">
+    <figure class="absolute bottom-0 left-0">
+        <img src="https://keystoneglobalnetwork.com.np/images/bg-logo.svg" alt="Key Stone" class="w-auto" />
+    </figure>
+    <div class="container relative z-10 py-16">
+        <div class="row-grid">
+            <div class="col-span-12 md:col-span-10 md:col-start-2">
+                <div class="flex flex-wrap justify-between gap-10 lg:flex-nowrap">
+                    <div class="w-full lg:max-w-[16rem]">
+                        <a class="flex items-center" href="/">
+                            <img src="https://keystoneglobalnetwork.com.np/images/logo.png" alt="Key Stone" class="w-auto h-12" />
+                        </a>
+                        <div>
+                            <div class="mt-6">
+                                <h6 class="font-semibold text-[#4A4A4A]">Nepal</h6>
+                                <div class="flex flex-col font-medium gap-3 mt-3 text-[#212529] max-w-[85%]">
+                                                                        <p class="leading-[150%]">3rd floor, City Center, Kamal Pokhari, Kathmandu</p>
+                                                                                                            <a href="tel:+977 9801000900" title="+977 9801000900">+977 9801000900</a>
+                                                                                                            <a href="mailto: nepal@keystoneglobalnetwork.com">nepal@keystoneglobalnetwork.com</a>
+                                                                    </div>
+                            </div>
+                            <div class="mt-8">
+                                <span id='iasBadge' data-account-id='6264'></span>
+                            </div>
+                            <!-- <div class="mt-8">
+                                <h6 class="font-semibold text-[#4A4A4A]">Singapore</h6>
+                                <div class="flex flex-col font-medium gap-3 mt-3 text-[#212529] max-w-[85%]">
+                                                                        <p class="leading-[150%]">4 Flora Drive #06-62, Singapore</p>
+                                                                                                            <a href="tel:+65 93664949">+65 93664949</a>
+                                                                                                            <a href="mailto: info@keystoneglobalnetwork.com">info@keystoneglobalnetwork.com</a>
+                                                                    </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-auto">
+                        <h5 class="text-lg font-medium md:mb-12">Quick Links</h5>
+                        <div class="flex flex-col gap-4 mt-5 text-[#212529] font-medium">
+                                                        <a href="/">Home</a>
+                                                        <a href="/about">About Us</a>
+                                                        <a href="/destinations">Key Destinations</a>
+                                                        <a href="/services">Key Services</a>
+                                                        <a href="/events">Events</a>
+                                                        <a href="/contact">Contact Us</a>
+                                                        <a href="/careers">Career</a>
+                                                    </div>
+                    </div>
+                    <div class="w-full lg:w-auto">
+                        <h5 class="text-lg font-medium md:mb-12">Destination</h5>
+                        <div class="flex flex-col gap-4 mt-5">
+                                                        <a href=https://keystoneglobalnetwork.com.np/destinations/australia class="flex items-start gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/324bdce3-5d8a-45ae-ac0b-2e6a2a7f5f07.png?s=567d1af99269ba499499055e7e697f4c"
+            alt=""
+                            width="2560"
+                height="1280"
+                                        srcset="/curator/media/324bdce3-5d8a-45ae-ac0b-2e6a2a7f5f07.png?h=50&amp;w=100&amp;s=86658b345fc04a45acb23def0b17dc4c 100w, /curator/media/324bdce3-5d8a-45ae-ac0b-2e6a2a7f5f07.png?h=30&amp;w=60&amp;s=29aba34381ee6e6793eab18e26e1ea8e 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Connecting Australia</p>
+                            </a>
+                                                        <a href=https://keystoneglobalnetwork.com.np/destinations/canada class="flex items-start gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/8ea0773d-c6d4-4ae2-9ec0-ece0b6c81a56.png?s=91fd43f4eecee7d208218451930d058c"
+            alt=""
+                            width="200"
+                height="100"
+                                        srcset="/curator/media/8ea0773d-c6d4-4ae2-9ec0-ece0b6c81a56.png?h=50&amp;w=100&amp;s=3a74ec6e92994959305f4a4f0cf9c29d 100w, /curator/media/8ea0773d-c6d4-4ae2-9ec0-ece0b6c81a56.png?h=30&amp;w=60&amp;s=38ec697b5f84b0ce9aa34b777aa10261 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Connecting Canada</p>
+                            </a>
+                                                        <a href=https://keystoneglobalnetwork.com.np/destinations/usa class="flex items-start gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/342d8b43-261c-480e-a3b5-4181feaea041.png?s=456a9180222eb6d9259e5908d39766a7"
+            alt=""
+                            width="200"
+                height="104"
+                                        srcset="/curator/media/342d8b43-261c-480e-a3b5-4181feaea041.png?h=52&amp;w=100&amp;s=67925b6dbc63608cfc559b8c9637db66 100w, /curator/media/342d8b43-261c-480e-a3b5-4181feaea041.png?h=31&amp;w=60&amp;s=759f2b33a048104f394c0cbcbc533449 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Connecting USA</p>
+                            </a>
+                                                        <a href=https://keystoneglobalnetwork.com.np/destinations/uk class="flex items-start gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/8cad8156-0694-4977-a567-fde4b7fe3fab.webp?s=63a428e0c3b22f42bbbe835c244e28f8"
+            alt=""
+                            width="580"
+                height="290"
+                                        srcset="/curator/media/8cad8156-0694-4977-a567-fde4b7fe3fab.webp?h=50&amp;w=100&amp;s=6b6d72a7cc033565f9cdea91b37a27a1 100w, /curator/media/8cad8156-0694-4977-a567-fde4b7fe3fab.webp?h=30&amp;w=60&amp;s=b634087c0026f48c9d5689cb4acd0cc3 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Connecting UK</p>
+                            </a>
+                                                        <a href=https://keystoneglobalnetwork.com.np/destinations/new-zealand class="flex items-start gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/930965d2-75aa-4845-a900-eab921dc02ed.webp?s=64fb46a5f3402bd80c47ddc7edd218d5"
+            alt=""
+                            width="580"
+                height="290"
+                                        srcset="/curator/media/930965d2-75aa-4845-a900-eab921dc02ed.webp?h=50&amp;w=100&amp;s=ed4e33e1d170a337935c562cfd54c24d 100w, /curator/media/930965d2-75aa-4845-a900-eab921dc02ed.webp?h=30&amp;w=60&amp;s=50c991befe453691d3364adb369d713a 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Connecting New Zealand</p>
+                            </a>
+                                                        <a href=https://keystoneglobalnetwork.com.np/destinations/ireland class="flex items-start gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/2111ede2-5d77-42d0-8e2d-ed73c127f619.webp?s=9744af9fbe187771e05e8e16ae7ecfb9"
+            alt=""
+                            width="1600"
+                height="800"
+                                        srcset="/curator/media/2111ede2-5d77-42d0-8e2d-ed73c127f619.webp?h=50&amp;w=100&amp;s=ea84ff8fb6266506dadae9c33859ec98 100w, /curator/media/2111ede2-5d77-42d0-8e2d-ed73c127f619.webp?h=30&amp;w=60&amp;s=2b584ab4f827f4731e171ca6a72b28d2 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Connecting Ireland</p>
+                            </a>
+                                                        <a href=https://keystoneglobalnetwork.com.np/destinations/germany class="flex items-start gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/469507da-0617-471e-b443-44d726b0cf58.jpg?s=1f4f0fccec487989cdedb6f8fe01aac2"
+            alt=""
+                            width="3595"
+                height="2157"
+                                        srcset="/curator/media/469507da-0617-471e-b443-44d726b0cf58.jpg?h=60&amp;w=100&amp;s=31804d2ece4a73ba3870db1dd87fd50d 100w, /curator/media/469507da-0617-471e-b443-44d726b0cf58.jpg?h=36&amp;w=60&amp;s=1aaadd79a574ede0bbdf8ba0930fddf1 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Connecting Germany</p>
+                            </a>
+                                                    </div>
+                    </div>
+                    <div class="w-full lg:w-auto">
+                        <h5 class="text-lg font-medium md:mb-12">Services</h5>
+                        <div class="flex flex-col gap-4 mt-5">
+                                                        <a href="/services#career-counselling" class="flex gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/d3b06704-cdd6-4ca5-9020-af3fd17ff481.jpg?s=8c5367dc0890f73b20801aadff69a1a6"
+            alt=""
+                            width="1500"
+                height="1000"
+                                        srcset="/curator/media/d3b06704-cdd6-4ca5-9020-af3fd17ff481.jpg?h=66&amp;w=100&amp;s=f31a95d0c0f83a4b93680c76d6ba90e4 100w, /curator/media/d3b06704-cdd6-4ca5-9020-af3fd17ff481.jpg?h=40&amp;w=60&amp;s=53cd9183472ce1c402ebf63fc1be63f2 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Career Counselling</p>
+                            </a>
+                                                        <a href="/services#university-and-visa-application" class="flex gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/4640875f-cbfc-47f9-b2d9-72a89abd0325.jpg?s=529d878fb4624a7443ad0488f3d0074c"
+            alt=""
+                            width="1200"
+                height="775"
+                                        srcset="/curator/media/4640875f-cbfc-47f9-b2d9-72a89abd0325.jpg?h=64&amp;w=100&amp;s=4e549c282cf4a11763ebeea43268db9b 100w, /curator/media/4640875f-cbfc-47f9-b2d9-72a89abd0325.jpg?h=38&amp;w=60&amp;s=7d30889403f68e1d7237e8c7da9ca6a4 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">University and Visa Application</p>
+                            </a>
+                                                        <a href="/services#ielts-pte-toefl-gre-sat-preparation" class="flex gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/37408841-be43-4fe2-a16c-f77ee21d94ca.jpg?s=388714761719721460e6ab30fd6bd0e4"
+            alt=""
+                            width="800"
+                height="450"
+                                        srcset="/curator/media/37408841-be43-4fe2-a16c-f77ee21d94ca.jpg?h=56&amp;w=100&amp;s=563b0b9dc5eea2dea746b9a3755d98dd 100w, /curator/media/37408841-be43-4fe2-a16c-f77ee21d94ca.jpg?h=33&amp;w=60&amp;s=82f684da14b6aec4160e1d4c58754c9d 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">IELTS | PTE | TOEFL | GRE | SAT Preparation</p>
+                            </a>
+                                                        <a href="/services#scholarships-and-finances" class="flex gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/75d779e3-78c9-4ce9-8660-0ab26446eb8a.jpg?s=a32bd0d92d648eb20c9f9a108f70b8c4"
+            alt=""
+                            width="824"
+                height="545"
+                                        srcset="/curator/media/75d779e3-78c9-4ce9-8660-0ab26446eb8a.jpg?h=66&amp;w=100&amp;s=65729e0bfec33dffb5a76b0e9c04ce45 100w, /curator/media/75d779e3-78c9-4ce9-8660-0ab26446eb8a.jpg?h=39&amp;w=60&amp;s=3c1741688d6a58715b8591fbe5758af2 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Scholarships and Finances</p>
+                            </a>
+                                                        <a href="/services#flight-and-accommodation" class="flex gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/afddb354-880b-4a6d-acdf-2b8418a24821.jpg?s=2069c191720e6bf017f5ac427473fd60"
+            alt=""
+                            width="800"
+                height="532"
+                                        srcset="/curator/media/afddb354-880b-4a6d-acdf-2b8418a24821.jpg?h=66&amp;w=100&amp;s=d9a80840174906b4da592abfa6807736 100w, /curator/media/afddb354-880b-4a6d-acdf-2b8418a24821.jpg?h=39&amp;w=60&amp;s=9ae6a1c5ad777164b835c1daa6f157c1 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Flight and Accommodation</p>
+                            </a>
+                                                        <a href="/services#pre-departure-preparation" class="flex gap-2">
+                                <div class="w-10 h-6 overflow-hidden rounded-sm">
+                                                                        <img
+            src="/curator/media/03d9a593-594d-44a8-8832-f1c96e4a6bed.png?s=f55314e51cf09dcbbee67d3ee206505d"
+            alt=""
+                            width="770"
+                height="480"
+                                        srcset="/curator/media/03d9a593-594d-44a8-8832-f1c96e4a6bed.png?h=62&amp;w=100&amp;s=3fbc557d23bba3128dbee125e76b1532 100w, /curator/media/03d9a593-594d-44a8-8832-f1c96e4a6bed.png?h=37&amp;w=60&amp;s=02fba8af92509b4bf1f224e640c7a2f7 60w"
+                sizes="(max-width: 100px) 100vw, 60px"
+                        class="object-cover w-full h-full"
+        />
+                                                                        </div>
+                                <p class="text-[#212529] font-medium text-sm">Pre-Departure Preparation</p>
+                            </a>
+                                                    </div>
+                        <div class="flex items-center gap-3 mt-8">
+                                                        <a href="https://facebook.com/keystoneglobalnetwork" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" class="fill-[#999898] hover:fill-[#3b5998] duration-200 ease-in-out">
+                                    <g clip-path="url(#clip0_2139_3150)">
+                                        <path d="M23.1017 11.504C23.1017 5.56455 18.2813 0.744141 12.3419 0.744141C6.40244 0.744141 1.58203 5.56455 1.58203 11.504C1.58203 16.7117 5.28341 21.0479 10.1899 22.0486V14.7319H8.03793V11.504H10.1899V8.81401C10.1899 6.73737 11.8792 5.04807 13.9558 5.04807H16.6458V8.27602H14.4938C13.902 8.27602 13.4178 8.76021 13.4178 9.35201V11.504H16.6458V14.7319H13.4178V22.21C18.8516 21.672 23.1017 17.0883 23.1017 11.504Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2139_3150">
+                                            <rect width="22.8722" height="22.8722" fill="white" transform="translate(0.906006 0.0644531)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                                                                                                                                            <a href="https://wa.me/9779801000900" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-[#999898]" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container relative z-10">
+        <div class="row-grid">
+            <div class="col-span-12 md:col-span-10 md:col-start-2">
+                <div class="flex gap-6 pt-3 pb-12 border-t border-[#E3E3E3]">
+                    <a href="/privacy-policy" class="text-[#212529] font-medium text-sm hover:underline underline-offset-4">Privacy
+                        policy</a>
+                    <a href=https://keystoneglobalnetwork.com.np/contact class="text-[#212529] font-medium text-sm hover:underline underline-offset-4">Contact us</a>
+                    <a href=https://keystoneglobalnetwork.com.np/journey class="text-[#212529] font-medium text-sm hover:underline underline-offset-4">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+<div class="fixed z-50 right-4 bottom-10">
+  <div class="flex flex-col items-center gap-2 overflow-hidden transition-all duration-300 ease-in-out social-links-container max-h-0">
+    <a href="https://m.me/keystoneglobalnetwork" target="_blank" class="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-white" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+      </svg>
+    </a>
+    <a href="https://wa.me/9779801000900" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-yellow-500">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-white" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+      </svg>
+    </a>
+  </div>
+  <button id="socialLinks" class="h-14">
+    <svg class="block social-open-icon" width="100%" height="100%" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M61.4302 35.0919C61.4353 38.6028 60.7472 42.0802 59.4053 45.3245C58.0634 48.5689 56.0941 51.5164 53.6105 53.9979C51.126 56.4827 48.1763 58.4535 44.9298 59.7978C41.6833 61.142 38.2037 61.8333 34.69 61.8321C30.9081 61.8414 27.1678 61.0431 23.7192 59.4905L12.5404 61.1441C11.9854 61.2347 11.4166 61.1884 10.8835 61.0093C10.3504 60.8302 9.86905 60.5237 9.48133 60.1163C9.09361 59.7089 8.81121 59.213 8.65866 58.6717C8.50611 58.1304 8.48802 57.5601 8.60597 57.0102L10.1583 45.6694C8.68529 42.3385 7.93265 38.7339 7.94975 35.0919C7.94494 31.581 8.63321 28.1037 9.97509 24.8594C11.317 21.6151 13.2861 18.6676 15.7695 16.1858C18.2538 13.7009 21.2035 11.73 24.45 10.3858C27.6966 9.04154 31.1762 8.35033 34.69 8.35167C41.7858 8.35214 48.5912 11.17 53.6105 16.1858C56.0928 18.6683 58.0612 21.616 59.4031 24.8601C60.7449 28.1043 61.4337 31.5812 61.4302 35.0919Z" fill="white" stroke="#1676EA" stroke-width="3.51256" stroke-linecap="round" stroke-linejoin="round" />
+      <rect width="26.0688" height="0" transform="translate(21.6814 35.0919)" fill="#1676EA" />
+      <path d="M21.6814 35.0919H21.6987" stroke="#1676EA" stroke-width="7.80504" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M34.707 35.0919H34.7244" stroke="#1676EA" stroke-width="7.80504" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M47.7329 35.0919H47.7503" stroke="#1676EA" stroke-width="7.80504" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+    <svg class="hidden social-close-icon" width="100%" height="100%" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2Zm0 1.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Zm3.446 4.897.084.073a.75.75 0 0 1 .073.976l-.073.084L13.061 12l2.47 2.47a.75.75 0 0 1 .072.976l-.073.084a.75.75 0 0 1-.976.073l-.084-.073L12 13.061l-2.47 2.47a.75.75 0 0 1-.976.072l-.084-.073a.75.75 0 0 1-.073-.976l.073-.084L10.939 12l-2.47-2.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073L12 10.939l2.47-2.47a.75.75 0 0 1 .976-.072Z" fill="#1676EA" />
+    </svg>
+  </button>
+</div>
+
+<div v-cloak id="activeEventApp">
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    //after window is completed load
+    //1 class selector for marquee
+    //2 marquee speed 0.2
+    // window.addEventListener('load', Marquee('.marquee', 0.2))
+
+</script>
+<script>
+    new Swiper(".destinationSwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            }
+        }
+    });
+</script>
+<script>
+    const services = [{"id":1,"title":"Career Counselling","slug":"career-counselling","subtitle":"Get expert advice on your career path","service":"Our experienced industry consultants go beyond traditional guidance, offering tailored support to navigate updated immigration policies and select the best university for your background and career aspirations. We ensure you\u0027re well-prepared for your chosen course and equipped to relate it to opportunities, globally.","image":"24","is_published":0,"created_at":"2024-05-29T04:19:47.000000Z","updated_at":"2024-05-29T09:11:14.000000Z","deleted_at":null},{"id":2,"title":"University and Visa Application","slug":"university-and-visa-application","subtitle":"We simplify your study abroad decision by guiding you through the application process","service":"Understanding the key factors such as educational environment, transportation, accommodation, culture, and cost of living is crucial for your study abroad decision. Keystone Global Network simplifies this process by identifying your strengths and interests, shortlisting suitable universities, and assisting with visa applications through our specialized team.","image":"25","is_published":0,"created_at":"2024-05-29T04:19:47.000000Z","updated_at":"2024-05-29T09:12:21.000000Z","deleted_at":null},{"id":3,"title":"IELTS | PTE | TOEFL | GRE | SAT Preparation","slug":"ielts-pte-toefl-gre-sat-preparation","subtitle":"Prepare for your English language proficiency tests with our expert trainers","service":"Achieving strong exam scores is essential for university applications. Our qualified panel prepares you thoroughly for IELTS, TOEFL, PTE, and GRE and SAT exams, ensuring you meet the requirements of your desired universities.","image":"26","is_published":0,"created_at":"2024-05-29T04:19:47.000000Z","updated_at":"2024-05-29T09:14:49.000000Z","deleted_at":null},{"id":4,"title":"Scholarships and Finances","slug":"scholarships-and-finances","subtitle":"We help you secure scholarships and financial aid","service":"Studying abroad can be expensive, but scholarships and financial aid packages can alleviate the burden. Keystone Global Network guides you on available scholarships based on your university and academic background, empowering you to make informed financial decisions.","image":"27","is_published":0,"created_at":"2024-05-29T04:19:47.000000Z","updated_at":"2024-05-29T09:15:17.000000Z","deleted_at":null},{"id":5,"title":"Flight and Accommodation","slug":"flight-and-accommodation","subtitle":"We assist you in finding the best accommodation and flight options","service":"Finding affordable travel and accommodation options can be challenging for students. We provide guidance on suitable accommodation services and affordable travel arrangements, minimizing your stress and workload.","image":"28","is_published":0,"created_at":"2024-05-29T04:19:47.000000Z","updated_at":"2024-05-29T09:15:57.000000Z","deleted_at":null},{"id":6,"title":"Pre-Departure Preparation","slug":"pre-departure-preparation","subtitle":"We equip you with essential info on enrollment, insurance, health, safety, and cultural adaptation for your study abroad journey.","service":"\u003Cp\u003EAs you prepare to embark on your study abroad journey, we ensure you\u0027re equipped with essential information on enrollment processes, insurance, health and safety, cultural adaptation, and more.\u003C\/p\u003E","image":"6","is_published":0,"created_at":"2024-05-29T08:36:16.000000Z","updated_at":"2024-05-29T08:36:16.000000Z","deleted_at":null}];
+    var swiper = new Swiper(".serviceSwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: services?.length == 4 ? 3 : services?.length >= 4 ? 4 : 2,
+                spaceBetween: 20,
+            }
+        }
+    });
+</script>
+<link rel="preload" as="style" href="https://keystoneglobalnetwork.com.np/build/assets/faq-WVDLLuL9.css" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/faq-BLbGauIZ.js" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/vue.esm-bundler-B62WDwIR.js" /><link rel="stylesheet" href="https://keystoneglobalnetwork.com.np/build/assets/faq-WVDLLuL9.css" data-navigate-track="reload" /><script type="module" src="https://keystoneglobalnetwork.com.np/build/assets/faq-BLbGauIZ.js" data-navigate-track="reload"></script><script>
+    // add id to faq data
+    const FAQ_DATA = [{"question":"What services do you offer for students interested in studying abroad? ","answer":"We offer a range of services including study abroad consultation, university selection guidance, visa assistance, test preparation (IELTS, PTE, SAT, GRE, TOEFL etc.), application support, and guidance. "},{"question":"Which countries and universities do you assist students in applying to? ","answer":"We assist students in applying to universities in popular study destinations such as the USA, Australia, UK, Canada, and New Zealand. We have partnerships with top-ranked universities across various fields of study "},{"question":"What are the eligibility criteria for studying abroad? ","answer":"Eligibility criteria vary depending on the country, university, and program. Generally, students need to meet academic requirements, English language proficiency (IELTS, PTE, TOEFL), and may require standardized test scores (SAT, GRE) for certain programs. "},{"question":"Do you provide scholarships or financial aid assistance? ","answer":"Yes, we offer guidance on scholarship opportunities, grants, and financial aid options available for international students. We help students explore funding opportunities based on their academic achievements and financial need. "},{"question":"How do you assist with visa applications and immigration processes? ","answer":"Our team provides comprehensive support throughout the visa application process, including document preparation, form filling, visa interview preparation, and guidance on visa requirements and regulations. "},{"question":"Can you help with accommodation arrangements and pre-departure preparations? ","answer":"We provide guidance on pre-departure preparations such as travel arrangements, insurance, health requirements, and cultural adaptation tips. "},{"question":"What support do you offer for English language proficiency exams like IELTS, PTE and TOEFL? ","answer":"We offer specialized coaching, practice tests, study materials, and exam strategies to help students achieve their target scores in English language proficiency exams such as IELTS, TOEFL, and PTE. "},{"question":"How do I get started with your consultancy services? ","answer":"To get started, you can schedule a free consultation with one of our experienced counselors. During the consultation, we\u0027ll discuss your academic goals, preferences, and provide personalized guidance on study abroad options that best suit your needs. "},{"question":"Are your services available for undergraduate, graduate, and postgraduate students? ","answer":"Yes, we cater to students at all levels of education, including undergraduate (Bachelor\u0027s degree), graduate (Master\u0027s degree).We tailor our services to meet the specific requirements of each student. "},{"question":"What sets your consultancy apart from others in the industry? ","answer":"Our consultancy stands out due to our personalized approach, extensive network of partner universities, experienced counselors, comprehensive services, success rate, and ongoing support throughout the study abroad journey. "}];
+</script>
+<script>
+    new Swiper(".testimonialSwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            }
+        }
+    });
+</script>
+<link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/app-CocHq4go.js" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/bootstrap-yVyWljs_.js" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/vue.esm-bundler-B62WDwIR.js" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/axios-B6xwUs71.js" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/animation-C5lsxL0d.js" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/index-DjKJqAo0.js" /><link rel="modulepreload" href="https://keystoneglobalnetwork.com.np/build/assets/active-event-DmX8JVFa.js" /><script type="module" src="https://keystoneglobalnetwork.com.np/build/assets/app-CocHq4go.js" data-navigate-track="reload"></script><script type="module" src="https://keystoneglobalnetwork.com.np/build/assets/animation-C5lsxL0d.js" data-navigate-track="reload"></script><script type="module" src="https://keystoneglobalnetwork.com.np/build/assets/active-event-DmX8JVFa.js" data-navigate-track="reload"></script>
+<script>
+  const ACTIVE_EVENT = {};
+  const btn = document.getElementById('socialLinks');
+  const socialLinks = document.querySelector('.social-links-container');
+  const closeIcon = document.querySelector('.social-close-icon');
+  const openIcon = document.querySelector('.social-open-icon');
+  
+  btn.addEventListener('click', () => {
+    socialLinks.classList.toggle('!max-h-60');
+    closeIcon.classList.toggle('!block');
+    openIcon.classList.toggle('!hidden');
+  });
+</script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <script>
+    const TEST_PREPFORM_URL = 'https://keystoneglobalnetwork.com.np/test-preparation/register';
+    document.addEventListener('DOMContentLoaded', function() {
+        var navTrigger = document.getElementById('nav-trigger');
+        var all = document.getElementById('all');
+        var offCanvas = document.getElementById('off-canvas');
+        var body = document.body;
+
+        navTrigger?.addEventListener('click', function(event) {
+          this.classList.toggle('active');
+          all.classList.toggle('open');
+          offCanvas.classList.toggle('show');
+          body.classList.toggle('overflow-hidden');
+        });
+    });
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        document.querySelector(".fw-navigation")?.classList.add("border-b");
+        document.querySelector(".fw-navigation")?.classList.add("border-[#eeeeee]");
+      } else {
+        document.querySelector(".fw-navigation")?.classList.remove("border-b");
+      }
+    };
+  </script>
+  <script async defer crossorigin="anonymous" src="https://www-cdn.icef.com/scripts/iasbadgeid.js"></script>
+</body>
+
+</html>

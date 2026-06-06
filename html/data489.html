@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en" x-data="modalForm()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurukul Education</title>
+    <link rel="icon" href="https://gurukuleducation.com.np/images/image.png" type="image/png">
+    <meta name="description" content="Gurukul Education provides expert counselling, visa assistance, language classes, and
+    study abroad support for Japan, Korea, Canada, Australia, UK, and more.">
+    <meta name="keywords"
+        content="Gurukul Education, Study Abroad Nepal, IELTS, PTE, Japanese language, Korean language, visa assistance, scholarship, Nepal education consultancy">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Gurukul Education">
+    <meta property="og:description" content="Gurukul Education provides expert counselling, visa assistance, language classes, and
+    study abroad support for Japan, Korea, Canada, Australia, UK, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gurukuleducation.com.np">
+    <meta name="theme-color" content="#0A3D62">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://gurukuleducation.com.np/js/wind.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#da1212',
+                        lightbg: '#da1212',
+                        secondary: '#041562',
+                        textmain: '#1E2937',
+                        textsecondary: '#64748B',
+                        scholarship: '#16A34A',
+                        crimson: '#da1212',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 10px 15px -3px rgb(0 0 0 / 0.1)',
+                    },
+                    /* =========================
+                       KEYFRAMES (FULL SET)
+                    ========================= */
+                    keyframes: {
+
+                        /* Fade */
+                        fadeIn: {
+                            '0%': {
+                                opacity: '0'
+                            },
+                            '100%': {
+                                opacity: '1'
+                            }
+                        },
+                        fadeOut: {
+                            '0%': {
+                                opacity: '1'
+                            },
+                            '100%': {
+                                opacity: '0'
+                            }
+                        },
+
+                        /* Zoom */
+                        zoomIn: {
+                            '0%': {
+                                transform: 'scale(0.8)',
+                                opacity: '0'
+                            },
+                            '100%': {
+                                transform: 'scale(1)',
+                                opacity: '1'
+                            }
+                        },
+                        zoomOut: {
+                            '0%': {
+                                transform: 'scale(1)',
+                                opacity: '1'
+                            },
+                            '100%': {
+                                transform: 'scale(0.8)',
+                                opacity: '0'
+                            }
+                        },
+
+                        /* Slide */
+                        slideInRight: {
+                            '0%': {
+                                transform: 'translateX(100%)',
+                                opacity: '0'
+                            },
+                            '100%': {
+                                transform: 'translateX(0)',
+                                opacity: '1'
+                            }
+                        },
+                        slideOutRight: {
+                            '0%': {
+                                transform: 'translateX(0)',
+                                opacity: '1'
+                            },
+                            '100%': {
+                                transform: 'translateX(100%)',
+                                opacity: '0'
+                            }
+                        },
+
+                        slideInLeft: {
+                            '0%': {
+                                transform: 'translateX(-100%)',
+                                opacity: '0'
+                            },
+                            '100%': {
+                                transform: 'translateX(0)',
+                                opacity: '1'
+                            }
+                        },
+                        slideOutLeft: {
+                            '0%': {
+                                transform: 'translateX(0)',
+                                opacity: '1'
+                            },
+                            '100%': {
+                                transform: 'translateX(-100%)',
+                                opacity: '0'
+                            }
+                        },
+
+                        slideInUp: {
+                            '0%': {
+                                transform: 'translateY(100%)',
+                                opacity: '0'
+                            },
+                            '100%': {
+                                transform: 'translateY(0)',
+                                opacity: '1'
+                            }
+                        },
+                        slideOutUp: {
+                            '0%': {
+                                transform: 'translateY(0)',
+                                opacity: '1'
+                            },
+                            '100%': {
+                                transform: 'translateY(100%)',
+                                opacity: '0'
+                            }
+                        },
+
+                        slideInDown: {
+                            '0%': {
+                                transform: 'translateY(-100%)',
+                                opacity: '0'
+                            },
+                            '100%': {
+                                transform: 'translateY(0)',
+                                opacity: '1'
+                            }
+                        },
+                        slideOutDown: {
+                            '0%': {
+                                transform: 'translateY(0)',
+                                opacity: '1'
+                            },
+                            '100%': {
+                                transform: 'translateY(-100%)',
+                                opacity: '0'
+                            }
+                        },
+
+                        /* Bounce */
+                        bounceSoft: {
+                            '0%,100%': {
+                                transform: 'translateY(0)'
+                            },
+                            '50%': {
+                                transform: 'translateY(-8px)'
+                            }
+                        },
+
+                        /* Pulse */
+                        pulseScale: {
+                            '0%,100%': {
+                                transform: 'scale(1)'
+                            },
+                            '50%': {
+                                transform: 'scale(1.05)'
+                            }
+                        },
+
+                        /* Shake */
+                        shake: {
+                            '0%,100%': {
+                                transform: 'translateX(0)'
+                            },
+                            '25%': {
+                                transform: 'translateX(-6px)'
+                            },
+                            '75%': {
+                                transform: 'translateX(6px)'
+                            }
+                        },
+
+                        /* Rotate */
+                        rotateIn: {
+                            '0%': {
+                                transform: 'rotate(-180deg)',
+                                opacity: '0'
+                            },
+                            '100%': {
+                                transform: 'rotate(0)',
+                                opacity: '1'
+                            }
+                        },
+                        rotateOut: {
+                            '0%': {
+                                transform: 'rotate(0)',
+                                opacity: '1'
+                            },
+                            '100%': {
+                                transform: 'rotate(180deg)',
+                                opacity: '0'
+                            }
+                        },
+
+                        /* Flip (3D) */
+                        flipIn: {
+                            '0%': {
+                                transform: 'rotateY(90deg)',
+                                opacity: '0'
+                            },
+                            '100%': {
+                                transform: 'rotateY(0)',
+                                opacity: '1'
+                            }
+                        },
+                        flipOut: {
+                            '0%': {
+                                transform: 'rotateY(0)',
+                                opacity: '1'
+                            },
+                            '100%': {
+                                transform: 'rotateY(90deg)',
+                                opacity: '0'
+                            }
+                        },
+
+                        /* Blur */
+                        blurIn: {
+                            '0%': {
+                                filter: 'blur(10px)',
+                                opacity: '0'
+                            },
+                            '100%': {
+                                filter: 'blur(0)',
+                                opacity: '1'
+                            }
+                        },
+                        blurOut: {
+                            '0%': {
+                                filter: 'blur(0)',
+                                opacity: '1'
+                            },
+                            '100%': {
+                                filter: 'blur(10px)',
+                                opacity: '0'
+                            }
+                        },
+
+                        /* Scale Pop */
+                        popIn: {
+                            '0%': {
+                                transform: 'scale(0.7)',
+                                opacity: '0'
+                            },
+                            '100%': {
+                                transform: 'scale(1)',
+                                opacity: '1'
+                            }
+                        },
+
+                        /* Float */
+                        float: {
+                            '0%,100%': {
+                                transform: 'translateY(0)'
+                            },
+                            '50%': {
+                                transform: 'translateY(-12px)'
+                            }
+                        }
+                    },
+
+                    /* =========================
+                       ANIMATIONS
+                    ========================= */
+                    animation: {
+                        fadeIn: 'fadeIn 1.5s ease forwards',
+                        fadeOut: 'fadeOut 1.5s ease forwards',
+
+                        zoomIn: 'zoomIn .7s ease forwards',
+                        zoomOut: 'zoomOut .7s ease forwards',
+
+                        slideInRight: 'slideInRight .7s ease forwards',
+                        slideOutRight: 'slideOutRight .7s ease forwards',
+                        slideInLeft: 'slideInLeft .7s ease forwards',
+                        slideOutLeft: 'slideOutLeft .7s ease forwards',
+                        slideInUp: 'slideInUp .7s ease forwards',
+                        slideOutUp: 'slideOutUp .7s ease forwards',
+                        slideInDown: 'slideInDown .7s ease forwards',
+                        slideOutDown: 'slideOutDown .7s ease forwards',
+
+                        bounceSoft: 'bounceSoft .6s ease infinite',
+                        pulseScale: 'pulseScale 1.2s ease-in-out infinite',
+                        shake: 'shake .7s ease',
+
+                        rotateIn: 'rotateIn .7s ease forwards',
+                        rotateOut: 'rotateOut .7s ease forwards',
+
+                        flipIn: 'flipIn .7s ease forwards',
+                        flipOut: 'flipOut .7s ease forwards',
+
+                        blurIn: 'blurIn .7s ease forwards',
+                        blurOut: 'blurOut .7s ease forwards',
+
+                        popIn: 'popIn 2s ease forwards',
+                        float: 'float 3s ease-in-out infinite'
+                    },
+                }
+
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #DC143C;
+            background-color: #F8FAFC;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .section-padding {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        @media (min-width: 768px) {
+            .section-padding {
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
+        }
+
+
+
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(10, 61, 98, 0.88), rgba(10, 61, 98, 0.68));
+        }
+
+        .animate-fade-up {
+            animation: fadeUp 0.7s ease-out both;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn-primary {
+            background-color: #DC143C;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.9rem 1.7rem;
+            font-weight: 600;
+            transition: all 0.7s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #DC143C;
+        }
+
+        .btn-green {
+            background-color: #DC143C;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.9rem 1.7rem;
+            font-weight: 600;
+            transition: all 0.7s ease;
+        }
+
+        .btn-green:hover {
+            background-color: #DC143C;
+        }
+
+        .btn-outline-light {
+            background-color: rgba(255, 255, 255, 0.08);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 9999px;
+            padding: 0.9rem 1.7rem;
+            font-weight: 600;
+            transition: all 0.7s ease;
+        }
+
+        .btn-outline-light:hover {
+            background-color: rgba(255, 255, 255, 0.16);
+        }
+
+        .section-title {
+            color: #DC143C;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .text-muted {
+            color: #64748B;
+        }
+
+        .premium-card {
+            background: white;
+            border-radius: 1.7rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            transition: all 0.7s ease;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .icon-badge {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(10, 61, 98, 0.08);
+            color: #DC143C;
+            font-size: 1.7rem;
+        }
+
+        input,
+        textarea,
+        select {
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            box-shadow: 0 0 0 3px rgba(10, 61, 98, 0.15);
+            border-color: #DC143C !important;
+        }
+
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+    <div class="bg-primary text-white">
+
+        
+        <div class="hidden lg:block">
+            <div class="container mx-auto flex justify-between items-center py-2.5 px-4">
+
+                <div class="flex items-center gap-4 text-sm">
+
+                                            <a href="mailto:info@gurukuleducation.com.np" class="hover:text-slate-200 flex items-center gap-2" title="info@gurukuleducation.com.np" aria-label="Email info@gurukuleducation.com.np">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8.5v7A2.5 2.5 0 0 0 5.5 18h13a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 18.5 6h-13A2.5 2.5 0 0 0 3 8.5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 8.5L12 13 3 8.5" />
+                            </svg>
+                            <span class="ml-2">info@gurukuleducation.com.np</span>
+                        </a>
+                    
+                                            <span class="text-white/40">|</span>
+                        <div class="flex items-center gap-2">
+                                                            <a href="tel:071590552" class="hover:text-slate-200 flex items-center gap-2" title="071590552" aria-label="Call 071590552">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 16.92V20a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3 5.18 2 2 0 0 1 5 3h3.09a1 1 0 0 1 1 .75c.12.7.35 1.36.67 1.97a1 1 0 0 1-.24 1.08L8.91 8.91a14 14 0 0 0 6.18 6.18l1.11-1.11a1 1 0 0 1 1.08-.24c.61.32 1.27.55 1.97.67a1 1 0 0 1 .75 1V16.92z" />
+                                    </svg>
+                                    <span class="ml-2">071590552</span>
+                                </a>
+                            
+                                                            <span class="text-white/40">,</span>
+                                <a href="tel:9857043937" class="hover:text-slate-200 flex items-center gap-2" title="9857043937" aria-label="Call 9857043937">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 16.92V20a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3 5.18 2 2 0 0 1 5 3h3.09a1 1 0 0 1 1 .75c.12.7.35 1.36.67 1.97a1 1 0 0 1-.24 1.08L8.91 8.91a14 14 0 0 0 6.18 6.18l1.11-1.11a1 1 0 0 1 1.08-.24c.61.32 1.27.55 1.97.67a1 1 0 0 1 .75 1V16.92z" />
+                                    </svg>
+                                    <span class="ml-2">9857043937</span>
+                                </a>
+                                                    </div>
+                    
+                                            <span class="text-white/40">|</span>
+                        <div class="flex items-center gap-2" title="Sun–Fri : 6:00 AM–6:00 PM" aria-label="Working hours: Sun–Fri : 6:00 AM–6:00 PM">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7v5l3 2" />
+                            </svg>
+                            <span class="ml-2">Sun–Fri : 6:00 AM–6:00 PM</span>
+                        </div>
+                    
+                </div>
+
+                                    <a href="https://it.gurukuleducation.com.np/course" target="_blank"
+                        class="bg-white text-secondary px-5 py-2 rounded-full font-semibold">
+                        Learning Centre →
+                    </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <header class="sticky top-0 z-50 py-1 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="container mx-auto px-6">
+        <div class="flex items-center justify-between ">
+
+            <!-- Logo -->
+            <a href="https://gurukuleducation.com.np" class="flex-shrink-0">
+                <img src="https://gurukuleducation.com.np/images/Gurukul.png" class="w-[140px] md:w-[160px] xl:w-[200px]">
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden xl:flex items-center gap-4 xl:gap-6 text-[13px] xl:text-[15px] font-medium">
+
+                <a href="https://gurukuleducation.com.np"
+                    class="whitespace-nowrap text-primary font-semibold">
+                    Home
+                </a>
+
+                <a href="https://gurukuleducation.com.np/about"
+                    class="whitespace-nowrap text-secondary">
+                    About Us
+                </a>
+
+                <!-- Courses Dropdown -->
+                <div class="relative group">
+
+                    <!-- Trigger -->
+                    <div
+                        class="whitespace-nowrap text-secondary
+                        flex items-center gap-1 py-2 cursor-pointer">
+
+                        Courses
+
+                        <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+
+                    <!-- Dropdown -->
+                    <div
+                        class="absolute top-full left-0 w-72 bg-white rounded-xl shadow-xl border border-slate-100
+                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+
+                        <div class="p-2">
+
+                                                            <a href="https://gurukuleducation.com.np/courses/3"
+                                    class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 transition hover:text-primary">
+
+                                    <!-- Icon -->
+                                    <div
+                                        class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <span class="text-sm font-bold text-primary">
+                                            K
+                                        </span>
+                                    </div>
+
+                                    <!-- Text -->
+                                    <div>
+                                        <div class="font-semibold text-sm">
+                                            Korean Language( EPS &amp; Student Visa)
+                                        </div>
+
+                                        <div class="text-xs text-slate-500">
+                                            
+                                        </div>
+                                    </div>
+
+                                </a>
+                                                            <a href="https://gurukuleducation.com.np/courses/4"
+                                    class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 transition hover:text-primary">
+
+                                    <!-- Icon -->
+                                    <div
+                                        class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <span class="text-sm font-bold text-primary">
+                                            J
+                                        </span>
+                                    </div>
+
+                                    <!-- Text -->
+                                    <div>
+                                        <div class="font-semibold text-sm">
+                                            Japanese Language
+                                        </div>
+
+                                        <div class="text-xs text-slate-500">
+                                            
+                                        </div>
+                                    </div>
+
+                                </a>
+                                                            <a href="https://gurukuleducation.com.np/courses/5"
+                                    class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 transition hover:text-primary">
+
+                                    <!-- Icon -->
+                                    <div
+                                        class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <span class="text-sm font-bold text-primary">
+                                            I
+                                        </span>
+                                    </div>
+
+                                    <!-- Text -->
+                                    <div>
+                                        <div class="font-semibold text-sm">
+                                            IELTS &amp; PTE Preparation
+                                        </div>
+
+                                        <div class="text-xs text-slate-500">
+                                            
+                                        </div>
+                                    </div>
+
+                                </a>
+                                                            <a href="https://gurukuleducation.com.np/courses/6"
+                                    class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 transition hover:text-primary">
+
+                                    <!-- Icon -->
+                                    <div
+                                        class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <span class="text-sm font-bold text-primary">
+                                            T
+                                        </span>
+                                    </div>
+
+                                    <!-- Text -->
+                                    <div>
+                                        <div class="font-semibold text-sm">
+                                            Tuition Class
+                                        </div>
+
+                                        <div class="text-xs text-slate-500">
+                                            
+                                        </div>
+                                    </div>
+
+                                </a>
+                                                            <a href="https://gurukuleducation.com.np/courses/7"
+                                    class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 transition hover:text-primary">
+
+                                    <!-- Icon -->
+                                    <div
+                                        class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <span class="text-sm font-bold text-primary">
+                                            P
+                                        </span>
+                                    </div>
+
+                                    <!-- Text -->
+                                    <div>
+                                        <div class="font-semibold text-sm">
+                                            Professional Accounting Training
+                                        </div>
+
+                                        <div class="text-xs text-slate-500">
+                                            
+                                        </div>
+                                    </div>
+
+                                </a>
+                                                            <a href="https://gurukuleducation.com.np/courses/8"
+                                    class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-slate-50 transition hover:text-primary">
+
+                                    <!-- Icon -->
+                                    <div
+                                        class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <span class="text-sm font-bold text-primary">
+                                            E
+                                        </span>
+                                    </div>
+
+                                    <!-- Text -->
+                                    <div>
+                                        <div class="font-semibold text-sm">
+                                            Entrance Preparation
+                                        </div>
+
+                                        <div class="text-xs text-slate-500">
+                                            
+                                        </div>
+                                    </div>
+
+                                </a>
+                            
+                            <!-- Footer -->
+                            <div class="border-t border-slate-100 mt-2 pt-2">
+
+                                <a href="https://gurukuleducation.com.np/courses"
+                                    class="flex items-center justify-center gap-2 px-4 py-2 text-primary font-semibold text-sm hover:bg-slate-50 rounded-lg">
+
+                                    View All Courses
+
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="https://gurukuleducation.com.np/contact"
+                    class="whitespace-nowrap text-secondary">
+                    Contact
+                </a>
+
+                <a href="https://gurukuleducation.com.np/admissions"
+                    class="bg-primary text-white px-5 py-2.5 rounded-full hover:bg-secondary transition transform hover:scale-105 whitespace-nowrap shadow-sm">
+                    Enroll Now
+                </a>
+
+            </nav>
+
+            <!-- Tablet -->
+            <div class="hidden md:flex xl:hidden items-center gap-3">
+
+                <a href="https://gurukuleducation.com.np/admissions"
+                    class="bg-primary text-white text-xs px-4 py-2 rounded-full hover:bg-secondary transition whitespace-nowrap">
+                    Enroll Now
+                </a>
+
+                <button onclick="openMenu()" class="p-2 border rounded-md hover:bg-slate-100 transition ml-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile -->
+            <button onclick="openMenu()" class="md:hidden p-2 border rounded-md hover:bg-slate-100 transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+</header>
+
+<!-- Overlay -->
+<div id="overlay" class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition duration-300 z-40"></div>
+
+<!-- Mobile Drawer -->
+<div id="mobileMenu"
+    class="fixed top-0 right-0 h-full w-[280px] sm:w-[320px] bg-white shadow-xl transform translate-x-full transition duration-300 z-50">
+
+    <div class="p-5 flex justify-between items-center border-b">
+        <span class="font-semibold text-lg">Menu</span>
+        <button onclick="closeMenu()" class="p-1 hover:bg-slate-100 rounded transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="p-5 flex flex-col gap-4">
+
+        <a href="https://gurukuleducation.com.np"
+            class="py-2 border-b border-slate-100 text-primary font-semibold">
+            Home
+        </a>
+
+        <a href="https://gurukuleducation.com.np/about"
+            class="py-2 border-b border-slate-100 text-secondary">
+            About Us
+        </a>
+
+        <!-- Mobile Courses -->
+        <div class="border-b border-slate-100 pb-2">
+
+            <button
+                onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
+                class="w-full flex items-center justify-between py-2 text-secondary">
+                <span>Courses</span>
+                <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+
+            <div class="hidden mt-2 ml-4 space-y-2 border-l-2 border-slate-200 pl-4">
+
+                                    <a href="https://gurukuleducation.com.np/courses/3"
+                        class="block py-2 text-sm text-slate-600 hover:text-primary">
+                        Korean Language( EPS &amp; Student Visa)
+                    </a>
+                                    <a href="https://gurukuleducation.com.np/courses/4"
+                        class="block py-2 text-sm text-slate-600 hover:text-primary">
+                        Japanese Language
+                    </a>
+                                    <a href="https://gurukuleducation.com.np/courses/5"
+                        class="block py-2 text-sm text-slate-600 hover:text-primary">
+                        IELTS &amp; PTE Preparation
+                    </a>
+                                    <a href="https://gurukuleducation.com.np/courses/6"
+                        class="block py-2 text-sm text-slate-600 hover:text-primary">
+                        Tuition Class
+                    </a>
+                                    <a href="https://gurukuleducation.com.np/courses/7"
+                        class="block py-2 text-sm text-slate-600 hover:text-primary">
+                        Professional Accounting Training
+                    </a>
+                                    <a href="https://gurukuleducation.com.np/courses/8"
+                        class="block py-2 text-sm text-slate-600 hover:text-primary">
+                        Entrance Preparation
+                    </a>
+                
+                <a href="https://gurukuleducation.com.np/courses" class="block py-2 text-sm text-primary font-semibold">
+                    View All →
+                </a>
+
+            </div>
+        </div>
+
+        <a href="https://gurukuleducation.com.np/destinations"
+            class="py-2 border-b border-slate-100 text-secondary">
+            Study Abroad
+        </a>
+
+        <a href="https://gurukuleducation.com.np/contact"
+            class="py-2 border-b border-slate-100 text-secondary">
+            Contact
+        </a>
+
+        <div class="mt-4 pt-4 border-t border-slate-200 space-y-3">
+
+            <a href="https://gurukuleducation.com.np/admissions"
+                class="bg-primary text-white px-4 py-3 rounded-full w-full hover:bg-primary/90 transition">
+                Enroll Now
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+    <main>
+        
+    
+            <section class="relative min-h-[85vh] flex items-center bg-cover bg-center animate-on-scroll" data-animate="fadeInUp"
+            style="background-image: url('https://gurukuleducation.com.np/storage/hero/MD1wjMuRGluDybxV8goh8JjFahe0MHP9kfpMCV6K.jpg');">
+
+            
+            <div class="absolute inset-0 bg-secondary/70"></div>
+
+            <div class="container mx-auto px-6 relative z-10 py-20">
+
+                <div class="max-w-3xl text-white">
+
+                    
+                                            <p class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-sm mb-6 animate-on-scroll"
+                            data-animate="popIn">
+
+                                                            🇳🇵<img src="https://gurukuleducation.com.np/storage/hero/badge/EjFwxMOQQ8g8xw2rp0HwdQjFCdMM42qjhvKjPTZG.png" alt="badge"
+                                    class="h-6 w-6 object-contain">
+                            
+                            Trusted Guidance for Your Education
+                        </p>
+                    
+                    
+                                            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate-on-scroll"
+                            data-animate="zoomIn">
+                            Gurukul Education – Your Education Partner
+                        </h1>
+                    
+                    
+                                            <p class="text-lg md:text-xl text-slate-100 mb-8 max-w-2xl animate-on-scroll" data-animate="popIn">
+                            Your reliable partner for studying in Japanese, Korean languages, IELTS &amp; PTE Preparation, Entrance Preparation, Tuition Class, Computer &amp; IT Training and more.
+                        </p>
+                    
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 animate-on-scroll" data-animate="slideInUp">
+
+                                                    <a href="#"
+                                class="bg-primary hover:bg-secondary text-white px-6 py-4 rounded-full font-semibold text-center animate-on-scroll"
+                                data-animate="popIn">
+                                Explore Courses
+                            </a>
+                        
+                                                    <a href="#"
+                                class="border border-white/30 hover:bg-primary text-white px-6 py-4 rounded-full font-semibold animate-on-scroll"
+                                data-animate="popIn">
+                                Get Free Counselling
+                            </a>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    
+    
+
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
+
+            
+            <div class="animate-on-scroll" data-animate="slideInLeft">
+
+                <h2 class="text-3xl md:text-5xl font-extrabold text-[#041562] mb-6">
+                    Who We Are ?
+                </h2>
+
+                <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                    Gurukul Education provides quality, career-focused learning programs including Japanese and Korean language classes, IELTS &amp; PTE preparation, entrance preparation courses, tuition classes, and computer &amp; IT training. Our goal is to support students in improving their academic performance, language skills, and technical knowledge through practical and result-oriented teaching methods.
+      We are committed to delivering updated course content, expert guidance, and a supportive learning environment to help students achieve their educational and professional goals. At Gurukul Education, we focus on building strong foundations and essential skills needed for future success.
+                </p>
+
+                <a href="https://gurukuleducation.com.np/about" class="inline-flex items-center font-semibold hover:underline"
+                    style="color:#041562;">
+                    Read More →
+                </a>
+            </div>
+
+            
+            <div class="animate-on-scroll" data-animate="slideInRight">
+
+                
+                    
+                    <div class="relative overflow-hidden ">
+                        <img src="https://gurukuleducation.com.np/storage/home_about/2S26c6NrQsOHcCx3fKSYZbgmUzBolM4OrVlaSga1.png" alt="About Image"
+                            class="object-contain object-center">
+                    </div>
+
+                    
+                                    
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section-padding">
+        <div class="container mx-auto px-6">
+
+            
+            <div class="max-w-3xl mb-12 animate-on-scroll" data-animate="fadeInUp">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-secondary mb-4">
+                    Our Mission & Core Values
+                </h2>
+                <p class="text-slate-600 text-lg">
+                    Our mission is to empower students through quality guidance, skill development, and global educational
+                    opportunities.
+                </p>
+            </div>
+
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                                    
+                    <div class="animate-on-scroll" data-animate="popIn">
+
+                        <div class="bg-white rounded-2xl p-6 shadow hover:-translate-y-1 transition">
+
+                            
+                            <div
+                                class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 overflow-hidden">
+
+                                                                    <img src="https://gurukuleducation.com.np/storage/values_mission/1zX3Y5PdqmGyoxoTRYYFKFQtVAurPmzqdQtpAJZG.png" alt="Quality Counseling &amp; Education"
+                                        class="w-6 h-6 object-contain">
+                                
+                            </div>
+
+                            
+                                                            <h3 class="text-xl font-bold mb-2 text-primary">
+                                    Quality Counseling &amp; Education
+                                </h3>
+                            
+                            
+                                                            <p class="text-slate-600 ">
+                                    Clear guidance for your study abroad journey.
+                                </p>
+                            
+
+                        </div>
+
+                    </div>
+                                    
+                    <div class="animate-on-scroll" data-animate="popIn">
+
+                        <div class="bg-white rounded-2xl p-6 shadow hover:-translate-y-1 transition">
+
+                            
+                            <div
+                                class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 overflow-hidden">
+
+                                                                    <img src="https://gurukuleducation.com.np/storage/values_mission/M1XGOiedN50lnhTgSdw9F2VuFrk6SFRAew3XKifW.png" alt="Experienced &amp; Professional Team"
+                                        class="w-6 h-6 object-contain">
+                                
+                            </div>
+
+                            
+                                                            <h3 class="text-xl font-bold mb-2 text-primary">
+                                    Experienced &amp; Professional Team
+                                </h3>
+                            
+                            
+                                                            <p class="text-slate-600 ">
+                                    Skilled experts guiding you with care.
+                                </p>
+                            
+
+                        </div>
+
+                    </div>
+                                    
+                    <div class="animate-on-scroll" data-animate="popIn">
+
+                        <div class="bg-white rounded-2xl p-6 shadow hover:-translate-y-1 transition">
+
+                            
+                            <div
+                                class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 overflow-hidden">
+
+                                                                    <img src="https://gurukuleducation.com.np/storage/values_mission/SqNnhj3TGz6vveK3q75jiQ9guJlXX9xb0pn6L09t.png" alt="Transparent Administrative System"
+                                        class="w-6 h-6 object-contain">
+                                
+                            </div>
+
+                            
+                                                            <h3 class="text-xl font-bold mb-2 text-primary">
+                                    Transparent Administrative System
+                                </h3>
+                            
+                            
+                                                            <p class="text-slate-600 ">
+                                    Honest and clear process at every step.
+                                </p>
+                            
+
+                        </div>
+
+                    </div>
+                                    
+                    <div class="animate-on-scroll" data-animate="popIn">
+
+                        <div class="bg-white rounded-2xl p-6 shadow hover:-translate-y-1 transition">
+
+                            
+                            <div
+                                class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 overflow-hidden">
+
+                                                                    <img src="https://gurukuleducation.com.np/storage/values_mission/hVog93sQgLbDZXgr1ii44xvkrDBhJ6Un1axyAmVz.png" alt="Student Success First"
+                                        class="w-6 h-6 object-contain">
+                                
+                            </div>
+
+                            
+                                                            <h3 class="text-xl font-bold mb-2 text-primary">
+                                    Student Success First
+                                </h3>
+                            
+                            
+                                                            <p class="text-slate-600 ">
+                                    Your success is always our priority.
+                                </p>
+                            
+
+                        </div>
+
+                    </div>
+                                    
+                    <div class="animate-on-scroll" data-animate="popIn">
+
+                        <div class="bg-white rounded-2xl p-6 shadow hover:-translate-y-1 transition">
+
+                            
+                            <div
+                                class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 overflow-hidden">
+
+                                                                    <img src="https://gurukuleducation.com.np/storage/values_mission/rPudMWSN3ULiz7GAGizJV9000VIe1u9tw2pVcV5E.png" alt="Personalized Student Guidance"
+                                        class="w-6 h-6 object-contain">
+                                
+                            </div>
+
+                            
+                                                            <h3 class="text-xl font-bold mb-2 text-primary">
+                                    Personalized Student Guidance
+                                </h3>
+                            
+                            
+                                                            <p class="text-slate-600 ">
+                                    Support tailored to your goals.
+                                </p>
+                            
+
+                        </div>
+
+                    </div>
+                                    
+                    <div class="animate-on-scroll" data-animate="popIn">
+
+                        <div class="bg-white rounded-2xl p-6 shadow hover:-translate-y-1 transition">
+
+                            
+                            <div
+                                class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 overflow-hidden">
+
+                                                                    <img src="https://gurukuleducation.com.np/storage/values_mission/FqRBje4zlglweilCn52la8SA6w7LsZRYFhaI1GVh.png" alt="Supportive Learning Environment"
+                                        class="w-6 h-6 object-contain">
+                                
+                            </div>
+
+                            
+                                                            <h3 class="text-xl font-bold mb-2 text-primary">
+                                    Supportive Learning Environment
+                                </h3>
+                            
+                            
+                                                            <p class="text-slate-600 ">
+                                    A friendly space to help you grow.
+                                </p>
+                            
+
+                        </div>
+
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-10">
+        <div class="container mx-auto px-6">
+            <div class="rounded-3xl bg-gradient-to-r from-primary to-secondary text-white p-8 md:p-12 flex flex-col lg:flex-row items-center justify-between gap-6 animate-on-scroll"
+                data-animate="slideInUp">
+                <div>
+                    <h3 class="text-3xl md:text-4xl font-extrabold mb-2">Up to 100% Scholarship</h3>
+                    <p class="text-white/90 text-lg">Take the next step toward your academic future with scholarship-based
+                        admissions support.</p>
+                </div>
+                <a href="https://gurukuleducation.com.np/admissions"
+                    class="bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-slate-100 animate-on-scroll"
+                    data-animate="popIn">
+                    Apply Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-secondary mb-4">
+                    Services We Provide
+                </h2>
+                <p class="text-slate-600 text-lg">
+                    Comprehensive support designed to guide students from planning to departure.
+                </p>
+            </div>
+
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-secondary hover:-translate-y-1 transition animate-on-scroll"
+                        data-animate="popIn">
+
+                        
+                        <div
+                            class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 overflow-hidden">
+
+                                                            <img src="https://gurukuleducation.com.np/storage/services/ZwbWMEiYNRe04uQmHjmqvpbT9e792YaW59VgpOEH.png" alt="Career Counselling"
+                                    class="w-6 h-6 object-contain">
+                            
+                        </div>
+
+                        
+                        <h3 class="text-xl font-bold mb-3 text-primary">
+                            Career Counselling
+                        </h3>
+
+                        
+                        <p class="text-slate-600">
+                            We guide students in choosing the right study path with expert advice.
+                        </p>
+
+                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-secondary hover:-translate-y-1 transition animate-on-scroll"
+                        data-animate="popIn">
+
+                        
+                        <div
+                            class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 overflow-hidden">
+
+                                                            <img src="https://gurukuleducation.com.np/storage/services/2SX6tzH9n6OXxWEAgPjWMEugTBdBX24iEiLrGNUj.png" alt="Test Preparation"
+                                    class="w-6 h-6 object-contain">
+                            
+                        </div>
+
+                        
+                        <h3 class="text-xl font-bold mb-3 text-primary">
+                            Test Preparation
+                        </h3>
+
+                        
+                        <p class="text-slate-600">
+                            We provide training for IELTS, PTE, JLPT, TOPIK, and other required exams.
+                        </p>
+
+                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-secondary hover:-translate-y-1 transition animate-on-scroll"
+                        data-animate="popIn">
+
+                        
+                        <div
+                            class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 overflow-hidden">
+
+                                                            <img src="https://gurukuleducation.com.np/storage/services/LeThuChQzjZeNwCCK5bhXRFTL0c1ibblp4EtGj1J.png" alt="Interview Assistance"
+                                    class="w-6 h-6 object-contain">
+                            
+                        </div>
+
+                        
+                        <h3 class="text-xl font-bold mb-3 text-primary">
+                            Interview Assistance
+                        </h3>
+
+                        
+                        <p class="text-slate-600">
+                            We prepare you confidently for interviews with proper practice and guidance.
+                        </p>
+
+                    </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class="section-padding">
+        <div class="container mx-auto px-6">
+            <div class="flex items-end justify-between mb-8 animate-on-scroll" data-animate="fadeInUp">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-secondary mb-3">Featured Courses</h2>
+                    <p class="text-slate-600 text-lg">Popular language and preparation courses for academic and career
+                        advancement.</p>
+                </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                    <div class="bg-white p-6 rounded-2xl card-shadow animate-on-scroll" data-animate="popIn">
+                        <h3 class="text-xl font-bold mb-3">Korean Language( EPS &amp; Student Visa)</h3>
+                        <p class="text-slate-600 mb-4">Structured learning with practical guidance and professional support.
+                        </p>
+                        <a href="https://gurukuleducation.com.np/courses/3"
+                            class="text-secondary font-semibold hover:underline animate-on-scroll"
+                            data-animate="fadeInUp">View Detail</a>
+                    </div>
+                                    <div class="bg-white p-6 rounded-2xl card-shadow animate-on-scroll" data-animate="popIn">
+                        <h3 class="text-xl font-bold mb-3">Japanese Language</h3>
+                        <p class="text-slate-600 mb-4">Structured learning with practical guidance and professional support.
+                        </p>
+                        <a href="https://gurukuleducation.com.np/courses/4"
+                            class="text-secondary font-semibold hover:underline animate-on-scroll"
+                            data-animate="fadeInUp">View Detail</a>
+                    </div>
+                                    <div class="bg-white p-6 rounded-2xl card-shadow animate-on-scroll" data-animate="popIn">
+                        <h3 class="text-xl font-bold mb-3">IELTS &amp; PTE Preparation</h3>
+                        <p class="text-slate-600 mb-4">Structured learning with practical guidance and professional support.
+                        </p>
+                        <a href="https://gurukuleducation.com.np/courses/5"
+                            class="text-secondary font-semibold hover:underline animate-on-scroll"
+                            data-animate="fadeInUp">View Detail</a>
+                    </div>
+                                    <div class="bg-white p-6 rounded-2xl card-shadow animate-on-scroll" data-animate="popIn">
+                        <h3 class="text-xl font-bold mb-3">Tuition Class</h3>
+                        <p class="text-slate-600 mb-4">Structured learning with practical guidance and professional support.
+                        </p>
+                        <a href="https://gurukuleducation.com.np/courses/6"
+                            class="text-secondary font-semibold hover:underline animate-on-scroll"
+                            data-animate="fadeInUp">View Detail</a>
+                    </div>
+                                    <div class="bg-white p-6 rounded-2xl card-shadow animate-on-scroll" data-animate="popIn">
+                        <h3 class="text-xl font-bold mb-3">Professional Accounting Training</h3>
+                        <p class="text-slate-600 mb-4">Structured learning with practical guidance and professional support.
+                        </p>
+                        <a href="https://gurukuleducation.com.np/courses/7"
+                            class="text-secondary font-semibold hover:underline animate-on-scroll"
+                            data-animate="fadeInUp">View Detail</a>
+                    </div>
+                                    <div class="bg-white p-6 rounded-2xl card-shadow animate-on-scroll" data-animate="popIn">
+                        <h3 class="text-xl font-bold mb-3">Entrance Preparation</h3>
+                        <p class="text-slate-600 mb-4">Structured learning with practical guidance and professional support.
+                        </p>
+                        <a href="https://gurukuleducation.com.np/courses/8"
+                            class="text-secondary font-semibold hover:underline animate-on-scroll"
+                            data-animate="fadeInUp">View Detail</a>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    
+    <section class="py-10 bg-secondary text-white animate-on-scroll" data-animate="popIn">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8 text-center">
+                            <div>
+                    
+                                            
+                        <div class="text-4xl font-extrabold counter" data-target="1000"
+                            data-suffix="+">
+                            0
+                        </div>
+                    
+                                            <div class="text-slate-200 mt-2">Happy Students</div>
+                    
+                </div>
+                            <div>
+                    
+                                            
+                        <div class="text-4xl font-extrabold counter" data-target="10"
+                            data-suffix="+">
+                            0
+                        </div>
+                    
+                                            <div class="text-slate-200 mt-2">Experienced Team</div>
+                    
+                </div>
+                            <div>
+                    
+                                            
+                        <div class="text-4xl font-extrabold counter" data-target="25"
+                            data-suffix="+">
+                            0
+                        </div>
+                    
+                                            <div class="text-slate-200 mt-2">Courses</div>
+                    
+                </div>
+                            <div>
+                    
+                                            
+                        <div class="text-4xl font-extrabold">
+                            Best Wishes
+                        </div>
+                    
+                                            <div class="text-slate-200 mt-2">From our side</div>
+                    
+                </div>
+                    </div>
+    </section>
+    
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-12 animate-on-scroll" data-animate="fadeInUp">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-secondary mb-4">What Students Say</h2>
+                <p class="text-slate-600 text-lg">Every student is a winner when guided with care, clarity, and commitment.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200  animate-on-scroll"
+                        data-animate="popIn">
+                        <div class="flex items-center justify-center">
+                            <img src="https://gurukuleducation.com.np/storage/testimonials/UouGOceaQ6RInOkEdGdiyJ3N9dNwQGakpH8c9L71.png" alt=""
+                                class="h-[100px] w-[100px] rounded-full object-cover object-center">
+                        </div>
+                        <div class="text-center space-y-2 pt-5">
+                            <p class="text-slate-700 italic">“Gurukul Education has been a great support in my learning journey. The Japanese language classes are well-structured and easy to understand. The teachers are very helpful and always encourage us to improve. I feel more confident now in my studies.”</p>
+                            <p class="font-bold text-secondary">Aarav Shrestha – EPS Visa</p>
+                        </div>
+                    </div>
+                                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200  animate-on-scroll"
+                        data-animate="popIn">
+                        <div class="flex items-center justify-center">
+                            <img src="https://gurukuleducation.com.np/storage/testimonials/ute3d22B6OVTQYRUNLXvEgPIay3erNS8WLn3kXwv.png" alt=""
+                                class="h-[100px] w-[100px] rounded-full object-cover object-center">
+                        </div>
+                        <div class="text-center space-y-2 pt-5">
+                            <p class="text-slate-700 italic">“I joined Gurukul Education for IELTS preparation, and it was the best decision. The teaching methods are practical, and the regular practice sessions helped me improve my speaking and writing skills significantly. The environment is very supportive and motivating.”</p>
+                            <p class="font-bold text-secondary">Nisha Thapa</p>
+                        </div>
+                    </div>
+                                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200  animate-on-scroll"
+                        data-animate="popIn">
+                        <div class="flex items-center justify-center">
+                            <img src="https://gurukuleducation.com.np/storage/testimonials/lSQmWuHGium4Wz0NIj4MfTAM5rEVe7DujGYw5Ydg.png" alt=""
+                                class="h-[100px] w-[100px] rounded-full object-cover object-center">
+                        </div>
+                        <div class="text-center space-y-2 pt-5">
+                            <p class="text-slate-700 italic">“The computer and IT training at Gurukul Education is very effective. I learned both theory and practical skills that I can use in real situations. The instructors are experienced and explain everything clearly, making learning easy and enjoyable.”</p>
+                            <p class="font-bold text-secondary">Manisha Shrestha – General Experience</p>
+                        </div>
+                    </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-10">
+            <div class="animate-on-scroll" data-animate="slideInLeft">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-secondary mb-4">Get In Touch</h2>
+                <p class="text-slate-600 text-lg mb-6">Tell us about your interest and we’ll help you take the next step.
+                </p>
+                <div id="notification" class="hidden mb-4 px-4 py-3 rounded-lg text-white font-medium"></div>
+
+<form id="contact-form" class="grid gap-4">
+    <input type="hidden" name="branch_id" value="1">
+
+    
+    <input type="text" name="name" placeholder="Name" required
+        class="rounded-xl border px-4 py-3 focus:border-secondary outline-none">
+
+    
+    <input type="email" name="email" placeholder="Email" required
+        class="rounded-xl border px-4 py-3 focus:border-secondary outline-none">
+
+    
+    <input type="text" name="phone" placeholder="Phone" required
+        class="rounded-xl border px-4 py-3 focus:border-secondary outline-none">
+
+    
+    <select name="course_detail_id" class="rounded-xl border px-4 py-3 focus:border-secondary outline-none">
+
+        <option value="">Interested Course</option>
+
+                    <option value="3">
+                Korean Language( EPS &amp; Student Visa)
+            </option>
+                    <option value="4">
+                Japanese Language
+            </option>
+                    <option value="5">
+                IELTS &amp; PTE Preparation
+            </option>
+                    <option value="6">
+                Tuition Class
+            </option>
+                    <option value="7">
+                Professional Accounting Training
+            </option>
+                    <option value="8">
+                Entrance Preparation
+            </option>
+        
+    </select>
+
+    
+    <textarea name="message" rows="5" placeholder="Message"
+        class="rounded-xl border px-4 py-3 focus:border-secondary outline-none"></textarea>
+
+    
+    <button type="submit" class="bg-primary hover:bg-secondary text-white py-3 rounded-xl font-semibold transition">
+        Send Message
+    </button>
+
+</form>
+            </div>
+            <div class="rounded-xl bg-gradient-to-br from-secondary to-slate-800 text-white p-8 md:p-10 flex flex-col justify-center animate-on-scroll"
+                data-animate="slideInRight">
+                <h3 class="text-3xl md:text-4xl font-extrabold mb-4">Ready to Study Abroad? Let’s Make It Happen.</h3>
+                <p class="text-slate-200 text-lg mb-6">Connect with Gurukul Education for reliable counselling, course
+                    guidance, and admissions support.</p>
+                <button @click="show('Get Free Counselling')"
+                    class="bg-primary hover:bg-primary px-6 py-3 rounded-full font-semibold w-fit animate-on-scroll"
+                    data-animate="popIn">
+                    Book Free Counselling
+                </button>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="bg-secondary text-white mt-16">
+    <div class="container mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Brand -->
+            <div class="space-y-4 flex flex-col justify-between">
+                <h3 class="text-2xl font-extrabold">Gurukul Education</h3>
+                <p class="text-slate-200 leading-relaxed text-sm">Your trusted partner for language courses, admissions support, visa guidance, counselling, and study abroad preparation.</p>
+                <div class="flex items-center gap-3 mt-3">
+                    <a href="/" class="text-white hover:opacity-90 font-semibold text-sm">Home</a>
+                    <a href="/about" class="text-white/80 hover:opacity-90 text-sm">About</a>
+                    <a href="/contact" class="text-white/80 hover:opacity-90 text-sm">Contact</a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="font-bold text-lg mb-4">Contact Us</h4>
+                <ul class="space-y-3 text-slate-200 text-sm">
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white/90" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8.5v7A2.5 2.5 0 0 0 5.5 18h13a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 18.5 6h-13A2.5 2.5 0 0 0 3 8.5z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 8.5L12 13 3 8.5" />
+                        </svg>
+                        <a href="mailto:info@gurukuleducation.com.np" class="hover:underline">info@gurukuleducation.com.np</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white/90" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 16.92V20a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3 5.18 2 2 0 0 1 5 3h3.09a1 1 0 0 1 1 .75c.12.7.35 1.36.67 1.97a1 1 0 0 1-.24 1.08L8.91 8.91a14 14 0 0 0 6.18 6.18l1.11-1.11a1 1 0 0 1 1.08-.24c.61.32 1.27.55 1.97.67a1 1 0 0 1 .75 1V16.92z" />
+                        </svg>
+                        <div class="flex flex-col text-sm">
+                            <a href="tel:+9779857043937" class="hover:underline">+977-9857043937</a>
+                            <a href="tel:+9779821901157" class="hover:underline text-white/80">+977-9821901157</a>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white/90" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7v5l3 2" />
+                        </svg>
+                        <span class="text-sm">Sun–Fri 6:00 AM–6:00 PM</span>
+                    </li>
+                    <li>
+                        <a href="https://learning.gurukuleducation.com.np" target="_blank" class="inline-block mt-2 bg-white text-secondary px-4 py-2 rounded-full text-sm font-semibold">Learning Centre</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Destinations -->
+            <div>
+                <h4 class="font-bold text-lg mb-4">Study Destinations</h4>
+                <ul class="grid grid-cols-2 gap-2 text-slate-200 text-sm">
+                    <li>Japan</li>
+                    <li>Korea</li>
+                    <li>Canada</li>
+                    <li>Australia</li>
+                    <li>UK</li>
+                    <li>Many More</li>
+                </ul>
+            </div>
+
+            <div class="flex items-start md:items-center md:justify-end">
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+                    <div class="flex items-center gap-4 text-white">
+                        <a href="#" class="hover:opacity-90" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.2v-2.9h2.2V9.1c0-2.2 1.3-3.4 3.3-3.4.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.3v1.6h2.3l-.4 2.9h-1.9v7A10 10 0 0 0 22 12z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="hover:opacity-90" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zM18.5 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="hover:opacity-90" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7 0h4.8v2.2h.1c.7-1.2 2.5-2.5 5.1-2.5 5.5 0 6.6 3.6 6.6 8.3V24h-5v-7.7c0-1.8 0-4.2-2.6-4.2-2.6 0-3 2-3 4.1V24H7V8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-white/20 mt-8 pt-6 text-sm text-slate-300 flex flex-col md:flex-row items-center justify-between gap-3">
+            <p class="text-sm">© 2076–2026 Gurukul Education. All Rights Reserved.</p>
+            <p class="text-sm text-white/80">Designed for accessibility, performance, and global education guidance.</p>
+        </div>
+    </div>
+</footer>
+    <div
+    x-show="open"
+    x-transition
+    class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4"
+    style="display: none;"
+    @keydown.escape.window="close()"
+>
+    <div class="bg-white rounded-2xl w-full max-w-2xl card-shadow p-6 md:p-8 relative">
+        <button @click="close()" class="absolute top-4 right-4 text-slate-500 hover:text-slate-800 text-xl" aria-label="Close modal">✕</button>
+
+        <h2 class="text-2xl md:text-3xl font-bold text-[#0A3D62] mb-2" x-text="title"></h2>
+        <p class="text-slate-600 mb-6">Fill out the form and our team will get in touch with you.</p>
+
+        <template x-if="success">
+            <div class="mb-4 rounded-xl bg-green-50 border border-green-200 text-green-700 px-4 py-3">
+                Thank you! Your inquiry has been submitted successfully.
+            </div>
+        </template>
+
+        <form @submit.prevent="submit()" class="grid md:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-sm font-semibold mb-2">Name</label>
+                <input x-model="form.name" type="text" required class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0A3D62]">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold mb-2">Phone</label>
+                <input x-model="form.phone" type="text" required class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0A3D62]">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold mb-2">Email</label>
+                <input x-model="form.email" type="email" required class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0A3D62]">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold mb-2">Preferred Course / Destination</label>
+                <input x-model="form.preferred" type="text" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0A3D62]">
+            </div>
+            <div class="md:col-span-2">
+                <label class="block text-sm font-semibold mb-2">Message</label>
+                <textarea x-model="form.message" rows="4" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#0A3D62]"></textarea>
+            </div>
+            <div class="md:col-span-2">
+                <button type="submit" :disabled="loading"
+                    class="w-full bg-green-600 hover:bg-green-700 disabled:opacity-70 text-white py-3.5 rounded-xl font-semibold transition">
+                    <span x-show="!loading">Submit Inquiry</span>
+                    <span x-show="loading">Submitting...</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>    <script></script>
+    <script>
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+
+        function openMenu() {
+            mobileMenu.classList.remove('translate-x-full');
+            overlay.classList.remove('opacity-0', 'pointer-events-none');
+
+            // Lock scroll
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.add('translate-x-full');
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+
+            // Unlock scroll
+            document.body.style.overflow = '';
+        }
+
+        // Close when clicking overlay
+        overlay.addEventListener('click', closeMenu);
+
+        // Close on ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === "Escape") closeMenu();
+        });
+    </script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const anim = el.dataset.animate;
+                        if (anim) el.classList.add('animate-' + anim);
+                        el.style.opacity = 1;
+                        observer.unobserve(el);
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+            elements.forEach(el => {
+                el.style.opacity = 0;
+                observer.observe(el);
+            });
+        });
+    </script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const counters = document.querySelectorAll('.counter');
+
+            const animateCounter = (counter) => {
+                const target = +counter.getAttribute('data-target');
+                const suffix = counter.getAttribute('data-suffix') || '';
+                let count = 0;
+
+                const speed = 200; // lower = faster
+                const increment = target / speed;
+
+                const updateCount = () => {
+                    if (count < target) {
+                        count += increment;
+                        counter.innerText = Math.ceil(count) + suffix;
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counter.innerText = target + suffix;
+                    }
+                };
+
+                updateCount();
+            };
+
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        obs.unobserve(entry.target); // run once
+                    }
+                });
+            }, {
+                threshold: 0.5
+            });
+
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+
+        });
+    </script>
+    <script>
+        function switchBranch(slug, btn) {
+
+            fetch(`/branch/${slug}`)
+                .then(res => res.json())
+                .then(data => {
+
+                    document.querySelector('[name="branch_id"]').value = data.id;
+
+                    document.getElementById('branchBox').innerHTML = `
+                ${data.map_embed ?? ''}
+
+                <div class="mt-5 text-slate-600">
+                    <p>Email: ${data.email}</p>
+                    <p>Phone: ${data.phone}</p>
+                    <p>Address: ${data.address}</p>
+                </div>
+            `;
+
+                    document.querySelectorAll('.branch-btn').forEach(b => {
+                        b.classList.remove('bg-secondary', 'text-white');
+                        b.classList.add('bg-slate-200');
+                    });
+
+                    btn.classList.add('bg-secondary', 'text-white');
+                });
+        }
+
+        // FORM SUBMIT
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            fetch('/contact/submit', {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': 'HG3PddrDAJ50uq66z3oeCFRh6Sd5adSiNvTLGfc5'
+                    },
+                    body: new FormData(this)
+                })
+                .then(res => res.json())
+                .then(res => {
+                    alert(res.message);
+                    this.reset();
+                });
+        });
+    </script>
+        <script>
+        let activeBranch = 1;
+
+        /* =========================
+        NOTIFICATION
+        ========================= */
+        function showNotification(msg, type = 'success') {
+            const box = document.getElementById('notification');
+            box.classList.remove('hidden');
+
+            box.className =
+                "mb-4 px-4 py-3 rounded-lg text-white font-medium " +
+                (type === 'success' ? 'bg-green-600' : 'bg-red-600');
+
+            box.innerText = msg;
+
+            setTimeout(() => box.classList.add('hidden'), 3000);
+        }
+
+        /* =========================
+        ACTIVE BUTTON
+        ========================= */
+        function setActiveButton(activeBtn) {
+
+            document.querySelectorAll('.branch-btn').forEach(btn => {
+                btn.classList.remove('bg-secondary', 'text-white');
+                btn.classList.add('bg-slate-200', 'text-slate-800');
+            });
+
+            activeBtn.classList.remove('bg-slate-200', 'text-slate-800');
+            activeBtn.classList.add('bg-secondary', 'text-white');
+        }
+
+        /* =========================
+        SWITCH BRANCH
+        ========================= */
+        function switchBranch(btn) {
+
+            const slug = btn.dataset.slug;
+
+            fetch(`/branch/${slug}`)
+                .then(res => res.json())
+                .then(data => {
+
+                    activeBranch = data.id;
+                    document.querySelector('[name="branch_id"]').value = data.id;
+
+                    const mapBox = document.getElementById('branchMap');
+
+                    /* =========================
+                    LEAFLET MAP
+                    ========================= */
+                    if (data.map_type === 'leaflet') {
+
+                        if (!data.lat || !data.lng) {
+                            mapBox.innerHTML = `
+                        <div class="flex items-center justify-center h-full text-red-500 font-semibold">
+                            Missing Leaflet coordinates
+                        </div>
+                    `;
+                            return;
+                        }
+
+                        mapBox.innerHTML = `<div id="leaflet-map" class="w-full h-[380px]"></div>`;
+                        initLeaflet(data.lat, data.lng);
+                    }
+
+                    /* =========================
+                    GOOGLE MAP
+                    ========================= */
+                    else {
+
+                        if (!data.map_embed || !data.map_embed.includes("google.com/maps/embed")) {
+                            mapBox.innerHTML = `
+                        <div class="flex items-center justify-center h-full text-red-500 font-semibold">
+                            Invalid Google Map Embed URL
+                        </div>
+                    `;
+                            return;
+                        }
+
+                        mapBox.innerHTML = `
+                    <iframe width="100%" height="380"
+                        style="border:0"
+                        loading="lazy"
+                        allowfullscreen
+                        src="${data.map_embed.trim()}">
+                    </iframe>
+                `;
+                    }
+
+                    document.getElementById('branchInfo').innerHTML = `
+                <p><strong>Email:</strong> ${data.email ?? ''}</p>
+                <p><strong>Phone:</strong> ${data.phone ?? ''}</p>
+                <p><strong>Address:</strong> ${data.address ?? ''}</p>
+            `;
+
+                    setActiveButton(btn);
+                });
+        }
+
+        /* =========================
+        LEAFLET INIT
+        ========================= */
+        function initLeaflet(lat, lng) {
+
+            setTimeout(() => {
+
+                const map = L.map('leaflet-map').setView([lat, lng], 14);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap'
+                }).addTo(map);
+
+                L.marker([lat, lng]).addTo(map);
+
+            }, 200);
+        }
+
+        /* =========================
+        FORM SUBMIT
+        ========================= */
+        const form = document.getElementById('contact-form');
+
+        if (form) {
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                if (form.dataset.loading === "1") return;
+                form.dataset.loading = "1";
+
+                fetch("https://gurukuleducation.com.np/contact/submit", {
+                        method: "POST",
+                        headers: {
+                            "X-CSRF-TOKEN": "HG3PddrDAJ50uq66z3oeCFRh6Sd5adSiNvTLGfc5"
+                        },
+                        body: new FormData(form)
+                    })
+                    .then(res => res.json())
+                    .then(res => {
+                        showNotification(res.message, "success");
+                        form.reset();
+                        document.querySelector('[name="branch_id"]').value = activeBranch;
+                    })
+                    .catch(() => {
+                        showNotification("Something went wrong!", "error");
+                    })
+                    .finally(() => {
+                        form.dataset.loading = "0";
+                    });
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>

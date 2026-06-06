@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Aims Global Educational Consultancy    </title>
+    <meta name="keywords" content="Aims Education">
+    <meta name="description" content="AIms Education. helps to bring the best possible outcome for each individual who chooses to obtain our services. Our vision is to contribute to society at large by establishing the best standards possible in all our endeavors.">
+    
+    <link href="http://www.aimsglobal.edu.np/images/20291767795032.jpg" rel="icon">
+    <link href="http://www.aimsglobal.edu.np/css/style.css" rel="stylesheet" media="screen">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="http://www.aimsglobal.edu.np/css/animate.css" media="screen">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
+   
+</head>
+
+<body>
+
+    <div class="responsive-menu visible-sm visible-xs">
+    
+    <!-- TOP BAR -->
+    <div class="mobile-topbar">
+
+        <!-- LOGO -->
+        <div class="topbar-logo">
+            <img src="https://aimsglobal.edu.np/include/mobilelogo.png" alt="Logo">
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="topbar-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <!-- MENU BAR -->
+        <div class="topbar-menu">
+            <a href="#" class="toggle-menu">
+                <i class="fa fa-bars" style="font-size: 28px;
+    margin-top: 15px;margin-right: 15px;"></i>
+            </a>
+        </div>
+
+    </div>
+    <div class="menu-open" style="display:none;">
+        <nav>
+            <ul>
+                <li><a href="http://www.aimsglobal.edu.np">Home</a></li><li><a href="http://www.aimsglobal.edu.np/Abou_Us">About</a></li><li class="has-submenu"><a href="http://www.aimsglobal.edu.np/Study_Abroad">Study Abroad</a><span class="submenu-toggle"><i class="fa fa-chevron-down" style="padding-left:8px"></i></span><ul style="display: none;"><li><a href="http://www.aimsglobal.edu.np/Study_in_USA">Study in USA</a></li><li><a href="http://www.aimsglobal.edu.np/Study_in_UK">Study in UK</a></li><li><a href="http://www.aimsglobal.edu.np/Study_in_CANADA">Study in CANADA</a></li><li><a href="http://www.aimsglobal.edu.np/Study_in_AUSTRALIA">Study in AUSTRALIA</a></li><li><a href="http://www.aimsglobal.edu.np/Study_in_JAPAN">Study in JAPAN</a></li><li><a href="http://www.aimsglobal.edu.np/Study_in_EUROPE">Study in EUROPE</a></li></ul></li><li class="has-submenu"><a href="http://www.aimsglobal.edu.np/">Test Preparations</a><span class="submenu-toggle"><i class="fa fa-chevron-down" style="padding-left:8px"></i></span><ul style="display: none;"><li><a href="http://www.aimsglobal.edu.np/IELTS">IELTS</a></li><li><a href="http://www.aimsglobal.edu.np/TOEFL">TOEFL</a></li><li><a href="http://www.aimsglobal.edu.np/PTE">PTE</a></li><li><a href="http://www.aimsglobal.edu.np/SAT">SAT</a></li><li><a href="http://www.aimsglobal.edu.np/GRE">GRE</a></li><li><a href="http://www.aimsglobal.edu.np/JLPT">JLPT</a></li></ul></li><li><a href="http://www.aimsglobal.edu.np/NewsNEvents">News/Events</a></li><li><a href="http://www.aimsglobal.edu.np/photogallery.php">Photos</a></li><li><a href="http://www.aimsglobal.edu.np/contact">Contact</a></li>            </ul>
+        </nav>
+    </div> <!-- /.menu-open -->
+</div>
+
+<!-- Styles for dropdown arrow -->
+<style>
+.responsive-menu {
+    background-color: #003366;
+}
+
+/* GRID LAYOUT */
+.mobile-topbar {
+    display: grid;
+    /* 
+       Change: Use 'auto' for left/right and '1fr' for middle.
+       This ensures the menu button (right) and logo (left) get exactly the width they need,
+       preventing them from being squashed or pushed off screen.
+    */
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px; /* Adds consistent spacing between columns */
+}
+
+/* LEFT */
+.topbar-logo img {
+    height: 40px;
+    display: block;
+    margin-left: 10px;
+}
+
+/* CENTER */
+.topbar-social {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    /* Change: Removed 'margin-left: 35px' which was pushing content into the menu area */
+    margin-left: 0;
+}
+
+.topbar-social i {
+    font-size: 15px;
+    color: #fff;
+    padding-top: 6px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border: 1px solid #fff;
+    margin: 2px;
+}
+
+/* RIGHT */
+.topbar-menu {
+    /* Change: Use justify-self to push the menu icon to the far right */
+    justify-self: end;
+    text-align: right;
+}
+
+.topbar-menu i {
+    font-size: 24px;
+    color: #fff;
+    /* Change: Removed float: right (bad for grid layouts) and manual padding/margins */
+    float: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+</style>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+ $(document).ready(function(){
+    $('.toggle-menu').off('click');
+    $('.toggle-menu').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('.menu-open').stop(true, true).slideToggle(300);
+    });
+    $('.responsive-menu').on('click', '.has-submenu > a, .has-submenu > .submenu-toggle', function(e){
+        e.preventDefault(); 
+        e.stopImmediatePropagation(); 
+        var $submenu = $(this).parent().find('ul').first();
+        $submenu.slideToggle(300);
+        $('.responsive-menu .has-submenu ul').not($submenu).slideUp(300);
+    });
+});
+</script> <!-- /.responsive-menu -->
+	<div class="top-header">
+		<header class="site-header">
+				<div class="container">         
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12 header-info-left">
+							<span class="topnleft1">
+							<ul>
+								<li><a href="https://wa.me/9779705459770"><i class="fa fa-phone topfas"></i>01-4544906</a></li>
+							</ul>
+							</span>
+							<span class="topnleft2">
+							<ul>
+								<li><a href="mailto:aimsglobal.edu.np@gmail.com"><i class="fa fa-envelope-o topfas"></i> info@aimsglobal.edu.np</a></li>
+							</ul>
+							</span>
+						</div> <!-- /.col-md-6 -->
+                       	<div class="col-md-6 col-sm-6 col-xs-12 header-info-right visible-md visible-lg">
+    					        <!-- Social Media Links --->
+                		    <style>
+                                .fa:hover {
+                                    opacity: 0.7;
+                                }
+                                
+                                .myHed{
+                                width: 31px !important;
+                                font-size: 14px !important;
+                                text-align: center;
+                                text-decoration: none;
+                                border-radius: 50% !important;
+                                }
+                                </style>
+                                
+                                
+                                <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=100054388695973"><i class="fab fa-facebook-f myHed"></i></a>
+    <a href="#"><i class="fab fa-instagram myHed"></i></a>
+    <a href="#"><i class="fab fa-youtube myHed"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100054388695973"><i class="fab fa-twitter myHed"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100054388695973"><i class="fab fa-linkedin-in myHed"></i></a>
+</div>
+                                
+                                
+                                
+                                
+                                
+                                
+                            
+
+    					<!-- Social Media Links End --->
+    					
+						
+	</div> 
+    <script type="text/javascript">
+	    $(document).ready(function() {
+        $('.language').click(function(){
+		var lang = $(this).attr('id');
+		$.ajax({
+		type: 'POST',
+		url: 'http://www.aimsglobal.edu.np/setSession.php',
+		data: 'ses='+lang,
+		cache: false,
+		success: function(response){
+				if(response=='Success'){
+				window.location.reload();
+				}
+				else alert('bhayena');
+				}
+	        });
+		});
+    });
+	</script>
+                        <!-- /.col-md-6 -->
+					</div> <!-- /.row -->
+				</div> <!-- /.container -->
+			</div> <!-- /.top-header -->
+		<style>
+    .hover-effect {
+        transition: background 0.3s ease, color 0.3s ease;
+        border-radius: 50px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .hover-effect:hover {
+        background: linear-gradient(-45deg, #15499f 0%, #8830df 100%);
+        color: #fff !important;
+    }
+
+    .hover-effect a:hover {
+        color: #fff !important;
+    }
+
+    .hover-effect:hover i {
+        color: #fff;
+    }
+</style>
+
+<div class="container-fluid menu-wrapper visible-md visible-lg" id="main-menu">
+    <div class="container">
+        <div class="row main-menu">
+            <div class="col-sm-3 logo" style="padding-top:13px;">
+                <figure>
+                    <a href="http://www.aimsglobal.edu.np">
+                                                    <img src="http://www.aimsglobal.edu.np/images/36591767795032.jpg"
+                                 title="Aims Global Educational Consultancy"
+                                 alt="Aims Global Educational Consultancy">
+                                            </a>
+                </figure>
+            </div>
+
+            <div class="col-sm-9">
+                <nav>
+                    <ul class="sf-menu">
+                        <li class="has-child">
+        <a href="http://www.aimsglobal.edu.np">
+            <i class="fa fa-home"></i> Home
+            <span class="arrow"></span>
+        </a></li><li class="" style="">
+                                            <a href="http://www.aimsglobal.edu.np/Abou_Us">
+                                                About
+                                            </a></li><li class="" style="">
+                                            <a href="http://www.aimsglobal.edu.np/Study_Abroad">
+                                                Study Abroad
+                                            </a><ul class="child-menu"><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/Study_in_USA">
+                                                    Study in USA
+                                                </a>
+                                              </li><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/Study_in_UK">
+                                                    Study in UK
+                                                </a>
+                                              </li><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/Study_in_CANADA">
+                                                    Study in CANADA
+                                                </a>
+                                              </li><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/Study_in_AUSTRALIA">
+                                                    Study in AUSTRALIA
+                                                </a>
+                                              </li><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/Study_in_JAPAN">
+                                                    Study in JAPAN
+                                                </a>
+                                              </li><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/Study_in_EUROPE">
+                                                    Study in EUROPE
+                                                </a>
+                                              </li></ul></li><li class="" style="">
+                                            <a href="http://www.aimsglobal.edu.np/">
+                                                Test Preparations
+                                            </a><ul class="child-menu"><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/IELTS">
+                                                    IELTS
+                                                </a>
+                                              </li><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/TOEFL">
+                                                    TOEFL
+                                                </a>
+                                              </li><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/PTE">
+                                                    PTE
+                                                </a>
+                                              </li><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/SAT">
+                                                    SAT
+                                                </a>
+                                              </li><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/GRE">
+                                                    GRE
+                                                </a>
+                                              </li><li>
+                                                <a style="margin-left:10px" href="http://www.aimsglobal.edu.np/JLPT">
+                                                    JLPT
+                                                </a>
+                                              </li></ul></li><li class="" style="">
+                                            <a href="http://www.aimsglobal.edu.np/NewsNEvents">
+                                                News/Events
+                                            </a></li><li class="" style="">
+                                            <a href="http://www.aimsglobal.edu.np/photogallery.php">
+                                                Photos
+                                            </a></li><li class="hover-effect" style="border: 1px dotted #15499f; padding: 5px 10px; border-radius: 60px; margin-top: 32px;">
+                                            <a href="http://www.aimsglobal.edu.np/contact">
+                                                <i class="fa fa-paper-plane"></i> Contact
+                                            </a></li>                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- /.menu-wrapper -->
+		</header> <!-- /.site-header -->
+	
+<div class="top-content"></div> <!-- /.top-content -->
+<!--Slider Ends-->	
+<div class="container-fluid" style="margin-left: -30px;margin-right: -30px;">
+    <style>
+/***
+====================================================================
+    Google Fonts
+====================================================================
+ ***/
+@import url('https://fonts.googleapis.com/css?family=Antic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700');
+/*** 
+=============================================
+    Rev Slider Wrapper
+=============================================
+***/
+
+.rev_slider_wrapper .slide-content-box h4 {
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: 'Antic', sans-serif;
+}
+.rev_slider_wrapper .slide-content-box h1 {
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+.rev_slider_wrapper .slide-content-box p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'Antic', sans-serif;
+}
+.rev_slider_wrapper .slotholder {
+    position: relative;
+}
+.slotholder:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+.tp-bannertimer {
+    display: none;  
+}
+.rev_slider_wrapper .tparrows {
+    background: transparent;
+    border: 2px solid #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+}
+.rev_slider_wrapper .tparrows:before {
+    font-family: "FontAwesome";
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*** 
+=============================================
+    Mobile Responsiveness
+=============================================
+***/
+@media (max-width: 767px) {
+    .rev_slider_wrapper .slide-content-box {
+        text-align: center !important;
+        width: 90%; /* Ensure the width is appropriate */
+        margin: 0 auto !important; /* Centering */
+    }
+    .rev_slider_wrapper .slide-content-box h1 {
+        font-size: 20px !important; /* Set a smaller font size */
+        line-height: 24px !important; /* Adjust line height for better wrapping */
+        margin-bottom: 10px !important;
+        float: none !important; 
+        width: 50% !important; /* Wrap within 50% of the screen */
+        margin-left: auto; /* Centering */
+        margin-right: auto; /* Centering */
+        word-wrap: break-word; /* Ensures words can break to fit */
+        hyphens: auto; /* Enables hyphenation for better text management */
+    }
+    .rev_slider_wrapper .slide-content-box h4 {
+        font-size: 20px !important;
+        line-height: 26px !important;
+    }
+    .rev_slider_wrapper .slide-content-box p {
+        display: none; 
+    }
+}
+</style>
+<!--Start rev slider wrapper-->    
+    <section class="rev_slider_wrapper">
+        <div id="slider1" class="rev_slider" data-version="5.0">
+            <ul>
+                                <li data-transition="fade">
+                    <img src="http://www.aimsglobal.edu.np/pic/slide/31201719213883.jpg"  
+                         alt="" 
+                         width="100%" 
+                         data-bgposition="center center" 
+                         data-bgfit="cover" 
+                         data-bgrepeat="no-repeat" 
+                         data-bgparallax="3" 
+                         data-kenburns="on" 
+                         data-duration="12000" 
+                         data-ease="Linear.easeNone" 
+                         data-scalestart="100" 
+                         data-scaleend="130" 
+                         data-offsetstart="0 0" 
+                         data-offsetend="0 0"
+                    >
+                    <div class="tp-caption tp-resizeme" 
+                        data-x="['center','center','center','center']" 
+                        data-hoffset="['0','0','0','0']" 
+                        data-y="['bottom','bottom','bottom','bottom']" 
+                        data-voffset="['80','80','60','50']" 
+                        data-transform_idle="o:1;"         
+                        data-transform_in="y:[-100%];z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:1500;e:Power4.easeInOut;" 
+                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none"
+                        data-responsive_offset="on"
+                        data-start="700">
+                       
+                       <div class="slide-content-box" style="
+                            max-width: 90%; 
+                            margin: 0 auto; 
+                            padding: 15px 20px; 
+                            text-align: center;
+                            border-radius: 4px;
+                        ">
+                            <h1 style="
+                                position: relative; 
+                                color: white; /* Set font color to white */
+                                text-shadow: 
+                                    2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust shadow color and blur */
+                            ">
+                                Welcome to AIMS Global Education!                            </h1>
+                        </div>
+                    </div>
+                </li>
+                                <li data-transition="slideright">
+                    <img src="http://www.aimsglobal.edu.np/pic/slide/24791712436462.jpg"  
+                         alt="" 
+                         width="100%" 
+                         data-bgposition="center center" 
+                         data-bgfit="cover" 
+                         data-bgrepeat="no-repeat" 
+                         data-bgparallax="3" 
+                         data-kenburns="on" 
+                         data-duration="12000" 
+                         data-ease="Linear.easeNone" 
+                         data-scalestart="130" 
+                         data-scaleend="100" 
+                         data-offsetstart="0 0" 
+                         data-offsetend="0 0"
+                    >
+                    <div class="tp-caption tp-resizeme" 
+                        data-x="['center','center','center','center']" 
+                        data-hoffset="['0','0','0','0']" 
+                        data-y="['bottom','bottom','bottom','bottom']" 
+                        data-voffset="['80','80','60','50']" 
+                        data-transform_idle="o:1;"         
+                        data-transform_in="y:[-100%];z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:1500;e:Power4.easeInOut;" 
+                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none"
+                        data-responsive_offset="on"
+                        data-start="700">
+                       
+                       <div class="slide-content-box" style="
+                            max-width: 90%; 
+                            margin: 0 auto; 
+                            padding: 15px 20px; 
+                            text-align: center;
+                            border-radius: 4px;
+                        ">
+                            <h1 style="
+                                position: relative; 
+                                color: white; /* Set font color to white */
+                                text-shadow: 
+                                    2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust shadow color and blur */
+                            ">
+                                Welcome to AIMS Global Education!                            </h1>
+                        </div>
+                    </div>
+                </li>
+                                <li data-transition="slideleft">
+                    <img src="http://www.aimsglobal.edu.np/pic/slide/21901712436608.jpg"  
+                         alt="" 
+                         width="100%" 
+                         data-bgposition="center center" 
+                         data-bgfit="cover" 
+                         data-bgrepeat="no-repeat" 
+                         data-bgparallax="3" 
+                         data-kenburns="on" 
+                         data-duration="12000" 
+                         data-ease="Linear.easeNone" 
+                         data-scalestart="110" 
+                         data-scaleend="140" 
+                         data-offsetstart="-100 0" 
+                         data-offsetend="100 0"
+                    >
+                    <div class="tp-caption tp-resizeme" 
+                        data-x="['center','center','center','center']" 
+                        data-hoffset="['0','0','0','0']" 
+                        data-y="['bottom','bottom','bottom','bottom']" 
+                        data-voffset="['80','80','60','50']" 
+                        data-transform_idle="o:1;"         
+                        data-transform_in="y:[-100%];z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:1500;e:Power4.easeInOut;" 
+                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                        data-splitin="none" 
+                        data-splitout="none"
+                        data-responsive_offset="on"
+                        data-start="700">
+                       
+                       <div class="slide-content-box" style="
+                            max-width: 90%; 
+                            margin: 0 auto; 
+                            padding: 15px 20px; 
+                            text-align: center;
+                            border-radius: 4px;
+                        ">
+                            <h1 style="
+                                position: relative; 
+                                color: white; /* Set font color to white */
+                                text-shadow: 
+                                    2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust shadow color and blur */
+                            ">
+                                Welcome to AIMS Global Education!                            </h1>
+                        </div>
+                    </div>
+                </li>
+                            </ul>
+        </div>
+    </section>
+    <!--End rev slider wrapper-->
+ <!-- /.col-md-8 -->
+</div>		
+<!--Slider Ends-->
+<!--Welcome Section-->
+<div class="container">
+    <style>
+    /*** 
+
+====================================================================
+	Wellcome Section
+====================================================================
+
+***/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+}
+figure {
+    margin: 0;
+}
+.btn-style-one {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 29px;
+    font-weight: 700;
+    padding: 8px 24px;
+    background: #0b4696;
+    letter-spacing: 1px;
+    border: 1px solid #0b4696;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.wellcome-section .section-title{
+	margin-bottom: 40px;
+}
+.wellcome-section .item-holder{
+	margin-bottom: 40px;
+	border: 1px solid #f7f7f7;
+}
+.wellcome-section .image-box{
+	position: relative;
+}
+.wellcome-section .image-box img{
+	width: 100%;
+}
+.wellcome-section .overly-btn{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: rgba(255, 255, 255, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    transform: scale(0, 0);
+}
+.wellcome-section .item-holder:hover .overly-btn{
+	-webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+.wellcome-section .icon-box {
+	position: absolute;
+	right: 30px;
+	bottom: -30px;
+	background: #15499f;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 5px;
+}
+.wellcome-section .icon-box i:before{
+	color: #ffffff;
+	font-size: 36px;
+	margin-left: 0px;
+}
+.wellcome-section .item-holder .text{
+	padding: 20px 30px;
+	color:#0c2f6f;
+}
+
+.wellcome-section .item-holder h5{
+	font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #0c2f6f;
+    font-family: 'IBM Plex Sans Condensed';
+}
+
+@media (max-width: 400px) {
+   .wellcome-section .item-holder h5 {
+    text-align: -webkit-center;
+    background: #15499f;
+    color: #fff;
+    font-size: 24px;
+    margin: -10px -20px 10px -20px;
+    padding: 5px 0px;
+    border-radius: 5px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-family: 'IBM Plex Sans Condensed';
+    }
+    .wellcome-section .item-holder .text {
+    color: #fff;
+    }
+    .wellcome-section .item-holder {
+    margin-bottom: 5px; 
+    border: 1px solid #f7f7f7;
+    }
+}
+
+.wellcome-section .item-holder p{
+    font-size: 18px;
+    color: #1d1d1d;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0 0 20px 0px;
+}
+
+</style>
+
+<!--Wellcome Section-->
+    <section class="wellcome-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1 class="mystyle">Welcome to <span>Aims Global Educational Consultancy</span></h1>
+                <p>AIms Education. helps to bring the best possible outcome for each individual who chooses to obtain our services. Our vision is to contribute to society at large by establishing the best standards possible in all our endeavors.</p>
+        </div>
+        </div><!--welcome container ends -->    
+        <div class="row">
+            <!-- Skilled Manpower - Col-sm-4 -->
+   			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 aos-init aos-animate" data-aos="fade-right" data-aos-delay="500">
+                    <div class="item-holder">
+                                                                         <div class="image-box">
+                            <figure>
+                                <img src="http://www.aimsglobal.edu.np/pic/article/49981712421147.jpg" alt="Study Abroad">
+                            </figure>
+                                                        
+                            <div class="overly-btn"><a href="http://www.aimsglobal.edu.np/Study_Abroad" class="btn-style-one">read more</a></div>
+                            <div class="icon-box">
+                                <i class="flaticon-interface-8"></i>
+                            </div>
+                        </div>                            
+                        <div class="text">
+                            <a href="http://www.aimsglobal.edu.np/Study_Abroad"><h5>Study Abroad</h5></a>
+                            <p>We are experts in this industry with over 100 years experience. What that means is ...</p>
+                        </div>
+                    </div>
+                                    </div>
+        <!-- Skilled Manpower - Col-sm-4 -->  
+        <!-- Semi Skilled Manpower - Col-sm-4 -->
+   			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="item-holder">
+                                                                         <div class="image-box">
+                            <figure>
+                                <img src="http://www.aimsglobal.edu.np/pic/article/6321712423882.jpg" alt="Test Preparation">
+                            </figure>
+                                                        
+                            <div class="overly-btn"><a href="http://www.aimsglobal.edu.np/Test_Preparation" class="btn-style-one">read more</a></div>
+                            <div class="icon-box">
+                                <i class="flaticon-interface-8"></i>
+                            </div>
+                        </div>                            
+                        <div class="text">
+                            <a href="http://www.aimsglobal.edu.np/Test_Preparation"><h5>Test Preparation</h5></a>
+                            <p>We provide various test preparation classes to our students.&nbsp;</p>
+                        </div>
+                    </div>
+                                    </div>
+        <!-- Semi Skilled Manpower - Col-sm-4 --> 
+        <!-- Semi Skilled Manpower - Col-sm-4 -->
+   			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 aos-init aos-animate" data-aos="fade-left" data-aos-delay="500">
+                    <div class="item-holder">
+                                                                     <div class="image-box">
+                            <figure>
+                                <img src="http://www.aimsglobal.edu.np/pic/article/48951712426426.jpg" alt="Language Classes">
+                            </figure>
+                                                        
+                            <div class="overly-btn"><a href="http://www.aimsglobal.edu.np/Language_Classes" class="btn-style-one">read more</a></div>
+                            <div class="icon-box">
+                                <i class="flaticon-interface-8"></i>
+                            </div>
+                        </div>                            
+                        <div class="text">
+                            <a href="http://www.aimsglobal.edu.np/Language_Classes"><h5>Language Classes</h5></a>
+                            <p>Currently we are running Korean, English(Basic to Advance Level) and Japanese Laguage classes to our ...</p>
+                        </div>
+                    </div>
+                                    </div>
+        <!-- Semi Skilled Manpower - Col-sm-4 --> 
+  		</div><!--Row Closes -->	
+    </section>
+    <!--End Wellcome Section--></div>    
+<!--Welcome Ends-->
+<!--Countries Section-->
+<div class="container-fluid" style="background:#f7f7f7;">
+    <style>
+/*** 
+====================================================================
+	Service Section
+====================================================================
+***/
+.service-section .section-title{
+	margin-bottom: 40px;
+	text-align:center;
+}
+.service-section .item-holder{
+	text-align: center;
+	padding: 20px 30px;
+    margin-bottom: 40px;
+    background: #ffffff;
+    cursor: pointer;
+}
+.service-section .item-holder .icon-box{
+	position: relative;
+	display: inline-block;
+	line-height: 55px;
+	margin-top: 15px;
+}
+.service-section .item-holder i:before{
+    font-size: 50px;
+    color: #0b4696;
+    margin-left: 0px;
+}
+.service-section .image-text{
+	position: relative;
+}
+.service-section .item-holder:hover h5{
+	color: #0b4696;
+}
+.service-section .item-holder h5{
+	font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #15499f;
+    font-family: 'IBM Plex Sans Condensed';
+}
+.service-section .item-holder p{
+	font-size: 15px;
+    color: #1d1d1d;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Noto Sans';
+}
+.service-section .owl-theme .owl-controls{
+	display: none;
+}
+</style>
+
+<!--Service Section-->
+<section class="service-section">
+    <div class="container aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
+        	
+        <div>
+            <h1 class="mystyle">Study Abroad <span>Destinations</span></h1>
+            <p></p>
+        </div>
+
+        <div class="service-carousel four-column-carousel">
+                        <div class="slide-item">
+                <div class="item-holder">
+                    <div class="icon-box">
+                        <a href="http://www.aimsglobal.edu.np/USA"> 
+                                                    <img src="http://www.aimsglobal.edu.np/pic/article/46691712427012.jpg" 
+                            class="img-responsive">
+                                                </a>
+                    </div>
+                    <div class="image-text">
+                        <a href="http://www.aimsglobal.edu.np/USA">
+                            <h5>USA</h5>
+                        </a>
+                    </div>                            
+                </div>
+            </div>
+                        <div class="slide-item">
+                <div class="item-holder">
+                    <div class="icon-box">
+                        <a href="http://www.aimsglobal.edu.np/UK"> 
+                                                    <img src="http://www.aimsglobal.edu.np/pic/article/49211712427903.jpg" 
+                            class="img-responsive">
+                                                </a>
+                    </div>
+                    <div class="image-text">
+                        <a href="http://www.aimsglobal.edu.np/UK">
+                            <h5>UK</h5>
+                        </a>
+                    </div>                            
+                </div>
+            </div>
+                        <div class="slide-item">
+                <div class="item-holder">
+                    <div class="icon-box">
+                        <a href="http://www.aimsglobal.edu.np/Canada"> 
+                                                    <img src="http://www.aimsglobal.edu.np/pic/article/24731712427938.jpg" 
+                            class="img-responsive">
+                                                </a>
+                    </div>
+                    <div class="image-text">
+                        <a href="http://www.aimsglobal.edu.np/Canada">
+                            <h5>Canada</h5>
+                        </a>
+                    </div>                            
+                </div>
+            </div>
+                        <div class="slide-item">
+                <div class="item-holder">
+                    <div class="icon-box">
+                        <a href="http://www.aimsglobal.edu.np/Australia"> 
+                                                    <img src="http://www.aimsglobal.edu.np/pic/article/35301712427964.jpg" 
+                            class="img-responsive">
+                                                </a>
+                    </div>
+                    <div class="image-text">
+                        <a href="http://www.aimsglobal.edu.np/Australia">
+                            <h5>Australia</h5>
+                        </a>
+                    </div>                            
+                </div>
+            </div>
+                        <div class="slide-item">
+                <div class="item-holder">
+                    <div class="icon-box">
+                        <a href="http://www.aimsglobal.edu.np/Japan"> 
+                                                    <img src="http://www.aimsglobal.edu.np/pic/article/26771712427996.jpg" 
+                            class="img-responsive">
+                                                </a>
+                    </div>
+                    <div class="image-text">
+                        <a href="http://www.aimsglobal.edu.np/Japan">
+                            <h5>Japan</h5>
+                        </a>
+                    </div>                            
+                </div>
+            </div>
+                        <div class="slide-item">
+                <div class="item-holder">
+                    <div class="icon-box">
+                        <a href="http://www.aimsglobal.edu.np/Europe"> 
+                                                    <img src="http://www.aimsglobal.edu.np/pic/article/48541712428019.jpg" 
+                            class="img-responsive">
+                                                </a>
+                    </div>
+                    <div class="image-text">
+                        <a href="http://www.aimsglobal.edu.np/Europe">
+                            <h5>Europe</h5>
+                        </a>
+                    </div>                            
+                </div>
+            </div>
+                
+        </div>
+            </div>
+</section>
+<!-- End Service Section --></div>    
+<!--Countries Ends-->
+<!--Events Section-->
+<div class="container-fluid">
+    <style>
+/*** 
+====================================================================
+	Blog Section
+====================================================================
+
+***/
+
+.blog-section{
+	position: relative;
+	margin-top: 90px;
+	padding-bottom: 60px;
+	z-index: 1;
+}
+.blog-section .section-title{
+	position: relative;
+	margin-bottom: 40px;
+}
+.blog-section .item-holder{
+	position: relative;
+	margin-bottom: 40px;
+	transition: all 500ms ease;
+}
+.blog-section .item-holder:hover{
+	transition: all 500ms ease;
+	box-shadow: 0 0 20px 5px #f1f1f1;
+}
+.blog-section .item-holder .image-box{
+	position: relative;
+}
+.blog-section .item-holder img{
+	position: relative;
+	width: 100%;
+}
+.blog-section .item-holder .image-box .date-box{
+	position: absolute;
+	left: 100px;
+	/*border: 1px solid #f7f7f7;*/
+}
+.blog-section .item-holder .date-box span{
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 18px;
+	font-weight: 400;
+	padding: 8px 20px;
+	background: #15499f;
+	display: inline-block;
+	font-family: 'Noto Sans', sans-serif;
+}
+.blog-section .item-holder .content-text{
+	position: relative;
+	padding: 0px 30px;
+	margin-top: 40px;
+	border: 1px solid #f7f7f7;
+	border-top: none;
+    font-size: 16px;
+    color: #1d1d1d;
+    font-weight: 400;
+    line-height: 1.5;
+    /* font-family: 'Antic', sans-serif; */
+    font-family: 'Noto Sans';
+}
+.blog-section .content-text .sec-title h5{
+	position: relative;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #222222;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.blog-section .content-text .sec-title h5:before{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	content: '';
+	width: 50px;
+	height: 2px;
+	background: #0b4696;
+}
+.blog-section .content-text .text p{
+	padding-bottom: 15px;
+	font-size: 16px;
+    color: #1d1d1d;
+    font-weight: 400;
+    line-height: 1.5;
+    /* font-family: 'Antic', sans-serif; */
+    font-family: 'Noto Sans';
+}
+.blog-section .item-holder .blog-info{
+	border-top: 1px solid #f6f6f6;
+}
+.blog-section .item-holder .blog-info li{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #848484;
+	padding: 12px 0px;
+	margin-right: 10px;
+	text-transform: capitalize;
+	font-family: 'Antic', sans-serif;
+}
+.blog-section .item-holder .blog-info li i{
+	font-size: 13px;
+	margin-right: 8px;
+}
+
+.blog-section .icon-box {
+	position: absolute;
+	left: 30px;
+	bottom: -30px;
+	background: #15499f;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 5px;
+}
+
+
+.blog-section .icon-box:hover{
+    transition: all 500ms ease;
+    box-shadow: 0 0 20px 5px #f7f7f7;
+    cursor:hand;
+}
+
+
+
+.blog-section .icon-box i:before{
+	color: #ffffff;
+	font-size: 36px;
+	margin-left: 0px;
+}
+
+
+.blog-section .date-box h5{
+	font-size: 16px;
+    line-height: 1.5;
+    color: #1d1d1d;
+    font-family: 'Arial Narrow', sans-serif;
+}
+
+@media (max-width: 400px) {
+   .blog-section .date-box h5 {
+    text-align: -webkit-center;
+    background: #15499f;
+    color: #fff;
+    font-size: 16px;
+    margin: -10px -20px 10px -20px;
+    padding: 5px 0px;
+    border-radius: 5px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-family: 'Arial Narrow', sans-serif;
+    }
+}
+
+/*** 
+</style>
+<!--Blog Section-->
+<section class="blog-section">
+        <div class="container aos-init aos-animate" data-aos="zoom-in-up" data-aos-delay="500">
+            <div>
+                <h1 class="mystyle">News <span>& Events</span></h1>
+                <p class="NewStyle">Kindly visit this section for recent announcements made by Aims Global Educational Consultancy.</p>
+            </div>
+            <div class="row">
+                   				                <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
+                    <div class="item-holder">
+                       <div class="image-box">
+                            <figure>
+                                <a href="http://www.aimsglobal.edu.np/NewsNEvents/Hear_from_our_own_Applicant_Kishoree_Pandit">
+										<img src="http://www.aimsglobal.edu.np/pic/article/small_thumb/8021764237918.jpg" alt="">
+									</a>
+                            </figure>
+                            
+                            <div class="icon-box">
+                                <i class="flaticon-interface-8"></i>
+                            </div>
+                            
+                            <div class="date-box">
+                                <h5>Posted Date: 2024-05-20</h5>
+                            </div>
+                                                   </div>
+                        <div class="content-text">
+                            <div class="sec-title">
+                               <a href="http://www.aimsglobal.edu.np/NewsNEvents/Hear_from_our_own_Applicant_Kishoree_Pandit">Hear from our own Applicant Kishoree Pandit</a>
+                            </div>
+                            <div class="text">
+                                <p class="read-more"><a href="http://www.aimsglobal.edu.np/NewsNEvents/Hear_from_our_own_Applicant_Kishoree_Pandit"></a></p>
+                            </div>
+                        </div>    
+                </div><!--item-holder-->
+               
+            </div><!--col-lg-4 col-md-6 col-sm-6 col-xs-12 Ends-->
+    	    				                <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
+                    <div class="item-holder">
+                       <div class="image-box">
+                            <figure>
+                                <a href="http://www.aimsglobal.edu.np/NewsNEvents/Join__ace_your_IELTS_and_PTE_Adventure_Awaits">
+										<img src="http://www.aimsglobal.edu.np/pic/article/small_thumb/26651764239769.jpg" alt="">
+									</a>
+                            </figure>
+                            
+                            <div class="icon-box">
+                                <i class="flaticon-interface-8"></i>
+                            </div>
+                            
+                            <div class="date-box">
+                                <h5>Posted Date: 2024-04-04</h5>
+                            </div>
+                                                   </div>
+                        <div class="content-text">
+                            <div class="sec-title">
+                               <a href="http://www.aimsglobal.edu.np/NewsNEvents/Join__ace_your_IELTS_and_PTE_Adventure_Awaits">Join & ace your IELTS and PTE!</a>
+                            </div>
+                            <div class="text">
+                                <p class="read-more"><a href="http://www.aimsglobal.edu.np/NewsNEvents/Join__ace_your_IELTS_and_PTE_Adventure_Awaits"></a></p>
+                            </div>
+                        </div>    
+                </div><!--item-holder-->
+               
+            </div><!--col-lg-4 col-md-6 col-sm-6 col-xs-12 Ends-->
+    	    				                <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
+                    <div class="item-holder">
+                       <div class="image-box">
+                            <figure>
+                                <a href="http://www.aimsglobal.edu.np/NewsNEvents/Our_web_portal_has_launched_successfully">
+										<img src="http://www.aimsglobal.edu.np/pic/article/small_thumb/32311735287397.jpg" alt="">
+									</a>
+                            </figure>
+                            
+                            <div class="icon-box">
+                                <i class="flaticon-interface-8"></i>
+                            </div>
+                            
+                            <div class="date-box">
+                                <h5>Posted Date: 2023-06-27</h5>
+                            </div>
+                                                   </div>
+                        <div class="content-text">
+                            <div class="sec-title">
+                               <a href="http://www.aimsglobal.edu.np/NewsNEvents/Our_web_portal_has_launched_successfully">Our web portal has launched successfully.</a>
+                            </div>
+                            <div class="text">
+                                <p class="read-more"><a href="http://www.aimsglobal.edu.np/NewsNEvents/Our_web_portal_has_launched_successfully"></a></p>
+                            </div>
+                        </div>    
+                </div><!--item-holder-->
+               
+            </div><!--col-lg-4 col-md-6 col-sm-6 col-xs-12 Ends-->
+    	                </div><!--Row Ends-->
+        </div><!--Container Ends-->
+    </section>
+<!--End Blog Section--></div>    
+<!--Events Ends-->
+<!--OurTeam Section-->
+<div class="container-fluid" style="background:#f7f7f7;">
+     <style>
+/*** 
+
+====================================================================
+	Team Section
+====================================================================
+
+***/
+
+.team-section{
+	position: relative;
+	padding : 90px 0px 70px;
+}
+.team-section .section-title{
+	position: relative;
+	margin-bottom: 40px;
+}
+.team-section .image-holder{
+	margin-bottom: 30px;
+}
+.team-section .image-holder img{
+	width: 100%;
+}
+.team-section .image-box{
+	position: relative;
+	overflow: hidden;
+}
+.team-section .social-links{
+	position: absolute;
+	bottom: -46px;
+	left: 0px;
+	width: 100%;
+	background: rgba(11, 70, 150, 0.5);
+	-moz-transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+}
+.team-section .image-holder:hover .social-links{
+	bottom: 0px;
+	-moz-transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+}
+.team-section .social-links li{
+	display: inline-block;
+	padding: 12px 15px;
+}
+.team-section .social-links li i{
+	font-size: 16px;
+	color: #ffffff;
+}
+.team-section .image-holder .image-text {
+	border: 1px solid #f6f6f6;
+}
+.team-section .image-holder .image-text h5{
+	font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #15499f;
+    font-family: 'IBM Plex Sans Condensed';
+}
+.team-section .image-holder .image-text p{
+	font-size: 16px;
+    color: #1d1d1d;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Arial Narrow', sans-serif;
+}     
+     
+ </style>
+ 
+ <!--team section-->
+ 
+    <section class="team-section">
+        <div class="container">
+            <div>
+                <h1 class="mystyle">Our <span>Experts</span></h2>
+                <p class="NewStyle">We are here to help you find the optimal balance between the cost of the course and its quality.</p>
+            </div>
+            <div class="row aos-init aos-animate" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="image-holder">
+                        <div class="image-box">
+                            <figure>
+                                <a href="#"><img src="https://aimsglobal.edu.np/pic/article/sumanlarge.jpg" alt=""></a>
+                            </figure>
+                             <ul class="social-links text-center">
+                                <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                </ul>
+                        </div>
+                        <div class="image-text text-center">
+                            <h5>Suman Aryal</h5>
+                            <p>Founder/CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="image-holder">
+                        <div class="image-box">
+                            <figure>
+                                <a href="#"><img src="https://aimsglobal.edu.np/pic/article/sujanlarge.jpg" alt=""></a>
+                            </figure>
+                            <ul class="social-links text-center">
+                                <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                </ul>
+                        </div>
+                        <div class="image-text text-center">
+                            <h5>Sujan Aryal</h5>
+                            <p>Managing Director</p>
+                        </div>
+                    </div>
+                </div>
+ 
+ 
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="image-holder">
+                        <div class="image-box">
+                            <figure>
+                                <a href="#"><img src="https://aimsglobal.edu.np/pic/article/sa.jpg" alt=""></a>
+                            </figure>
+                            <ul class="social-links text-center">
+                                <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                </ul>
+                        </div>
+                        <div class="image-text text-center">
+                            <h5>Saroj Adhikari</h5>
+                            <p>IT Officer </p>
+                        </div>
+                    </div>
+                </div>
+ 
+ 
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="image-holder">
+                        <div class="image-box">
+                            <figure>
+                                <a href="#"><img src="https://aimsglobal.edu.np/pic/article/januma.jpg" alt=""></a>
+                            </figure>
+                            <ul class="social-links text-center">
+                                <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                </ul>
+                        </div>
+                        <div class="image-text text-center">
+                            <h5>Jamuna Silwal</h5>
+                            <p>Finance Officer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="image-holder">
+                        <div class="image-box">
+                            <figure>
+                                <a href="#"><img src="https://aimsglobal.edu.np/pic/article/sudip.jpg" alt=""></a>
+                            </figure>
+                            <ul class="social-links text-center">
+                                <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                </ul>
+                        </div>
+                        <div class="image-text text-center">
+                            <h5>Sudip Khanal</h5>
+                            <p>Business Development Manager</p>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            </div>
+        </div>
+    </section>
+    <!--End team section-->
+
+</div>    
+<!--OurTeam Ends-->
+<!--NewsLetters Starts-->
+<div class="container">
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+</script>
+<style>
+/*** 
+====================================================================
+	Subscribe Section
+====================================================================
+
+***/
+
+.subscribe-section {
+	position: relative;
+	padding: 50px 0px 55px;
+}
+.subscribe-section .auto-container {
+	position: relative;
+	z-index: 1;
+}
+.subscribe-section h2 {
+	position: relative;
+    color: #15499f;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.subscribe-section .text {
+	margin-bottom: 20px;
+    font-size: 18px;
+    color: #1d1d1d;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+.subscribe-section form {
+	position: relative;
+	margin-top: 30px;
+}
+.subscribe-section .form-group {
+	position: relative;
+	display: block;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+.subscribe-section .form-group input[type="text"],
+.subscribe-section .form-group input[type="tel"],
+.subscribe-section .form-group input[type="email"],
+.subscribe-section .form-group textarea {
+	position: relative;
+	display: block;
+	width: 100%;
+	line-height: 25px;
+	padding: 14px 16px;
+	height: 50px;
+	color: #848484;
+	font-size: 14px;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	-webkit-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+.subscribe-section .form-group input[type="submit"],
+.subscribe-section .form-group button {
+	position: absolute;
+	top: 0;
+	right: 0;
+    height: 50px;
+}
+.subscribe-section .form-group button span {
+	font-size: 20px;
+	padding-left: 0 !important;
+	padding-right: 8px;
+}
+.subscribe-section .form-group input[type="text"]:focus,
+.subscribe-section .form-group input[type="tel"]:focus,
+.subscribe-section .form-group input[type="email"]:focus,
+.subscribe-section .form-group textarea:focus {
+	border-color: #0b4696;
+	transition: all 300ms ease;
+}
+.small-text {
+    font-size: 16px;
+    padding-top: 12px;
+}
+.logo {
+    padding-top: 10px;
+}
+
+/*** 
+</style>
+
+   
+
+<!--Subscribe Section-->
+    <section class="subscribe-section">
+        <div class="auto-container aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+            <div class="row clearfix">
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="mystyle">Sign Up <span>for Newsletter</span></h1>
+                    <div class="text">We’ll be with you on every walk of life on how to identify new opportunities.</div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <form method="post" action="newsletters.php">
+                        <div class="form-group">
+                            <input type="email" name="email" value="" placeholder="Enter your Email" required="">
+                            <input type="hidden" name="WebVisitor" value="">
+                            
+                            &nbsp;                            <input type="submit" class="btn-style-one" value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Subscribe Section-->
+</div>	            
+<!--NewsLetters Ends-->
+
+            
+            
+            
+            
+		
+<style>
+.location-map {
+    position: relative; /* Positioning context for the overlay */
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    height: 250px;
+    overflow: hidden; /* To contain the overlay */
+}
+
+.location-map iframe {
+    position: relative;
+    z-index: 1; /* Keep the iframe behind the overlay */
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Border style for iframe */
+}
+
+/* Overlay link styled to cover the iframe */
+.overlay-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; /* Adjust z-index to be above the iframe */
+    display: block; /* Make it cover the entire area */
+}
+
+/* Overlay for a dimming effect */
+.location-map::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #15499f;
+    opacity: 0.3; /* Overlay opacity */
+    z-index: 1; /* Keep this below the link */
+}
+ </style>
+ 
+    <footer class="site-footer">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 aos-init aos-animate" data-aos="fade-right" data-aos-delay="500">
+                        <div style="margin:10px">
+                        <h2 class="mystyle">About us</h2>
+                        <p class="FootStyle">Aims Global Educational Consultancy helps to bring the best possible outcome for each individual who chooses to obtain our services. Our vision is to contribute to society at large by establishing the best standards possible in all our endeavors. <br> HEMS is a part of a global network that focuses on the betterment of students and helps them to achieve their academic objectives.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-4 col-xs-12 contact-info footer-widget aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
+                         <div style="margin:10px">
+                        <h2 class="mystyle">Contact <span>Info</span></h2>
+                       
+                        <div style="float:left;">
+                            <p class="FootStyle">    
+                            <i class="fa fa-map" aria-hidden="true" style="    vertical-align: bottom;
+                            margin-right: 15px;
+                            font-size: 20px;
+                            margin-top: 15px;">
+                            </i>
+                            </p>
+                       </div>
+                        <div style="margin-left:20px;">
+                            <p class="FootStyle">
+                                Aims Global Educational Consultancy                            </p>
+                        </div>
+                            
+                        <div style="float:left;">
+                            <p class="FootStyle">    
+                            <i class="fa fa-phone" aria-hidden="true" style="    vertical-align: bottom;
+                            margin-right: 15px;
+                            font-size: 20px;">
+                            </i>
+                            </p>
+                        </div>
+                        <div style="margin-left:20px;">
+                            <p class="FootStyle">
+                                01-4544906                            </p>
+                        </div>    
+                        
+                        <div style="float:left;">
+                            <p class="FootStyle">    
+                            <i class="fa fa-envelope" aria-hidden="true" 
+                            style=" margin-right: 15px;
+                            font-size: 20px;">
+                            </i>
+                            </p>
+                        </div>
+                        <div style="margin-left:20px;">
+                            <p class="FootStyle">
+                               aimsglobal.edu.np@gmail.com                            </p>
+                        </div>
+                        
+                        <div style="float:left;">
+                            <p class="FootStyle">    
+                            <i class="fa fa-globe" 
+                            aria-hidden="true" style="margin-right: 15px;
+                            font-size: 20px;">
+                            </i>
+                            </p>
+                        </div>
+                        
+                        
+                        <div style="margin-left:20px;">
+                            <p class="FootStyle">
+                               https://www.aimsglobal.edu.np
+                            </p>
+                        </div>    
+                        
+                        <div style="float:left;">
+                            <p class="FootStyle">    
+                            <i class="fa fa-address-card" aria-hidden="true" style="    vertical-align: bottom;
+                            margin-right: 15px;
+                            font-size: 20px;">
+                            </i>
+                            </p>
+                        </div>
+                        <div style="margin-left:20px;">
+                            <p class="FootStyle">
+                               Putalisadak(Way to Dillibazaar), Kathmandu, Nepal
+                            </p>
+                        </div>
+                            
+                        </div>    
+                           
+                    
+                       
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-8 col-xs-12 aos-init aos-animate" data-aos="fade-left" data-aos-delay="500">
+                    <div style="margin:10px">
+                        <h2 class="mystyle">Location Map</h2>
+                        <div class="location-map">
+                            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3671648588215!2d85.32093857614103!3d27.705947725551933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb196db6a53785%3A0x7e2dea30587bc173!2sAims%20Global%20Educational%20Consultancy!5e0!3m2!1sen!2snp!4v1766850035281!5m2!1sen!2snp" target="_blank" class="overlay-link">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3671648588215!2d85.32093857614103!3d27.705947725551933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb196db6a53785%3A0x7e2dea30587bc173!2sAims%20Global%20Educational%20Consultancy!5e0!3m2!1sen!2snp!4v1766850035281!5m2!1sen!2snp" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </a>
+                        </div>
+                    </div>    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="main-footer">
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6" style="margin:15px 0; color: #FFF; font-size: 14px">
+                           Aims Global Educational Consultancy[AIMS] 
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="credits">
+                                <p style="margin:15px 0; color: #FFF;"> <a href="https://asaroj.com.np/" style="text-decoration:none; color:#fff;font-size: 14px!important">Developer: Saroj Adhikari</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   <style>    
+	.go-top {
+    position: fixed;
+    bottom: 20em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: #15499f;
+    opacity: 0.7;
+    font-size: 15px;
+    padding: 1em;
+    display: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 1);
+	position: fixed;
+    bottom: 20em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+    font-size: 15px;
+    padding: 1em;
+    display: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+</style> 
+<script>
+    $(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+			
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+
+</script> 
+<a href="#" class="go-top"><i class="fa fa-arrow-up" aria-hidden="true" style="margin-left: 3px;
+    font-size: 20px;"></i></a>
+    <script src="http://www.aimsglobal.edu.np/js/jquery-1.10.2.min.js"></script>
+    <script src="http://www.aimsglobal.edu.np/js/bootstrap.min.js"></script>
+    <script src="http://www.aimsglobal.edu.np/js/plugins.min.js"></script>
+    <script src="http://www.aimsglobal.edu.np/js/custom.min.js"></script>
+    <script src="http://www.aimsglobal.edu.np/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="http://www.aimsglobal.edu.np/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="http://www.aimsglobal.edu.np/js/owl.carousel.min.js"></script>
+    <script src="http://www.aimsglobal.edu.np/js/wow.js"></script>
+    <script src="http://www.aimsglobal.edu.np/js/script.js"></script>
+     <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=58a4805066518c001129c15c&product=sticky-share-buttons" defer></script>
+    <script id="pixel-chaty" async="true" src="https://cdn.chaty.app/pixel.js?id=qvlyROAJ"></script>
+    <script>
+            $(document).ready(function () {
+            $('.toggle-menu').on('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('.menu-open').slideToggle(200);
+            });
+
+            $('.menu-open li.has-child > a').on('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                let parentLi = $(this).parent();
+                let submenu = parentLi.children('.child-menu');
+
+                $('.menu-open li.has-child').not(parentLi).removeClass('open').children('.child-menu').slideUp(200);
+                $('.menu-open li.has-child').not(parentLi).find('.arrow').removeClass('rotate');
+
+                parentLi.toggleClass('open');
+                submenu.slideToggle(200);
+                $(this).find('.arrow').toggleClass('rotate');
+            });
+
+            $(document).on('click', function (e) {
+                if ($(e.target).closest('.menu-open, .toggle-menu').length === 0) {
+                    $('.menu-open').slideUp(200);
+                    $('.child-menu').slideUp(200);
+                    $('.arrow').removeClass('rotate');
+                }
+            });
+
+            $(window).on('scroll', function () {
+                if ($(this).scrollTop() > 20) {
+                    $('#main-menu').addClass('sticky');
+                } else {
+                    $('#main-menu').removeClass('sticky');
+                }
+            });
+        });
+    </script>
+        <script src="http://www.aimsglobal.edu.np/js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>    
+        
+</body>
+</html>

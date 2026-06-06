@@ -28,7 +28,7 @@ url = []
 
 AboutConsultancy = ""
 
-for i, query in enumerate(search_query[0:15]):
+for i, query in enumerate(search_query[0:3]):
     
     try:
         defaultpath = "data"
@@ -104,6 +104,17 @@ for i, query in enumerate(search_query[0:15]):
 
             print("\n")
             print("Ending of DESCRIPTION ********************")
+        max_len = max(len(name),len(logo),len(ConsultancyDesc),len(url))
+
+
+        if (max_len-len(name))>0:
+            name += [""]
+        if (max_len-len(logo))>0:
+            logo += [""]
+        if (max_len-len(ConsultancyDesc))>0:
+            ConsultancyDesc += [""]
+        if (max_len-len(url))>0:
+            url += [""]
 
     except Exception as e:
         print("Couldn't scrape Data",e)

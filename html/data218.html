@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>APACE INTERNATIONAL GROUP PVT. LTD.</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Squada+One&family=Suez+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://apaceinternational.com.au/frontend/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://apaceinternational.com.au/frontend/css/style.css" />
+    <link rel="stylesheet" href="https://apaceinternational.com.au/frontend/css/custome.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!--owl carousel-->
+    <link rel="stylesheet" href="https://apaceinternational.com.au/frontend/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://apaceinternational.com.au/frontend/owl/owl.theme.default.min.css">
+    <!-- Livewire Styles -->
+<style >
+    [wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {
+        display: none;
+    }
+
+    [wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {
+        display:none;
+    }
+
+    [wire\:offline] {
+        display: none;
+    }
+
+    [wire\:dirty]:not(textarea):not(input):not(select) {
+        display: none;
+    }
+
+    input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {
+        animation-duration: 50000s;
+        animation-name: livewireautofill;
+    }
+
+    @keyframes livewireautofill { from {} }
+</style>
+</head>
+
+<body>
+    <header id="header">
+        <!-- <div class="sticky-top" data-toggle="affix"> -->
+        <nav class="navbar navbar-expand-lg  fixed-top first-navbar justify-content-center">
+            <div class="container">
+                <a href="https://apaceinternational.com.au" class="navbar-brand">
+                    <img src="https://apaceinternational.com.au/uploads/media/db2a5e12bc26e2dbba55daaff95d05ad.1661426048.png" alt="company logo"
+                        style="height: 3.5rem; width: 8rem;" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="d-none d-lg-inline">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-9 mt-1">
+                            <div class="contact-items d-flex ">
+                                <h6 class="bolding top_info mx-2"><i class="fas fa-envelope mx-1"></i>Email:
+                                    info@apaceinternational.com.au
+                                </h6>
+                                <h6 class="bolding top_info"><i class="fas fa-phone mx-1"></i>Contact:
+                                    61 480 507 875</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-1 text-right ">
+                            <div class="mx-1 content search-right">
+                                <form class="search-form" role="search">
+                                    <div class="form-group group_form pull-right" id="search">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <!-- <button type="submit" class="form-control form-control-submit">Submit</button> -->
+                                        <span class="search-label"><i
+                                                class="fas fa-search-location text-white"></i></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </nav>
+
+
+
+        <nav class="navbar navbar-expand-lg  second-navbar">
+            <div class="collapse navbar-collapse " id="myNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item  active  mx-3 ">
+                        <a href="https://apaceinternational.com.au" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item  mx-3">
+                        <a href="https://apaceinternational.com.au/abroad-study" class="nav-link">Destination</a>
+                    </li>
+                    <li class="nav-item  mx-3">
+                        <a href="https://apaceinternational.com.au/career" class="nav-link">Career</a>
+                    </li>
+                    <li class="nav-item  mx-3">
+                        <a href="https://apaceinternational.com.au/classes" class="nav-link">Test-preparation</a>
+                    </li>
+                    <li class="nav-item  mx-3">
+                        <a href="https://apaceinternational.com.au/about-us" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item  mx-3">
+                        <a href="https://apaceinternational.com.au/book-appointment"
+                            class="nav-link shadow-lg book-app rounded text-light">Book Appointment</a>
+                    </li>
+                                            <li class="nav-item  mx-3">
+                            <a href="https://apaceinternational.com.au/register" type="button" class="nav-link">Register</a>
+                        </li>
+                        <li class="nav-item  mx-3">
+                            <a href="https://apaceinternational.com.au/login" type="button" class="nav-link">Login</a>
+                        </li>
+                                        <!-- <li class="nav-item mx-3 login">
+                      <a href="dashboard.html" type="button" class="nav-link">Dashboard</a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </nav>
+        <!-- </div> -->
+        <!-- pl-3 pl-lg-5 mx-3 -->
+    </header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                    class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"
+                    class=""></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"
+                    class=""></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"
+                    class=""></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"
+                    class=""></li>
+                        
+        </ol>
+        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                    <div class="banner-1 d-flex align-items-center pl-3 pl-lg-5"
+                        style="background-image: url('https://apaceinternational.com.au/uploads/media/slider/2412_1691717244.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <div class="text-white">
+                            <h1 class="text-capitalize font-weight-bold text-shadow fa-4x fa-sm-2"></h1>
+                            <h1 class="text-capitalize font-weight-bold fa-sm-1"></h1>
+                            <!---->
+                            <!--    <a href="https://apaceinternational.com.au/abroad-study/study-in-australia"-->
+                            <!--        class="btn btn-yellow font-weight-bold"> Know More <i-->
+                            <!--            class="fas fa-arrow-alt-circle-right fa-1x text-dark"> </i></a>-->
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                            <div class="carousel-item ">
+                    <div class="banner-1 d-flex align-items-center pl-3 pl-lg-5"
+                        style="background-image: url('https://apaceinternational.com.au/uploads/media/slider/4721_1691717149.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <div class="text-white">
+                            <h1 class="text-capitalize font-weight-bold text-shadow fa-4x fa-sm-2"></h1>
+                            <h1 class="text-capitalize font-weight-bold fa-sm-1"></h1>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                            <div class="carousel-item ">
+                    <div class="banner-1 d-flex align-items-center pl-3 pl-lg-5"
+                        style="background-image: url('https://apaceinternational.com.au/uploads/media/slider/9327_1691717339.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <div class="text-white">
+                            <h1 class="text-capitalize font-weight-bold text-shadow fa-4x fa-sm-2"></h1>
+                            <h1 class="text-capitalize font-weight-bold fa-sm-1"></h1>
+                            <!---->
+                            <!--    <a href="https://apaceinternational.com.au/abroad-study/study-in-uk"-->
+                            <!--        class="btn btn-yellow font-weight-bold"> Know More <i-->
+                            <!--            class="fas fa-arrow-alt-circle-right fa-1x text-dark"> </i></a>-->
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                            <div class="carousel-item ">
+                    <div class="banner-1 d-flex align-items-center pl-3 pl-lg-5"
+                        style="background-image: url('https://apaceinternational.com.au/uploads/media/slider/1368_1691717310.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <div class="text-white">
+                            <h1 class="text-capitalize font-weight-bold text-shadow fa-4x fa-sm-2"></h1>
+                            <h1 class="text-capitalize font-weight-bold fa-sm-1"></h1>
+                            <!---->
+                            <!--    <a href="https://apaceinternational.com.au/abroad-study/study-in-uk"-->
+                            <!--        class="btn btn-yellow font-weight-bold"> Know More <i-->
+                            <!--            class="fas fa-arrow-alt-circle-right fa-1x text-dark"> </i></a>-->
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                            <div class="carousel-item ">
+                    <div class="banner-1 d-flex align-items-center pl-3 pl-lg-5"
+                        style="background-image: url('https://apaceinternational.com.au/uploads/media/slider/5598_1691717283.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <div class="text-white">
+                            <h1 class="text-capitalize font-weight-bold text-shadow fa-4x fa-sm-2"></h1>
+                            <h1 class="text-capitalize font-weight-bold fa-sm-1"></h1>
+                            <!---->
+                            <!--    <a href="https://apaceinternational.com.au/abroad-study/study-in-canada"-->
+                            <!--        class="btn btn-yellow font-weight-bold"> Know More <i-->
+                            <!--            class="fas fa-arrow-alt-circle-right fa-1x text-dark"> </i></a>-->
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                    </div>
+        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> -->
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <!-- <span class="sr-only">Previous</span> -->
+        <!-- </a> -->
+        <!-- <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> -->
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+        <!-- <span class="sr-only">Next</span> -->
+        <!-- </a> -->
+    </div>
+
+    <section class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col pt-4">
+                    <div id="our_featured" class="owl-carousel owl-theme inform-card">
+                        <div class="item">
+                            <div class="card bg-top-service card-1">
+                                <div class="card-body py-5 top_border">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-chalkboard-teacher body-icon "></i>
+                                        <div class="side-text align-self-center mx-4">
+                                            <h5 class="bolding">Apply Online</h5>
+                                            <h6>We promise the Guidance to apply visa online</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center align-items-center">
+                                    <a href="https://apaceinternational.com.au/apply-online" class="index-arrow"><i
+                                            class="fas fa-arrow-alt-circle-right fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card bg-top-service card-2 ">
+                                <div class="card-body py-5 top_border">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-book-reader body-icon"></i>
+                                        <div class="side-text align-self-center mx-4">
+                                            <h5 class="bolding">Our Courses</h5>
+                                            <h6>View of courses and get what
+                                                you dream of studying </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center">
+                                    <a href="https://apaceinternational.com.au/courses" class="index-arrow"><i
+                                            class="fas fa-arrow-alt-circle-right fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card bg-top-service card-2 ">
+                                <div class="card-body py-5 top_border">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-book-reader body-icon"></i>
+                                        <div class="side-text align-self-center mx-4">
+                                            <h5 class="bolding">Our Courses</h5>
+                                            <h6>View of courses and get what
+                                                you dream of studying </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center">
+                                    <a href="https://apaceinternational.com.au/courses" class="index-arrow"><i
+                                            class="fas fa-arrow-alt-circle-right fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card bg-top-service card-3">
+                                <div class="card-body py-5 top_border">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-university body-icon "></i>
+                                        <div class="side-text align-self-center mx-4">
+                                            <h5 class="bolding">Our University</h5>
+                                            <h6>View our university and check for
+                                                the best for yours.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center">
+                                    <a href="https://apaceinternational.com.au/abroad-study" class="index-arrow"><i
+                                            class="fas fa-arrow-alt-circle-right fa-2x text-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 ab_co_se">
+        <div class="container">
+                            <div class="row align-items-center">
+                    <div class="col-12 mx-auto col-md-6 col-lg-6 my-3 py-5 fl-video">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video controls autoplay>
+                                <source src="https://apaceinternational.com.au/uploads/welcome-apaceinternational.mp4" type="video/mp4">
+                                <source src="https://apaceinternational.com.au/uploads/welcome-apaceinternational.mp4" type="video/ogg">
+                                Your browser does not support the video tag.
+                              </video>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 mx-auto col-md-6 col-lg-5 my-3">
+                        <h1 class="font-weight-bold py-2">Apace International</h1>
+                        <h4 class="second_title"> <img src="https://apaceinternational.com.au/images/threeline.gif" class="about_us_line"
+                                alt="">
+                            Education Consultancy</h3>
+                            <div class="text-wrap text-left">
+                                <p>Namaskar!</p>
+
+<p>Welcome to Apace International Consultancy -&nbsp; your ultimate destination for all your overseas study and tourism aspirations. We are a team of experienced professionals driven by the passion to fulfill your dreams of studying and working abroad. At Apace International, we bring your aspirations and dreams to reality.&nbsp;</p>
+
+<p>&nbsp;</p>
+                            </div>
+                            <h5 class="font-weight-bold"><a href="https://apaceinternational.com.au/about-us">Know more <i
+                                        class="fas fa-arrow-alt-circle-right text-dark"></i></a></h5>
+                            
+                    </div>
+                </div>
+                    </div>
+    </section>
+    <section class="py-5 info-image">
+        <div class="container d-flex align-items-end">
+            <div class="row inform-card">
+                <div class="col-md-12 text-center m-2">
+                    <h3 class="text-light bolding py-5">Where and What Do you Want To Study?</h3>
+                </div>
+                
+                <div class="col-10 mx-auto col-md-6 col-lg-3 my-3">
+                    <div class="card card-b mx-1">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <!-- <i class="fas fa-home body-icon "></i> -->
+                                <div class="side-text align-self-center mx-2 card-effect">
+                                    <span class="featured-effect-icon  bolding">
+                                        <a href="https://apaceinternational.com.au/it-courses" class="know-more">Know More</a>
+                                    </span>
+                                    <h4 class=" bg-courses-land text-center" style="width: 50px;">MBA</h4>
+                                    <h6 class=" fee text-center mt-2" style="width: 100px;">Fee: $400</h6>
+                                    <h6 class="card-margin bolding">Boost Your knowledge Explore The New Within</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 mx-auto col-md-6 col-lg-3 my-3">
+                    <div class="card card-b mx-1">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <!-- <i class="fas fa-home body-icon "></i> -->
+                                <div class="side-text align-self-center mx-2 card-effect">
+                                    <span class="featured-effect-icon  bolding">
+                                        <a href="https://apaceinternational.com.au/it-courses" class="know-more">Know More</a>
+                                    </span>
+                                    <h4 class=" bg-courses-land text-center" style="width: 50px;">IT</h4>
+                                    <h6 class=" fee text-center mt-2" style="width: 100px;">Fee: $400</h6>
+                                    <h6 class="card-margin bolding">Boost Your knowledge Explore The New Within</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 mx-auto col-md-6 col-lg-3 my-3">
+                    <div class="card card-c mx-1">
+                        <div class="card-body">
+                            <div class=" d-flex justify-content-center align-items-center">
+                                <!-- <i class="fas fa-home body-icon "></i> -->
+                                <div class="text-center align-self-center mx-2 card-effect">
+                                    <span class="featured-effect-icon  bolding">
+                                        <a href="https://apaceinternational.com.au/engineering-courses" class="know-more">Know More</a>
+                                    </span>
+                                    <h4 class=" bg-courses-land" style="width: 170px;">Engineering</h4>
+                                    <h6 class=" fee text-center mt-2" style="width: 100px;">Fee: $400</h6>
+                                    <h6 class="card-margin bolding">Be The Boss Of Your Own
+                                        Join Us Today</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 mx-auto col-md-6 col-lg-3 my-3">
+                    <div class="card card-d mx-1">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <!-- <i class="fas fa-home body-icon "></i> -->
+                                <div class="text-center align-self-center mx-2 card-effect">
+                                    <span class="featured-effect-icon  bolding">
+                                        <a href="https://apaceinternational.com.au/nursing-courses" class="know-more">Know More</a>
+                                    </span>
+                                    <h4 class=" bg-courses-land" style="width: 150px;">Nursing</h4>
+                                    <h6 class=" fee text-center mt-2" style="width: 100px;">Fee: $400</h6>
+                                    <h6 class="card-margin bolding">View the University of your own choice</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="carousel-title bolding">We are Providing</h3>
+                    <hr>
+                </div>
+                <!-- single service -->
+                                    <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+                        <span class="service-icon">
+                                                            <i class="fas fa-plane-departure fa-2x"></i>
+                                                    </span>
+                        <h5 class="font-weight-bold">Visa Service &amp; Assistance</h5>
+                        <p class="text-muted text-center">
+                            Guiding you through every step of application and visa process. A seamless journey to your dream.
+                        </p>
+                    </div>
+                                    <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+                        <span class="service-icon">
+                                                            <i class="fas fa-user-graduate fa-2x"></i>
+                                                    </span>
+                        <h5 class="font-weight-bold">Career Counselling</h5>
+                        <p class="text-muted text-center">
+                            Empowering your professional voyage with a roadmap to success. Tailored career counseling towards excellence.
+                        </p>
+                    </div>
+                                    <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+                        <span class="service-icon">
+                                                            <i class="fas fa-chalkboard-teacher fa-2x"></i>
+                                                    </span>
+                        <h5 class="font-weight-bold">Online Tutorials</h5>
+                        <p class="text-muted text-center">
+                            Virtual consultants at your service- anytime, anywhere. Navigate your journey with convenience.
+                        </p>
+                    </div>
+                                    <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+                        <span class="service-icon">
+                                                            <i class="fas fa-briefcase fa-2x"></i>
+                                                    </span>
+                        <h5 class="font-weight-bold">Placement Assistance</h5>
+                        <p class="text-muted text-center">
+                            Assisting your career pathway with our placement support. Connecting you to promising opportunities.
+                        </p>
+                    </div>
+                                    <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+                        <span class="service-icon">
+                                                            <i class="fas fa-chalkboard-teacher fa-2x"></i>
+                                                    </span>
+                        <h5 class="font-weight-bold">Variety of University</h5>
+                        <p class="text-muted text-center">
+                            Explore ideal universities worldwide with our expert-curated options tailored to your ambitions.
+                        </p>
+                    </div>
+                                    <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+                        <span class="service-icon">
+                                                            <i class="fas fa-book-open fa-2x"></i>
+                                                    </span>
+                        <h5 class="font-weight-bold">Easy Course Access</h5>
+                        <p class="text-muted text-center">
+                            Embrace a hassle-free learning experience with seamless navigation through your selected courses.
+                        </p>
+                    </div>
+                                <!-- end service -->
+            </div>
+        </div>
+    </section>
+    <!-- ielts classes -->
+    <section id="ielts" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center bolding ">There are many ways to learn</h3>
+                    <hr>
+                </div>
+                <div class="col pt-4" id="ielting">
+                    <div id="sponsor" class="owl-carousel owl-theme">
+                                                    <div class="item download">
+                                <a href="https://apaceinternational.com.au/test-preparation/ielts-class">
+                                    <img src="https://apaceinternational.com.au/uploads/media/ielts-class_8_1662464232.png" alt="">
+                                </a>
+                            </div>
+                                                    <div class="item download">
+                                <a href="https://apaceinternational.com.au/test-preparation/toefl-class">
+                                    <img src="https://apaceinternational.com.au/uploads/media/toefl-class_8_1662464434.png" alt="">
+                                </a>
+                            </div>
+                                                    <div class="item download">
+                                <a href="https://apaceinternational.com.au/test-preparation/pte-class">
+                                    <img src="https://apaceinternational.com.au/uploads/media/pte-class_5_1662464447.png" alt="">
+                                </a>
+                            </div>
+                                                    <div class="item download">
+                                <a href="https://apaceinternational.com.au/test-preparation/sat-class">
+                                    <img src="https://apaceinternational.com.au/uploads/media/sat-class_3_1662464458.png" alt="">
+                                </a>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="numbers" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center bolding">Why Choose Us</h3>
+                    <h5 class="text-center bolding">See Result</h5>
+                    <hr>
+                </div>
+                <!-- col-sm-6 col-md-6 col-lg-4 -->
+                <div class="col-10 mx-auto col-md-6 col-lg-4 my-3 no-padding text-center num d-flex flex-column">
+                    <i class="fas fa-file-invoice fa-2x"></i>
+                    <span class="numscroller my-3 num-item" data-min='1' data-max='50' data-delay='5'
+                        data-increment='10'>20+</span>
+                    <h5 class="bolding">Certified Courses</h5>
+                </div>
+                <div class="col-10 mx-auto col-md-6 col-lg-4 my-3 no-padding text-center num d-flex flex-column border-rl">
+                    <i class="fas fa-user-graduate fa-2x"></i>
+                    <span class="numscroller my-3 num-item" data-min='1' data-max='2000' data-delay='5'
+                        data-increment='10'>1500+</span>
+                    <h5 class="bolding">Student enrolled</h5>
+                </div>
+                <div class="col-10 mx-auto col-md-6 col-lg-4 my-3 no-padding text-center num d-flex flex-column">
+                    <i class="fas fa-walking fa-2x"></i>
+                    <span class="numscroller my-3 num-item" data-min='1' data-max='2000' data-delay='5'
+                        data-increment='10'>1500+</span>
+                    <h5 class="bolding">Successful Placement</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center bolding ">News and Event</h3>
+                    <hr>
+                </div>
+                                    <div class="col-md-4">
+                        <div class="card text-justify">
+                            <img src="https://apaceinternational.com.au/uploads/media/news-4_4_1645371834.jpg" alt="">
+                            <div class="card-body index-card">
+                                <p>
+                                    Know all about student visa USA.
+                                </p>
+                                <div>
+                                    <br>
+                                    <span id="text4">
+                                        <p class="text-dark">
+                                            
+                                        </p>
+                                        <p><a href="https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html" class="btn btn-primary btn-sm py-2"
+                                                target="_blank">read more</a></p>
+                                </div>
+                                <div class="btn-container text-center">
+                                    <button id="toggle4" class="toggling_button">Read More</button>
+                                </div>
+                                <!-- <a href="#" class="news-link">SEE MORE</a> -->
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-md-4">
+                        <div class="card text-justify">
+                            <img src="https://apaceinternational.com.au/uploads/media/news-3_6_1645371816.jpeg" alt="">
+                            <div class="card-body index-card">
+                                <p>
+                                    View status for student visa.
+                                </p>
+                                <div>
+                                    <br>
+                                    <span id="text3">
+                                        <p class="text-dark">
+                                            
+                                        </p>
+                                        <p><a href="https://www.gov.uk/student-visa" class="btn btn-primary btn-sm py-2"
+                                                target="_blank"></a></p>
+                                </div>
+                                <div class="btn-container text-center">
+                                    <button id="toggle3" class="toggling_button">Read More</button>
+                                </div>
+                                <!-- <a href="#" class="news-link">SEE MORE</a> -->
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-md-4">
+                        <div class="card text-justify">
+                            <img src="https://apaceinternational.com.au/uploads/media/australian-customs_7_1632386062.JPG" alt="">
+                            <div class="card-body index-card">
+                                <p>
+                                    View all the information about Student Visa of Australia
+                                </p>
+                                <div>
+                                    <br>
+                                    <span id="text2">
+                                        <p class="text-dark">
+                                            
+                                        </p>
+                                        <p><a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500" class="btn btn-primary btn-sm py-2"
+                                                target="_blank">Learn More</a></p>
+                                </div>
+                                <div class="btn-container text-center">
+                                    <button id="toggle2" class="toggling_button">Read More</button>
+                                </div>
+                                <!-- <a href="#" class="news-link">SEE MORE</a> -->
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+    <section class="featured py-5">
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <h3 class="text-center bolding">Take a Tour</h3>
+                    <hr>
+                    <h6 class="text-center bolding">We have lot more to offer</h6>
+                    <!-- <hr> -->
+                </div>
+                <div class="col-12 mx-auto">
+                    <!-- col-md-7 col-lg-9 mx-auto my-3 -->
+                    <div class="row no-gutters">
+                        <!-- single photo -->
+                                                    <div class="mx-auto col-md-3 col-lg-3">
+                                <div class="featured-container mb-1">
+                                    <img src="https://apaceinternational.com.au/uploads/media/test-activities-update_6_1703676465.jpg" alt=""
+                                        class="img-fluid" data-toggle="modal"
+                                        data-target="#gallery1" />
+                                    <span class="featured-search-icon" data-toggle="modal"
+                                        data-target="#gallery1">
+                                        <i class="fas fa-arrow-alt-circle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                                                    <div class="mx-auto col-md-3 col-lg-3">
+                                <div class="featured-container mb-1">
+                                    <img src="https://apaceinternational.com.au/uploads/media/gallery_9_1703676476.jpg" alt=""
+                                        class="img-fluid" data-toggle="modal"
+                                        data-target="#gallery2" />
+                                    <span class="featured-search-icon" data-toggle="modal"
+                                        data-target="#gallery2">
+                                        <i class="fas fa-arrow-alt-circle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                                                    <div class="mx-auto col-md-3 col-lg-3">
+                                <div class="featured-container mb-1">
+                                    <img src="https://apaceinternational.com.au/uploads/media/test-activities-update_1_1703676486.jpg" alt=""
+                                        class="img-fluid" data-toggle="modal"
+                                        data-target="#gallery3" />
+                                    <span class="featured-search-icon" data-toggle="modal"
+                                        data-target="#gallery3">
+                                        <i class="fas fa-arrow-alt-circle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                                                    <div class="mx-auto col-md-3 col-lg-3">
+                                <div class="featured-container mb-1">
+                                    <img src="https://apaceinternational.com.au/uploads/media/image-gallery_6_1703676497.jpg" alt=""
+                                        class="img-fluid" data-toggle="modal"
+                                        data-target="#gallery4" />
+                                    <span class="featured-search-icon" data-toggle="modal"
+                                        data-target="#gallery4">
+                                        <i class="fas fa-arrow-alt-circle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                                                    <div class="mx-auto col-md-3 col-lg-3">
+                                <div class="featured-container mb-1">
+                                    <img src="https://apaceinternational.com.au/uploads/media/test_4_1703676510.jpg" alt=""
+                                        class="img-fluid" data-toggle="modal"
+                                        data-target="#gallery5" />
+                                    <span class="featured-search-icon" data-toggle="modal"
+                                        data-target="#gallery5">
+                                        <i class="fas fa-arrow-alt-circle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                                                    <div class="mx-auto col-md-3 col-lg-3">
+                                <div class="featured-container mb-1">
+                                    <img src="https://apaceinternational.com.au/uploads/media/image-gallery_4_1703676523.jpg" alt=""
+                                        class="img-fluid" data-toggle="modal"
+                                        data-target="#gallery6" />
+                                    <span class="featured-search-icon" data-toggle="modal"
+                                        data-target="#gallery6">
+                                        <i class="fas fa-arrow-alt-circle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                                                    <div class="mx-auto col-md-3 col-lg-3">
+                                <div class="featured-container mb-1">
+                                    <img src="https://apaceinternational.com.au/uploads/media/image-gallery_8_1703676562.jpg" alt=""
+                                        class="img-fluid" data-toggle="modal"
+                                        data-target="#gallery7" />
+                                    <span class="featured-search-icon" data-toggle="modal"
+                                        data-target="#gallery7">
+                                        <i class="fas fa-arrow-alt-circle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                                                    <div class="mx-auto col-md-3 col-lg-3">
+                                <div class="featured-container mb-1">
+                                    <img src="https://apaceinternational.com.au/uploads/media/image-gallery_6_1703676623.jpg" alt=""
+                                        class="img-fluid" data-toggle="modal"
+                                        data-target="#gallery8" />
+                                    <span class="featured-search-icon" data-toggle="modal"
+                                        data-target="#gallery8">
+                                        <i class="fas fa-arrow-alt-circle-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                                                <!-- end single photo -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+            <div class="modal fade" id="gallery1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-captalize">Test Activities Update</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- end modal header -->
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/test-activities-update_6_1703676465.jpg" alt=""
+                                    class="img-fluid" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal fade" id="gallery2" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-captalize">gallery</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- end modal header -->
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/gallery_9_1703676476.jpg" alt=""
+                                    class="img-fluid" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal fade" id="gallery3" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-captalize">Test Activities Update</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- end modal header -->
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/test-activities-update_1_1703676486.jpg" alt=""
+                                    class="img-fluid" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal fade" id="gallery4" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-captalize">Image Gallery</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- end modal header -->
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/image-gallery_6_1703676497.jpg" alt=""
+                                    class="img-fluid" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal fade" id="gallery5" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-captalize">Test</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- end modal header -->
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/test_4_1703676510.jpg" alt=""
+                                    class="img-fluid" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal fade" id="gallery6" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-captalize">Image Gallery</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- end modal header -->
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/image-gallery_4_1703676523.jpg" alt=""
+                                    class="img-fluid" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal fade" id="gallery7" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-captalize">image Gallery</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- end modal header -->
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/image-gallery_8_1703676562.jpg" alt=""
+                                    class="img-fluid" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal fade" id="gallery8" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-captalize">image Gallery</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- end modal header -->
+                    <!-- modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/image-gallery_6_1703676623.jpg" alt=""
+                                    class="img-fluid" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal end -->
+    <section id="quotes" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center bolding">Our Happy Students</h3>
+                    <hr>
+                </div>
+                <div class="col mt-3">
+                    <div id="customers" class="owl-carousel owl-theme">
+                                                    <div class="customer text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/testimonial/d476ed9b6bd7c0c1b604af80cf83b2e6.1662900843.jpg" alt=""
+                                    class="img-fluid rounded-circle mx-auto">
+                                <blockquote class="blockquote">
+                                    <p class="w-50 mx-auto my-3">
+                                        <i class="fas fa-quote-left mr-2"></i>
+                                        Thanks for your support, guidance for abroad study
+                                    </p>
+                                    <footer class="blockquote-footer">
+                                        Pratiksha Khadka, Australia
+                                    </footer>
+                                </blockquote>
+                            </div>
+                                                    <div class="customer text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/testimonial/6a37f73179888a8df1048b2e0449c78c.1662900952.jpg" alt=""
+                                    class="img-fluid rounded-circle mx-auto">
+                                <blockquote class="blockquote">
+                                    <p class="w-50 mx-auto my-3">
+                                        <i class="fas fa-quote-left mr-2"></i>
+                                        Thanks for you guidance and support to make my visa success study in Australia.
+                                    </p>
+                                    <footer class="blockquote-footer">
+                                        Sujan Karki, Australia
+                                    </footer>
+                                </blockquote>
+                            </div>
+                                                    <div class="customer text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/testimonial/56c587a2467438fae56480013047fede.1662900700.jpg" alt=""
+                                    class="img-fluid rounded-circle mx-auto">
+                                <blockquote class="blockquote">
+                                    <p class="w-50 mx-auto my-3">
+                                        <i class="fas fa-quote-left mr-2"></i>
+                                        Thanks for making my dream to study in Australia Universities..
+Apace International
+                                    </p>
+                                    <footer class="blockquote-footer">
+                                        Samir Shrestha, Australia
+                                    </footer>
+                                </blockquote>
+                            </div>
+                                                    <div class="customer text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/testimonial/cbd8a0f4828568912b36389da397e595.1703573891.jpg" alt=""
+                                    class="img-fluid rounded-circle mx-auto">
+                                <blockquote class="blockquote">
+                                    <p class="w-50 mx-auto my-3">
+                                        <i class="fas fa-quote-left mr-2"></i>
+                                        Thank you for your kind cooperation and support
+                                    </p>
+                                    <footer class="blockquote-footer">
+                                        Sujan Niroula, Canada
+                                    </footer>
+                                </blockquote>
+                            </div>
+                                                    <div class="customer text-center">
+                                <img src="https://apaceinternational.com.au/uploads/media/testimonial/7209c5c792f943e96013484467f95777.1703574329.jpg" alt=""
+                                    class="img-fluid rounded-circle mx-auto">
+                                <blockquote class="blockquote">
+                                    <p class="w-50 mx-auto my-3">
+                                        <i class="fas fa-quote-left mr-2"></i>
+                                        Thank you Apace International Team, Always remember your support and counseling..
+                                    </p>
+                                    <footer class="blockquote-footer">
+                                        Janak Raj Joshi, USA
+                                    </footer>
+                                </blockquote>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="part" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center bolding">Our Partners</h3>
+                    <hr>
+                </div>
+                <div class="col">
+                    <div id="partners" class="owl-carousel owl-theme">
+                                                    <div class="item">
+                                <img src="https://apaceinternational.com.au/uploads/media/certificate/usq_6_1632386811.png" alt="">
+                            </div>
+                                                    <div class="item">
+                                <img src="https://apaceinternational.com.au/uploads/media/certificate/ibma_4_1632386864.png" alt="">
+                            </div>
+                                                    <div class="item">
+                                <img src="https://apaceinternational.com.au/uploads/media/certificate/aibi_8_1662900445.jpg" alt="">
+                            </div>
+                                                    <div class="item">
+                                <img src="https://apaceinternational.com.au/uploads/media/certificate/04_3_1645373293.png" alt="">
+                            </div>
+                                                    <div class="item">
+                                <img src="https://apaceinternational.com.au/uploads/media/certificate/05_7_1631686640.png" alt="">
+                            </div>
+                                                    <div class="item">
+                                <img src="https://apaceinternational.com.au/uploads/media/certificate/06_7_1631686208.png" alt="">
+                            </div>
+                                                    <div class="item">
+                                <img src="https://apaceinternational.com.au/uploads/media/certificate/07_8_1631686397.png" alt="">
+                            </div>
+                                                    <div class="item">
+                                <img src="https://apaceinternational.com.au/uploads/media/certificate/08_4_1631686436.png" alt="">
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 footer-background">
+        <!-- Footer Links -->
+        <div class="container">
+            <!-- Grid row -->
+            <div class="fmain_ap">
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-4 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h4 class="bolding">Apace <span class="blue-color">International</span></h4>
+                        <ul class="list-unstyled contact">
+                            <li>
+                                <h6><i class="fas fa-home px-2 py-1"></i>suite 9D Level 7 138 Albert Street Brisbane QLD Australia 4000</h6>
+                            </li>
+                            <li>
+                                <h6><i class="fas fa-envelope-square px-2 py-1"></i>info@apaceinternational.com.au</h6>
+                            </li>
+                            
+                        </ul>
+                        <div class="border-bottom mb-3"></div>
+                        <h5 class="font-weight-bold "><span class="blue-color">Pokhara</span> Branch</h5>
+                        <ul class="list-unstyled contact">
+                            <li>
+                                <h6><i class="fas fa-home px-2 py-1"></i>suite 9D Level 7 138 Albert Street Brisbane QLD Australia 4000</h6>
+                            </li>
+                            <li>
+                                <h6><i class="fas fa-envelope-square px-2 py-1"></i>info@apaceinternational.com.au</h6>
+                            </li>
+                            
+                        </ul>
+                        <div class="icons mt-4">
+                            <i class="fab fa-facebook-f  mx-1"></i>
+                            <i class="fab fa-twitter  mx-1"></i>
+                            <i class="fab fa-instagram  mx-1"></i>
+                            <i class="fab fa-google  mx-1"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-md-4 mt-md-0 mt-3">
+                                <h5 class="font-weight-bold "><span class="blue-color">Useful</span> Links</h5>
+
+                                <ul class="list-unstyled foot">
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>SOP Sample</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>Interview Preparation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>Work Experience</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>Affidavit Sample</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mt-md-0 mt-3">
+                                <h5 class="font-weight-bold "><span class="blue-color">Useful</span> Documents</h5>
+
+                                <ul class="list-unstyled foot">
+
+
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i> Statement of Purpose</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>SOP Sample</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>Work experience Letter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>Recommendation Letter</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>Bio-Data</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mt-md-0 mt-3">
+                                <h5 class="font-weight-bold "><span class="blue-color">Useful</span> Links</h5>
+
+                                <ul class="list-unstyled foot">
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>SOP Sample</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>Interview Preparation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>Work Experience</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><i class="fas fa-circle p-2"></i>Affidavit Sample</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 copywright mt-2">© 2022 Copyright:
+            <a class="font-weight-bold text-light" href="#"> APACE INTERNATIONAL GROUP PVT. LTD.</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://apaceinternational.com.au/frontend/js/jquery-3.3.1.min.js"></script>
+    <script src="https://apaceinternational.com.au/frontend/js/bootstrap.bundle.min.js"></script>
+    <script src="https://apaceinternational.com.au/frontend/js/numscorller-1.0.js"></script>
+    <script src="https://apaceinternational.com.au/frontend/owl/owl.carousel.min.js"></script>
+    <script src="https://apaceinternational.com.au/frontend/owl/owl.js"></script>
+    <script src="https://apaceinternational.com.au/frontend/js/app.js"></script>
+    <!-- Livewire Scripts -->
+<script >
+    console.warn("Livewire: The published Livewire assets are out of date
+ See: https://laravel-livewire.com/docs/installation/")
+</script>
+<script src="/vendor/livewire/livewire.js?id=54d078b2ce39327a1702" data-turbo-eval="false" data-turbolinks-eval="false" ></script>
+<script data-turbo-eval="false" data-turbolinks-eval="false" >
+    if (window.livewire) {
+	    console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.')
+	}
+
+    window.livewire = new Livewire();
+    window.livewire.devTools(true);
+    window.Livewire = window.livewire;
+    window.livewire_app_url = '';
+    window.livewire_token = 'Iez0ihx9qN0s9zY3qHMk7kzAenPlVTzRXQzCzCWO';
+
+	/* Make sure Livewire loads first. */
+	if (window.Alpine) {
+	    /* Defer showing the warning so it doesn't get buried under downstream errors. */
+	    document.addEventListener("DOMContentLoaded", function () {
+	        setTimeout(function() {
+	            console.warn("Livewire: It looks like AlpineJS has already been loaded. Make sure Livewire\'s scripts are loaded before Alpine.\\n\\n Reference docs for more info: http://laravel-livewire.com/docs/alpine-js")
+	        })
+	    });
+	}
+
+	/* Make Alpine wait until Livewire is finished rendering to do its thing. */
+    window.deferLoadingAlpine = function (callback) {
+        window.addEventListener('livewire:load', function () {
+            callback();
+        });
+    };
+
+    let started = false;
+
+    window.addEventListener('alpine:initializing', function () {
+        if (! started) {
+            window.livewire.start();
+
+            started = true;
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (! started) {
+            window.livewire.start();
+
+            started = true;
+        }
+    });
+</script>
+
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "434185346604345");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+
+</html>
