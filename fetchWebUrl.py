@@ -32,7 +32,13 @@ def genURL(results):
             print("This is the Facebook LINK ***************")
             print(HrefArr[i])
 
-    FilteredHref = [x for x in HrefArr if not any(k in x for k in ["facebook", "linkedin", "youtube","school","maps","worldwide","tiktok","wikipedia","instagram"])]
+    FilteredHref = [
+        x for x in HrefArr
+        if not any(k in x.lower() for k in [
+            "facebook","linkedin","youtube","school","maps",
+            "worldwide","tiktok","wikipedia","instagram","profile"
+        ]) and not any(ch.isdigit() for ch in x)
+    ]
 
     print("\n")
     print("ORIGINAL LIST OF LINKS ********************")

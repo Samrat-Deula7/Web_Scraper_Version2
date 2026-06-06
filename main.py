@@ -28,7 +28,7 @@ url = []
 
 AboutConsultancy = ""
 
-for i, query in enumerate(search_query[0:13]):
+for i, query in enumerate(search_query):
     
     try:
         defaultpath = "data"
@@ -84,7 +84,7 @@ for i, query in enumerate(search_query[0:13]):
             else:
                 logo.insert(i,"")
 
-        description = soup.find_all("p", text = re.compile(r"consultancy|education", re.I))
+        description = soup.find_all("p", text = re.compile(r"detail|company|consultancy|education|about", re.I)) or soup.find_all(class_=re.compile(r"detail|company|consultancy|education|about",re.I)) or soup.find_all("p")
 
         print("\n")
         print("WEBSITE DESCRIPTION ********************")
