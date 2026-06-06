@@ -18,6 +18,8 @@ def genURL(results):
     FBURL = ""
     HrefArr = []
     FilteredHref = []
+    ScoreBoard = []
+
 
 
     for i in range(8):
