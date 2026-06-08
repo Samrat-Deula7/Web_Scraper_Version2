@@ -20,6 +20,7 @@ import pandas as pd
 
 df = pd.read_excel("C:\\Users\\hp\\Downloads\\consultancy data.xlsx")
 search_query = df["Name of Company"].tolist()
+print(len(search_query))
 
 name = []
 logo = []
@@ -39,14 +40,14 @@ for i, query in enumerate(search_query):
 
         # JSON name
 
-        name.insert(i,query)
+        name.append(query)
 
 
         webUrl = siteURl.genURL(result)
 
         # JSON url
 
-        url.insert(i,webUrl)
+        url.append(webUrl)
 
         isDone = save.saveData(result,webUrl,path)
 
@@ -68,10 +69,10 @@ for i, query in enumerate(search_query):
 
                 # JSON LOGO
 
-                logo.insert(i,ImgLOGO if ImgLOGO else "")
+                logo.append(ImgLOGO if ImgLOGO else "")
 
             else:
-                logo.insert(i,"")
+                logo.append("")
 
         else:
             if img:
@@ -80,9 +81,9 @@ for i, query in enumerate(search_query):
 
                 # JSON LOGO
 
-                logo.insert(i,IconLOGO if IconLOGO else "")
+                logo.append(IconLOGO if IconLOGO else "")
             else:
-                logo.insert(i,"")
+                logo.append("")
 
         description = soup.find_all("p", text = re.compile(r"detail|company|consultancy|education|about", re.I)) or soup.find_all(class_=re.compile(r"detail|company|consultancy|education|about",re.I)) or soup.find_all("p")
 
@@ -97,9 +98,9 @@ for i, query in enumerate(search_query):
         if description:
             # JSON DESC
 
-            ConsultancyDesc.insert(i,str(description))
+            ConsultancyDesc.append(str(description))
         else:
-            ConsultancyDesc.insert(i,"")
+            ConsultancyDesc.append("")
 
 
             print("\n")
